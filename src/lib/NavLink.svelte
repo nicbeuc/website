@@ -14,5 +14,13 @@
 {/if}
 
 <style>
+  a {
+    text-decoration: none;
+    color: grey;
+    transition: color var(--transition-fast);
 
+    &:hover {
+      color: inherit;
+    }
+  }
 </style>
