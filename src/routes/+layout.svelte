@@ -23,9 +23,7 @@
 <style>
   main {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 6.4rem;
   }
   footer {
     padding-bottom: 2.4rem;
@@ -37,6 +35,6 @@
     gap: 1.6rem;
   }
   .copyright {
-    color: grey;
+    color: var(--color-neutral-600);
   }
 </style>

@@ -29,10 +29,10 @@
       }
     }
 
-    /* &::after {
+    &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: .15em;
       height: 1px;
       right: 0;
       left: 0;
@@ -40,6 +40,6 @@
       transition-property: opacity;
       transition-duration: inherit;
       transition-timing-function: inherit;
-    } */
+    }
   }
 </style>

@@ -36,6 +36,19 @@
 			:root {
 				--transition-easing: cubic-bezier(0.360, 0.235, 0.035, 1.000);
 				--transition-fast: 250ms var(--transition-easing);
+
+				--color-neutral-900: #141618;
+				--color-neutral-800: #343a40;
+				--color-neutral-700: #495057;
+				--color-neutral-600: #6c757d;
+				--color-neutral-500: #adb5bd;
+				--color-neutral-400: #ced4da;
+				--color-neutral-300: #dee2e6;
+				--color-neutral-200: #e9ecef;
+				--color-neutral-100: #f8f9fa;
+
+				--color-select-text: #0d47a1;
+				--color-select-bg: #bbdefb;
 			}
 
 			html {
@@ -46,6 +59,12 @@
 				font-size: 62.5%;
 				font-family: 'SK Modernist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 				font-weight: normal;
+				background-color: var(--color-neutral-100);
+			}
+
+			::selection {
+				background-color: var(--color-select-bg);
+				color: var(--color-select-text);
 			}
 
 			*, *::before, *::after {
@@ -62,8 +81,10 @@
 				line-height: 1.65;
 				font-size: 1.4rem;
 				min-height: 100vh;
+				letter-spacing: .02ch;
 				display: flex;
 				flex-direction: column;
+				color: var(--color-neutral-900);
 			}
 
 			img, picture, video, canvas, svg {
@@ -81,6 +102,7 @@
 
 			h1, h2, h3, h4, h5, h6 {
 				font-weight: normal;
+				font-size: inherit;
 			}
 
 			a {
@@ -95,6 +117,23 @@
 				max-width: 80rem;
 				margin-inline: auto;
 				padding-inline: 2.4rem;
+			}
+
+			article p {
+				max-width: 64ch;
+			}
+
+			article h1 {
+				margin-bottom: 4.8rem;
+			}
+
+			article :is(h2, h3, h4, h5, h6) {
+				margin-bottom: 1.2rem;
+				color: var(--color-neutral-600);
+			}
+
+			article section + section {
+				margin-top: 3.2rem;
 			}
 		</style>
 

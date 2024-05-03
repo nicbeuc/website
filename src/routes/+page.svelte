@@ -4,5 +4,10 @@
   h1 {
     font-size: inherit;
     max-width: 32ch;
+    color: var(--color-neutral-600);
+
+    & span {
+      color: var(--color-neutral-900);
+    }
   }
 </style>
