@@ -5,6 +5,7 @@
     font-size: inherit;
     max-width: 32ch;
     color: var(--color-neutral-600);
+    align-self: center;
 
     & span {
       color: var(--color-neutral-900);
