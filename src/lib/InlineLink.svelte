@@ -20,7 +20,7 @@
   a {
     text-decoration-line: underline;
     text-decoration-color: currentColor;
-    text-decoration-style: dotted;
+    text-decoration-style: dashed;
     text-underline-offset: .25em;
     color: var(--color-neutral-600);
     transition: all var(--transition-fast);
@@ -28,13 +28,17 @@
     position: relative;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: inherit;
       text-decoration-color: transparent;
 
       &::after {
         opacity: 1;
       }
+    }
+
+    &[target="_blank"] {
+      cursor: alias;
     }
 
     &::after {
@@ -47,6 +51,7 @@
       transition-duration: inherit;
       transition-timing-function: inherit;
       z-index: -1;
+      border-radius: .4em;
     }
 
     & svg {
