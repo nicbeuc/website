@@ -18,7 +18,7 @@
   </div>
   <div class="links">
     <small><NavLink href="/colophon">Colophon</NavLink></small>
-    <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
+    <small class="copyright">© {new Date().getFullYear()}</small>
   </div>
 </footer>
 

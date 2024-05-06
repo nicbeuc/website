@@ -3,6 +3,7 @@
 </script>
 
 <article>
+  <h1>Colophon</h1>
   <section>
     <h2>Typography</h2>
     <p>This website is set in <InlineLink href="https://seankanedesign.gumroad.com/l/sk-modernist" external>SK Modernist</InlineLink>, a beautiful geometric sans-serif font with a pinch of character, designed by <InlineLink href="https://seankanedesign.gumroad.com/" external>Sean Kane</InlineLink>. All fonts used on the site were purchased and are properly licensed.</p>
