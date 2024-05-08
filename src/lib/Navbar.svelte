@@ -1,8 +1,6 @@
 <script>
   import NavLink from "$lib/NavLink.svelte";
-  import Icon from "$lib/Icon.svelte";
   import Logo from "./Logo.svelte";
-  import { socialLinks } from "$lib/constants";
 </script>
 
 <header>
