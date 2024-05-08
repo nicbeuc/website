@@ -26,7 +26,7 @@
 }
 
 :root {
-	--page-width: 100rem;
+	--page-width: 90rem;
 
 	@media screen and (max-width: 799px) {
 		--page-width: 50rem;
