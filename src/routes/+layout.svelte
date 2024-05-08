@@ -1,13 +1,16 @@
 <script>
   import '../styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
+  import ScrollFade from '$lib/ScrollFade.svelte';
 </script>
 
 <div class="wrapper">
+  <ScrollFade />
   <Navbar />
   <main class="page-width">
     <slot />
   </main>
+  <ScrollFade />
 </div>
 
 <style>
