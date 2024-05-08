@@ -3,7 +3,6 @@
   <path d="M0 0H15V26C15 29.3137 12.3137 32 9 32H0V0Z" fill="currentColor"/>
 </svg>
 
-
 <style>
   svg {
     color: var(--color-neutral-400);

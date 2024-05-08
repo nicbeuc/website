@@ -28,6 +28,10 @@
 :root {
 	--page-width: 100rem;
 
+	@media screen and (max-width: 799px) {
+		--page-width: 50rem;
+	}
+
 	--transition-easing: cubic-bezier(0.36, 0.235, 0.035, 1);
 	--transition-fast: 250ms var(--transition-easing);
 
@@ -48,12 +52,12 @@
 
 	--padding-inline: 4.8rem;
 
-	@media screen and (max-width: 899px) {
+	@media screen and (max-width: 799px) {
 		--padding-inline: 3.2rem;
 	}
 
 	@media screen and (max-width: 499px) {
-		--padding-inline: 2.4rem;
+		--padding-inline: 1.6rem;
 	}
 
 	--border: 0.1rem solid var(--color-neutral-200);
@@ -165,6 +169,12 @@ main {
 	min-height: 100vh;
 	display: grid;
 	margin-left: auto;
+
+	@media screen and (max-width: 799px) {
+		width: 100%;
+		min-height: unset;
+		padding: var(--padding-inline);
+	}
 }
 
 article p {
