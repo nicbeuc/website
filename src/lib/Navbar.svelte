@@ -10,10 +10,8 @@
     <a href="/">
       <Logo />
     </a>
-    <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville, currently working at Make Me Modern.</p>
-  </div>
-  <div class="navbar__footer">
-    <div class="icons">
+    <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville, TN.</p>
+    <!-- <div class="icons">
       <NavLink href={socialLinks.github} external>
         <Icon name="github" title="GitHub"/>
       </NavLink>
@@ -23,11 +21,11 @@
       <NavLink href={socialLinks.readcv} external>
         <Icon name="readcv" title="read.cv"/>
       </NavLink>
-    </div>
-    <div class="links">
-      <small><NavLink href="/colophon">Colophon</NavLink></small>
-      <small class="copyright">© {new Date().getFullYear()}</small>
-    </div>
+    </div> -->
+  </div>
+  <div class="navbar__footer">
+    <small><NavLink href="/colophon">Colophon</NavLink></small>
+    <small>© {new Date().getFullYear()}</small>
   </div>
 </header>
 
@@ -47,11 +45,17 @@
   .navbar__header {
     & p {
       color: var(--color-neutral-600);
-      margin-top: 3.2rem;
+      margin-top: 2.4rem;
 
       & span {
         color: var(--color-neutral-900);
       }
+    }
+
+    & .icons {
+      display: flex;
+      gap: 1.6rem;
+      margin-top: 1.6rem;
     }
   }
 
@@ -61,16 +65,6 @@
     justify-content: space-between;
     padding-top: 2.4rem;
     border-top: var(--border);
-
-    & .links {
-      display: flex;
-      gap: 1.6rem;
-    }
-
-    & .icons {
-      display: flex;
-      gap: 1.6rem;
-    }
 
     & .copyright {
       color: var(--color-neutral-600);
