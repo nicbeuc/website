@@ -1,23 +1,23 @@
 <script>
-  import NavLink from "$lib/NavLink.svelte";
+  import Link from "$lib/Link.svelte";
   import Icon from "$lib/Icon.svelte";
   import { socialLinks } from "$lib/constants";
 </script>
 
 <footer class="page-width">
   <div class="icons">
-    <NavLink href={socialLinks.github} external>
+    <Link href={socialLinks.github} external>
       <Icon name="github" title="GitHub"/>
-    </NavLink>
-    <NavLink href={socialLinks.linkedin} external>
+    </Link>
+    <Link href={socialLinks.linkedin} external>
       <Icon name="linkedin" title="LinkedIn"/>
-    </NavLink>
-    <NavLink href={socialLinks.readcv} external>
+    </Link>
+    <Link href={socialLinks.readcv} external>
       <Icon name="readcv" title="read.cv"/>
-    </NavLink>
+    </Link>
   </div>
   <div class="links">
-    <small><NavLink href="/colophon">Colophon</NavLink></small>
+    <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>
   </div>
 </footer>

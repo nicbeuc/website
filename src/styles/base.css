@@ -111,7 +111,7 @@ body {
 	letter-spacing: 0.02ch;
 	display: flex;
 	flex-direction: column;
-	color: var(--color-neutral-900);
+	color: black;
 	overflow-x: overlay;
 }
 
@@ -181,10 +181,6 @@ article p {
 	max-width: 64ch;
 }
 
-article h1 {
-	margin-bottom: 4.8rem;
-}
-
 article :is(h2, h3, h4, h5, h6) {
 	margin-bottom: 1.2rem;
 	color: var(--color-neutral-600);
@@ -192,4 +188,9 @@ article :is(h2, h3, h4, h5, h6) {
 
 article section + section {
 	margin-top: 3.2rem;
+}
+
+.page-title {
+	margin-bottom: 4.8rem;
+	line-height: 2.4rem;
 }

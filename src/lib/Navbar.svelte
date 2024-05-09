@@ -1,5 +1,5 @@
 <script>
-  import NavLink from "$lib/NavLink.svelte";
+  import Link from "$lib/Link.svelte";
   import Logo from "./Logo.svelte";
 </script>
 
@@ -9,22 +9,14 @@
       <Logo />
     </a>
   </div>
-  <div class="navbar__content">
-    <!-- <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville, TN.</p> -->
-    <!-- <div class="icons">
-      <NavLink href={socialLinks.github} external>
-        <Icon name="github" title="GitHub"/>
-      </NavLink>
-      <NavLink href={socialLinks.linkedin} external>
-        <Icon name="linkedin" title="LinkedIn"/>
-      </NavLink>
-      <NavLink href={socialLinks.readcv} external>
-        <Icon name="readcv" title="read.cv"/>
-      </NavLink>
-    </div> -->
+  <div class="navbar__links">
+    <Link>Work</Link>
+    <Link>Now</Link>
+    <Link>Reading</Link>
+    <Link>Listening</Link>
   </div>
   <div class="navbar__footer">
-    <small><NavLink href="/colophon">Colophon</NavLink></small>
+    <small><Link href="/colophon">Colophon</Link></small>
     <small>© {new Date().getFullYear()}</small>
   </div>
 </header>
@@ -50,29 +42,24 @@
       bottom: var(--padding-inline);
       height: auto;
       background-color: var(--color-neutral-100);
-      border-radius: 100vw;
+      border-radius: 2.4rem;
       border: var(--border);
     }
   }
 
-  .navbar__content {
-    & p {
-      color: var(--color-neutral-600);
-      margin-top: 2.4rem;
+  .navbar__links {
+    display: none;
+    @media screen and (min-width: 800px) {
+      display: block;
+      margin-top: 4.8rem;
+    }
 
-      & span {
-        color: var(--color-neutral-900);
+    & a {
+      display: block;
+
+      &:not(:last-of-type) {
+        margin-bottom: .4rem;
       }
-    }
-
-    & .icons {
-      display: flex;
-      gap: 1.6rem;
-      margin-top: 1.6rem;
-    }
-
-    @media screen and (max-width: 799px) {
-      display: none;
     }
   }
 
