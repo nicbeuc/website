@@ -1,6 +1,7 @@
 <script>
   import Link from "$lib/Link.svelte";
   import Logo from "./Logo.svelte";
+  import { socialLinks } from "./constants";
 </script>
 
 <header>
@@ -9,11 +10,13 @@
       <Logo />
     </a>
   </div>
+  <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville.</p>
   <div class="navbar__links">
     <Link>Work</Link>
     <Link>Now</Link>
-    <Link>Reading</Link>
-    <Link>Listening</Link>
+    <Link href={socialLinks.github} external>GitHub</Link>
+    <Link href={socialLinks.readcv} external>Read.cv</Link>
+    <Link href={socialLinks.mail} external>Mail</Link>
   </div>
   <div class="navbar__footer">
     <small><Link href="/colophon">Colophon</Link></small>
@@ -28,7 +31,7 @@
     width: var(--navbar-width);
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     position: fixed;
     top: 0;
     left: calc((max(100vw, var(--page-width)) - var(--page-width)) / 2);
@@ -45,29 +48,30 @@
       border-radius: 2.4rem;
       border: var(--border);
     }
+
+    & > p {
+      margin-top: 3.2rem;
+      color: var(--color-neutral-600);
+
+      & span {
+        color: black;
+        font-weight: bolder;
+      }
+    }
   }
 
   .navbar__links {
-    display: none;
-    @media screen and (min-width: 800px) {
-      display: block;
-      margin-top: 4.8rem;
-    }
-
-    & a {
-      display: block;
-
-      &:not(:last-of-type) {
-        margin-bottom: .4rem;
-      }
-    }
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+    align-items: start;
   }
 
   .navbar__footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2.4rem;
+    padding-top: 1.6rem;
     border-top: var(--border);
 
     & .copyright {

@@ -6,6 +6,8 @@
     width: min(100vw, var(--page-width));
     height: var(--padding-inline);
     backdrop-filter: blur(5px);
+    z-index: 1000;
+    pointer-events: none;
 
     &::before {
       content: "";

@@ -9,6 +9,10 @@
     <p>This website is set in <InlineLink href="https://seankanedesign.gumroad.com/l/sk-modernist" external>SK Modernist</InlineLink>, a beautiful geometric sans-serif font with a pinch of character, designed by <InlineLink href="https://seankanedesign.gumroad.com/" external>Sean Kane</InlineLink>. All fonts used on the site were purchased and are properly licensed.</p>
   </section>
   <section>
+    <h2>Icons</h2>
+    <p>This website features <InlineLink href="https://basicons.xyz/" external>Basicons</InlineLink>, a simple and sharp icon suite created by <InlineLink href="https://www.preciousm.co/" external>Precious Madubuike</InlineLink> and <InlineLink href="https://www.linkedin.com/in/solomon-omojola-6255198a/" external>Solomon Omojola</InlineLink>.</p>
+  </section>
+  <section>
     <h2>Accessibility</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </section>
