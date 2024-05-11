@@ -20,7 +20,7 @@
       top: 0;
 
       &::before {
-        background: linear-gradient(to bottom, white, transparent);
+        background: linear-gradient(to bottom, var(--color-bg), transparent);
       }
     }
 
@@ -29,7 +29,7 @@
       bottom: 0;
 
       &::before {
-        background: linear-gradient(to top, white, transparent);
+        background: linear-gradient(to top, var(--color-bg), transparent);
       }
     }
   }

@@ -12,7 +12,7 @@
   </div>
   <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville.</p>
   <div class="navbar__links">
-    <Link>Work</Link>
+    <Link>Work <span>(3)</span></Link>
     <Link>Now</Link>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
@@ -65,6 +65,11 @@
     flex-direction: column;
     margin-top: 3.2rem;
     align-items: start;
+
+    & a span {
+      margin-inline-start: .4em;
+      color: var(--color-neutral-500)
+    }
   }
 
   .navbar__footer {

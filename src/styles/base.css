@@ -50,6 +50,8 @@
 	--color-select-text: #0d47a1;
 	--color-select-bg: #bbdefb;
 
+	--color-bg: var(--color-neutral-100);
+
 	--padding-inline: 4.8rem;
 
 	@media screen and (max-width: 799px) {
@@ -83,7 +85,7 @@ html {
 		'Helvetica Neue',
 		sans-serif;
 	font-weight: normal;
-	background-color: white;
+	background-color: var(--color-bg);
 }
 
 ::selection {

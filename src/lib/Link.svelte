@@ -30,7 +30,7 @@
     &:hover {
       color: inherit;
 
-      & svg {
+      & * {
         color: inherit;
       }
     }
