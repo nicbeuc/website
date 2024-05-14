@@ -16,12 +16,16 @@
 <style>
   .wrapper {
     --max-width: var(--page-width);
-    --navbar-width: 32rem;
+    --navbar-width: 34rem;
     max-width: var(--max-width);
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     width: 100%;
     margin-inline: auto;
+
+    @media screen and (max-width: 799px) {
+      flex-direction: column;
+    }
   }
 </style>

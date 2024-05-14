@@ -7,6 +7,6 @@
   svg {
     height: 2.4rem;
     width: 2.4rem;
-    color: var(--color-neutral-300);
+    color: var(--color-neutral-400);
   }
 </style>

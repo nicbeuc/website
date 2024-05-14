@@ -26,7 +26,7 @@
 }
 
 :root {
-	--page-width: 100rem;
+	--page-width: 110rem;
 
 	@media screen and (max-width: 799px) {
 		--page-width: 50rem;
@@ -40,8 +40,8 @@
 
 	--color-neutral-900: #141618;
 	--color-neutral-800: #343a40;
-	--color-neutral-700: #495057;
-	--color-neutral-600: #6c757d;
+	--color-neutral-700: #565c63;
+	--color-neutral-600: #7d858d;
 	--color-neutral-500: #adb5bd;
 	--color-neutral-400: #ced4da;
 	--color-neutral-300: #dee2e6;
@@ -50,7 +50,7 @@
 	--color-select-text: #0d47a1;
 	--color-select-bg: #bbdefb;
 
-	--color-bg: var(--color-neutral-100);
+	--color-bg: white;
 
 	--padding-inline: 4.8rem;
 
@@ -62,7 +62,7 @@
 		--padding-inline: 1.6rem;
 	}
 
-	--border: 0.1rem solid var(--color-neutral-200);
+	--border: 0.1rem solid var(--color-neutral-300);
 }
 
 html {
@@ -167,8 +167,7 @@ small {
 
 main {
 	width: calc(min(100vw, var(--max-width)) - var(--navbar-width));
-	padding: var(--padding-inline) var(--padding-inline) var(--padding-inline)
-		calc(var(--padding-inline) / 2);
+	padding: var(--padding-inline);
 	min-height: 100vh;
 	display: grid;
 	margin-left: auto;
@@ -176,7 +175,7 @@ main {
 	@media screen and (max-width: 799px) {
 		width: 100%;
 		min-height: unset;
-		padding: var(--padding-inline);
+		margin-top: 8rem;
 	}
 }
 
@@ -196,5 +195,4 @@ article section + section {
 .page-title {
 	margin-bottom: 3.2rem;
 	line-height: 2.4rem;
-	font-weight: bolder;
 }

@@ -32,5 +32,9 @@
         background: linear-gradient(to top, var(--color-bg), transparent);
       }
     }
+
+    @media screen and (max-width: 799px) {
+      height: 4.8rem;
+    }
   }
 </style>
