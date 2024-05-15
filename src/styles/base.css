@@ -107,11 +107,11 @@ body {
 	-moz-osx-font-smooothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.65;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	min-height: 100vh;
 	font-weight: 400;
 	overscroll-behavior: none;
-	letter-spacing: 0.02ch;
+	letter-spacing: 0.04ch;
 	display: flex;
 	flex-direction: column;
 	color: black;
