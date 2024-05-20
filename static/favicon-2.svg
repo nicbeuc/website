@@ -1,0 +1,17 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    #logo path {
+      fill: #7D858D;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #logo path {
+        fill: #E9ECEF;
+      }
+    }
+  </style>
+  <g id="logo">
+    <path d="M33.5 8H38C47.9411 8 56 16.0589 56 26V56H42.5C37.5295 56 33.5 51.9705 33.5 47V8Z" />
+    <path d="M8 8H30.5V47C30.5 51.9705 26.4705 56 21.5 56H8V8Z" />
+  </g>
+</svg>
