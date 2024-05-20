@@ -1,7 +1,3 @@
-<script>
-  import InlineLink from "$lib/InlineLink.svelte";
-</script>
-
 <article>
   <h1 class="page-title">What I'm Doing Now</h1>
   <section>
