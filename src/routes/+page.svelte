@@ -1,9 +1,11 @@
-<h1>More coming soon.</h1>
+<section>
+  <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
+  <p>Hi, I'm Nick Beuchat, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
+  <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing websites and user interfaces for Make Me Modern.</p>
+</section>
 
 <style>
-  h1 {
-    color: var(--color-neutral-600);
-    align-self: center;
-    justify-self: center;
+  section p:first-of-type {
+    margin-top: 5.6rem;
   }
 </style>

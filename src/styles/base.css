@@ -107,7 +107,7 @@ body {
 	-moz-osx-font-smooothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.65;
-	font-size: 1.2rem;
+	font-size: var(--font-size-body);
 	min-height: 100vh;
 	font-weight: 400;
 	overscroll-behavior: none;
@@ -163,6 +163,16 @@ small {
 	font-size: var(--font-size-body-sm);
 }
 
+.sr-only {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 /* ############### */
 
 main {
@@ -179,7 +189,8 @@ main {
 	}
 }
 
-article p {
+article p,
+section p {
 	max-width: 52ch;
 }
 
@@ -195,4 +206,8 @@ article section + section {
 .page-title {
 	margin-bottom: 3.2rem;
 	line-height: 2.4rem;
+}
+
+p + p {
+	margin-top: 1.6rem;
 }
