@@ -3,7 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
-static/fonts/
+/static/fonts/
 .env
 .env.*
 !.env.example
