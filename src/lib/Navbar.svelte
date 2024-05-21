@@ -3,8 +3,7 @@
   import Logo from "./Logo.svelte";
   import { socialLinks } from "./constants";
 
-  export let timestamp;
-  export let commitId;
+  export let commitData;
 </script>
 
 <header>
@@ -22,8 +21,8 @@
     <Link href={socialLinks.mail} external>Mail</Link>
   </div>
   <div class="navbar__footer">
-    {#if timestamp && commitId}
-      <small class="timestamp">Last updated on {timestamp} {commitId}</small>
+    {#if commitData}
+      <small class="timestamp">Last updated on {commitData.timestamp} <Link href={commitData.url} external>{commitData.id}</Link></small>
     {/if}
     <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>
@@ -103,11 +102,15 @@
   }
 
   .timestamp {
-    font-size: 1rem;
+    /* font-size: 1rem;
     padding: .4rem .8rem;
     background-color: var(--color-neutral-100);
-    border-radius: 1rem;
+    border-radius: 1rem; */
     width: fit-content;
     grid-area: timestamp;
+
+    & a {
+      margin-inline-start: .5em;
+    }
   }
 </style>
