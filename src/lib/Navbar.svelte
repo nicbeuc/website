@@ -12,8 +12,8 @@
   </div>
   <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville.</p>
   <div class="navbar__links">
-    <Link>Work <span>coming soon</span></Link>
-    <Link href="/now">Now <span>coming soon</span></Link>
+    <Link>Work</Link>
+    <Link href="/now">Now</Link>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
     <Link href={socialLinks.mail} external>Mail</Link>

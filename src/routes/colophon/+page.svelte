@@ -22,7 +22,11 @@
   </section>
   <section>
     <h2>Inspiration</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Below is a list of beautiful, functional websites that inspired the design of my own:</p>
+    <ul>
+      <li><InlineLink href="https://www.preciousm.co/" external>Precious Madubuike</InlineLink></li>
+      <li><InlineLink href="https://eryc.cc/" external>ERYC</InlineLink></li>
+    </ul>
   </section>
 </article>
 

@@ -208,6 +208,27 @@ article section + section {
 	line-height: 2.4rem;
 }
 
-p + p {
+*:is(p, ul) + *:is(p, ul) {
 	margin-top: 1.6rem;
+}
+
+ul {
+	padding-left: 2.4rem;
+	list-style: none;
+}
+
+li {
+	position: relative;
+}
+
+li::before {
+	content: '';
+	position: absolute;
+	width: 0.4em;
+	height: 0.4em;
+	background-color: var(--color-neutral-400);
+	border-radius: 0.125em;
+	top: 50%;
+	left: -1em;
+	transform: translateY(-50%);
 }
