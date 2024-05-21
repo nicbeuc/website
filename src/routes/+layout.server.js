@@ -16,8 +16,11 @@ export async function load() {
 			day: 'numeric'
 		});
 
+		const commitId = commitData.sha.slice(0, 7);
+
 		return {
-			timestamp
+			timestamp,
+			commitId
 		};
 	} catch (error) {
 		console.error('Error fetching timestamp');

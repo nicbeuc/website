@@ -8,7 +8,7 @@
 
 <div class="wrapper">
   <ScrollFade />
-  <Navbar timestamp={data.timestamp}/>
+  <Navbar timestamp={data.timestamp} commitId={data.commitId}/>
   <main class="page-width">
     <slot />
   </main>

@@ -4,6 +4,7 @@
   import { socialLinks } from "./constants";
 
   export let timestamp;
+  export let commitId;
 </script>
 
 <header>
@@ -21,8 +22,8 @@
     <Link href={socialLinks.mail} external>Mail</Link>
   </div>
   <div class="navbar__footer">
-    {#if timestamp}
-      <small class="timestamp">Last updated on {timestamp}</small>
+    {#if timestamp && commitId}
+      <small class="timestamp">Last updated on {timestamp} {commitId}</small>
     {/if}
     <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>
