@@ -18,7 +18,7 @@ export async function load() {
 
 		const id = commitData.sha.slice(0, 7);
 
-		const url = commitData.url;
+		const url = commitData.html_url;
 
 		return {
 			timestamp,
