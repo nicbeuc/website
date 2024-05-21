@@ -102,15 +102,21 @@
   }
 
   .timestamp {
-    /* font-size: 1rem;
-    padding: .4rem .8rem;
+    font-size: 1rem;
+    padding: .4rem 1.2rem;
     background-color: var(--color-neutral-100);
-    border-radius: 1rem; */
-    width: fit-content;
+    border: var(--border);
+    border-radius: 1rem;
+    align-items: center;
+    width: 100%;
     grid-area: timestamp;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
 
     & a {
       margin-inline-start: .5em;
+      justify-content: end;
     }
   }
 </style>
