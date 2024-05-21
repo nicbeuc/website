@@ -2,11 +2,13 @@
   import '../styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
+
+  export let data;
 </script>
 
 <div class="wrapper">
   <ScrollFade />
-  <Navbar />
+  <Navbar timestamp={data.timestamp}/>
   <main class="page-width">
     <slot />
   </main>

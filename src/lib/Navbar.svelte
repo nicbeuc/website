@@ -2,6 +2,8 @@
   import Link from "$lib/Link.svelte";
   import Logo from "./Logo.svelte";
   import { socialLinks } from "./constants";
+
+  export let timestamp;
 </script>
 
 <header>
@@ -19,6 +21,9 @@
     <Link href={socialLinks.mail} external>Mail</Link>
   </div>
   <div class="navbar__footer">
+    {#if timestamp}
+      <small class="timestamp">Last updated on {timestamp}</small>
+    {/if}
     <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>
   </div>
@@ -77,16 +82,31 @@
   }
 
   .navbar__footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "timestamp timestamp"
+      "links copyright";
     align-items: center;
     justify-content: space-between;
 
     & .copyright {
       color: var(--color-neutral-600);
+      justify-self: end;
     }
 
     @media screen and (max-width: 799px) {
       display: none;
     }
+  }
+
+  .timestamp {
+    font-size: 1rem;
+    padding: .4rem .8rem;
+    background-color: var(--color-neutral-100);
+    border-radius: 1rem;
+    width: fit-content;
+    grid-area: timestamp;
   }
 </style>
