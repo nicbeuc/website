@@ -8,4 +8,10 @@
   section p:first-of-type {
     margin-top: 5.6rem;
   }
+
+  section {
+    padding-bottom: 4.8rem;
+    border-bottom: var(--border);
+    border-bottom-style: dotted;
+  }
 </style>

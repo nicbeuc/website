@@ -181,6 +181,7 @@ main {
 	min-height: 100vh;
 	display: grid;
 	margin-left: auto;
+	align-items: start;
 
 	@media screen and (max-width: 799px) {
 		width: 100%;
