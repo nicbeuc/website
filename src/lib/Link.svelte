@@ -1,20 +1,17 @@
 <script lang="ts">
 	import Icon from "./Icon.svelte";
+  import { page } from "$app/stores";
 
   export let href: string = '#';
   export let external = false;
 </script>
 
-{#if external}
-  <a href={href ? href : '#'} target="_blank" rel="noopener">
-    <slot />
+<a href={href ? href : '#'} target={external ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
+  <slot />
+  {#if external}
     <Icon name="arrow-diagonal" --icon-size=".8em"/>
-  </a>
-{:else}
-  <a href={href ? href : '#'}>
-    <slot />
-  </a>
-{/if}
+  {/if}
+</a>
 
 <style>
   a {
@@ -33,6 +30,10 @@
       & * {
         color: inherit;
       }
+    }
+
+    &[aria-current] {
+      color: inherit;
     }
 
     &[target="_blank"] {
