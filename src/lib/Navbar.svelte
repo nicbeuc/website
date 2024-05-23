@@ -12,13 +12,16 @@
       <Logo />
     </a>
   </div>
-  <p><span>Nick Beuchat</span> is a designer and creative developer based in Knoxville.</p>
+  <div class="navbar__info">
+    <p><span>Nick Beuchat</span></p>
+    <p>Designer & Creative Developer</p>
+  </div>
   <div class="navbar__links">
-    <Link>Work</Link>
+    <Link href="/">Home</Link>
     <Link href="/now">Now</Link>
+    <Link href={socialLinks.mail}>Email</Link>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
-    <Link href={socialLinks.mail} external>Mail</Link>
   </div>
   <div class="navbar__footer">
     {#if commitData}
@@ -51,18 +54,23 @@
       height: auto;
       z-index: 1001;
     }
+  }
 
-    & > p {
-      margin-top: 3.2rem;
-      color: var(--color-neutral-700);
+  .navbar__info {
+    margin-top: 3.2rem;
+    color: var(--color-neutral-700);
 
-      & span {
-        color: black;
-      }
+    & span {
+      color: black;
+    }
 
-      @media screen and (max-width: 799px) {
-        display: none;
-      }
+    & p + p {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 799px) {
+      display: none;
     }
   }
 
