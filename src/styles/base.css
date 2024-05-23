@@ -222,6 +222,10 @@ li {
 	position: relative;
 }
 
+li + li {
+	margin-top: 0.4rem;
+}
+
 li::before {
 	content: '';
 	position: absolute;

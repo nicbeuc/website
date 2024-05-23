@@ -14,7 +14,7 @@
   </section>
   <section>
     <h2>Accessibility</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>I'm wholly committed to ensuring digital accessibility for any and all people who come across this site. If there's something you feel is preventing you from properly navigating the site or viewing its content, you can let me know <InlineLink href="mailto:nick.beuchat@gmail.com">via email</InlineLink> and I will do my best to address it.</p>
   </section>
   <section>
     <h2>Technical</h2>
@@ -26,6 +26,7 @@
     <ul>
       <li><InlineLink href="https://www.preciousm.co/" external>Precious Madubuike</InlineLink></li>
       <li><InlineLink href="https://eryc.cc/" external>ERYC</InlineLink></li>
+      <li><InlineLink href="https://www.fabianschultz.com/" external>Fabian Schultz</InlineLink></li>
     </ul>
   </section>
 </article>
