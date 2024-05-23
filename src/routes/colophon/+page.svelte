@@ -14,7 +14,7 @@
   </section>
   <section>
     <h2>Accessibility</h2>
-    <p>I'm wholly committed to ensuring digital accessibility for any and all people who come across this site. If there's something you feel is preventing you from properly navigating the site or viewing its content, you can let me know <InlineLink href="mailto:nick.beuchat@gmail.com">via email</InlineLink> and I will do my best to address it.</p>
+    <p>I'm wholly committed to ensuring digital accessibility for any and all people who come across this site. If there's something you feel is preventing you from properly navigating the site or viewing its content, you can let me know <InlineLink href="mailto:nick.beuchat@gmail.com?subject=Accessibility%20Concern">via email</InlineLink> and I will do my best to address it.</p>
   </section>
   <section>
     <h2>Technical</h2>

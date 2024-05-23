@@ -8,7 +8,7 @@
 
 <header>
   <div class="navbar__header">
-    <a href="/">
+    <a href="/" title="Go to the homepage">
       <Logo />
     </a>
   </div>
@@ -43,11 +43,12 @@
     z-index: 1;
 
     @media screen and (max-width: 799px) {
+      position: relative;
       width: 100%;
       left: 0;
       padding: var(--padding-inline);
       top: 0;
-      height: 5.6rem;
+      height: auto;
       z-index: 1001;
     }
 
