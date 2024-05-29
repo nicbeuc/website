@@ -2,6 +2,7 @@
   import '../styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
+  import MobileNav from '$lib/MobileNav.svelte';
 
   export let data;
 </script>
@@ -12,6 +13,7 @@
   <main class="page-width">
     <slot />
   </main>
+  <MobileNav />
   <ScrollFade />
 </div>
 

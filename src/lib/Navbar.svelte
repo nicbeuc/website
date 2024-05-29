@@ -46,6 +46,7 @@
     z-index: 1;
 
     @media screen and (max-width: 799px) {
+      display: none;
       position: relative;
       width: 100%;
       left: 0;
@@ -68,10 +69,6 @@
       margin-top: 0;
       font-size: 1.2rem;
     }
-
-    @media screen and (max-width: 799px) {
-      display: none;
-    }
   }
 
   .navbar__links {
@@ -83,10 +80,6 @@
     & a span {
       margin-inline-start: .4em;
       color: var(--color-neutral-500)
-    }
-
-    @media screen and (max-width: 799px) {
-      display: none;
     }
   }
 
@@ -103,10 +96,6 @@
     & .copyright {
       color: var(--color-neutral-600);
       justify-self: end;
-    }
-
-    @media screen and (max-width: 799px) {
-      display: none;
     }
   }
 

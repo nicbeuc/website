@@ -22,6 +22,11 @@
       &::before {
         background: linear-gradient(to bottom, var(--color-bg), transparent);
       }
+
+      @media screen and (max-width: 799px) {
+        display: none;
+
+      }
     }
 
     &:not(:first-child) {
