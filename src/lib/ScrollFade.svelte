@@ -39,7 +39,7 @@
     }
 
     @media screen and (max-width: 799px) {
-      height: 4.8rem;
+      height: 3.2rem;
     }
   }
 </style>
