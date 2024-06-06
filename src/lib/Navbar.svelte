@@ -16,13 +16,13 @@
     <p><span>Nick Beuchat</span></p>
     <p>Designer & Creative Developer</p>
   </div>
-  <div class="navbar__links">
+  <nav class="navbar__links">
     <Link href="/">Home</Link>
     <Link href="/now">Now</Link>
     <Link href={socialLinks.mail}>Email</Link>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
-  </div>
+  </nav>
   <div class="navbar__footer">
     {#if commitData}
       <small class="timestamp">Last updated on {commitData.timestamp} <Link href={commitData.url} external>{commitData.id}</Link></small>
