@@ -1,9 +1,10 @@
 <script>
   import Link from "$lib/Link.svelte";
   import Logo from "./Logo.svelte";
+  import LastUpdated from "./LastUpdated.svelte";
   import { socialLinks } from "./constants";
 
-  export let commitData;
+  export let data;
 </script>
 
 <header>
@@ -24,8 +25,8 @@
     <Link href={socialLinks.readcv} external>Read.cv</Link>
   </nav>
   <div class="navbar__footer">
-    {#if commitData}
-      <small class="timestamp">Last updated on {commitData.timestamp} <Link href={commitData.url} external>{commitData.id}</Link></small>
+    {#if data}
+      <LastUpdated commitData={data}/>
     {/if}
     <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>
@@ -46,14 +47,18 @@
     z-index: 1;
 
     @media screen and (max-width: 799px) {
-      display: none;
       position: relative;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 100%;
       width: 100%;
-      left: 0;
-      padding: var(--padding-inline);
-      top: 0;
-      height: auto;
+      gap: 1.6rem;
+      align-items: center;
+      padding: 0 var(--padding-inline);
+      height: 6.4rem;
       z-index: 1001;
+      margin-inline: auto;
+      margin-bottom: 4.8rem;
+      left: unset;
     }
   }
 
@@ -63,11 +68,19 @@
 
     & span {
       color: black;
+
+      @media screen and (max-width: 799px) {
+        font-size: 1.2rem;
+      }
     }
 
     & p + p {
       margin-top: 0;
       font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 799px) {
+      margin-top: 0;
     }
   }
 
@@ -80,6 +93,10 @@
     & a span {
       margin-inline-start: .4em;
       color: var(--color-neutral-500)
+    }
+
+    @media screen and (max-width: 799px) {
+      display: none;
     }
   }
 
@@ -97,24 +114,9 @@
       color: var(--color-neutral-600);
       justify-self: end;
     }
-  }
 
-  .timestamp {
-    font-size: 1rem;
-    padding: .4rem 1.2rem;
-    background-color: var(--color-neutral-100);
-    border: var(--border);
-    border-radius: 1rem;
-    align-items: center;
-    width: 100%;
-    grid-area: timestamp;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .8rem;
-
-    & a {
-      margin-inline-start: .5em;
-      justify-content: end;
+    @media screen and (max-width: 799px) {
+      display: none;
     }
   }
 </style>

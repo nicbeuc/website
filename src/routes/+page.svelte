@@ -8,8 +8,11 @@
 </section>
 
 <style>
-  section p:first-of-type {
-    margin-top: 5.6rem;
+
+  @media screen and (min-width: 800px) {
+    section p:first-of-type {
+      margin-top: 5.6rem;
+    }
   }
 
   section {

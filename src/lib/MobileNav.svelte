@@ -8,24 +8,6 @@
 <button>
   <Icon name="menu-dots" --icon-size="1.8rem"/>
 </button>
-<div class="drawer">
-  <div class="drawer__header">
-    <a href="/" title="Go to the homepage">
-      <Logo />
-    </a>
-  </div>
-  <div class="drawer__info">
-    <p><span>Nick Beuchat</span></p>
-    <p>Designer & Creative Developer</p>
-  </div>
-  <nav class="drawer__links">
-    <Link href="/">Home</Link>
-    <Link href="/now">Now</Link>
-    <Link href={socialLinks.mail}>Email</Link>
-    <Link href={socialLinks.github} external>GitHub</Link>
-    <Link href={socialLinks.readcv} external>Read.cv</Link>
-  </nav>
-</div>
 
 <style>
   button {
@@ -58,8 +40,7 @@
     }
   }
 
-
-  .drawer {
+  /* .drawer {
     position: fixed;
     left: 0;
     right: 0;
@@ -82,5 +63,5 @@
     @media screen and (min-width: 800px) {
       display: none;
     }
-  }
+  } */
 </style>

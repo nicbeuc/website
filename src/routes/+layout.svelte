@@ -3,17 +3,19 @@
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
   import MobileNav from '$lib/MobileNav.svelte';
+	import Footer from '$lib/Footer.svelte';
 
   export let data;
 </script>
 
 <div class="wrapper">
   <ScrollFade />
-  <Navbar commitData={data}/>
-  <main class="page-width">
+  <Navbar {data}/>
+  <main>
     <slot />
   </main>
   <MobileNav />
+  <Footer {data}/>
   <ScrollFade />
 </div>
 

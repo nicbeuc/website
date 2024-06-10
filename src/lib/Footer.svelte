@@ -1,42 +1,28 @@
 <script>
   import Link from "$lib/Link.svelte";
-  import Icon from "$lib/Icon.svelte";
-  import { socialLinks } from "$lib/constants";
+  import LastUpdated from "./LastUpdated.svelte";
+
+  export let data;
 </script>
 
 <footer class="page-width">
-  <div class="icons">
-    <Link href={socialLinks.github} external>
-      <Icon name="github" title="GitHub"/>
-    </Link>
-    <Link href={socialLinks.linkedin} external>
-      <Icon name="linkedin" title="LinkedIn"/>
-    </Link>
-    <Link href={socialLinks.readcv} external>
-      <Icon name="readcv" title="read.cv"/>
-    </Link>
-  </div>
-  <div class="links">
-    <small><Link href="/colophon">Colophon</Link></small>
-    <small class="copyright">© {new Date().getFullYear()}</small>
-  </div>
+  {#if data}
+    <LastUpdated commitData={data}/>
+  {/if}
+  <small><Link href="/colophon">Colophon</Link></small>
+  <small class="copyright">© {new Date().getFullYear()}</small>
 </footer>
 
 <style>
   footer {
-    padding-bottom: 6.4rem;
-    margin-top: 6.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .links {
-    display: flex;
-    gap: 1.6rem;
-  }
-  .icons {
-    display: flex;
-    gap: 1.6rem;
+    display: block;
+    margin-top: 4.8rem;
+    margin-bottom: 3.2rem;
+    width: 100%;
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
   }
   .copyright {
     color: var(--color-neutral-600);
