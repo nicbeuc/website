@@ -15,13 +15,31 @@
 
 <style>
   footer {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "lastupdated lastupdated"
+      "links copyright";
+    align-items: center;
     margin-top: 4.8rem;
     margin-bottom: 3.2rem;
     width: 100%;
 
     @media screen and (min-width: 800px) {
       display: none;
+    }
+
+    & *:first-child {
+      grid-area: lastupdated;
+    }
+
+    & *:nth-child(2) {
+      grid-area: links;
+    }
+
+    & *:nth-child(3) {
+      grid-area: copyright;
+      justify-self: end;
     }
   }
   .copyright {

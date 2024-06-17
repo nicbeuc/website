@@ -54,7 +54,7 @@
       gap: 1.6rem;
       align-items: center;
       padding: 0 var(--padding-inline);
-      height: 6.4rem;
+      height: 7.2rem;
       z-index: 1001;
       margin-inline: auto;
       margin-bottom: 4.8rem;
@@ -81,6 +81,10 @@
 
     @media screen and (max-width: 799px) {
       margin-top: 0;
+
+      & p {
+        line-height: 1.35;
+      }
     }
   }
 

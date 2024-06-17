@@ -59,7 +59,7 @@
 	}
 
 	@media screen and (max-width: 499px) {
-		--padding-inline: 1.6rem;
+		--padding-inline: 2rem;
 	}
 
 	--border: 0.1rem solid var(--color-neutral-300);
