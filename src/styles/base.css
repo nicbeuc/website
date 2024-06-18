@@ -187,6 +187,7 @@ main {
 		width: 100%;
 		min-height: unset;
 		padding-bottom: 4.8rem;
+		flex-grow: 1;
 	}
 }
 
