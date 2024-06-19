@@ -47,6 +47,7 @@
     z-index: 1;
 
     @media screen and (max-width: 799px) {
+      display: none;
       position: relative;
       grid-template-columns: auto 1fr;
       grid-template-rows: 100%;

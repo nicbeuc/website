@@ -15,7 +15,7 @@
     }
   }
 
-  section {
+  section:first-of-type {
     padding-bottom: 4.8rem;
     border-bottom: var(--border);
     border-bottom-style: dotted;
