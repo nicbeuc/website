@@ -15,7 +15,7 @@
     <slot />
   </main>
   <!--<MobileNav />-->
-  <Footer {data}/>
+  <Footer/>
   <ScrollFade />
 </div>
 
