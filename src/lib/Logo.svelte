@@ -8,6 +8,7 @@
     height: 2.4rem;
     width: 2.4rem;
     color: var(--color-neutral-400);
+    justify-self: center;
 
     @media screen and (max-width: 799px) {
       height: 3rem;

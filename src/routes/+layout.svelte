@@ -2,7 +2,7 @@
   import '../styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
-  // import MobileNav from '$lib/MobileNav.svelte';
+  import MobileNav from '$lib/MobileNav.svelte';
 	import Footer from '$lib/Footer.svelte';
 
   export let data;
@@ -14,7 +14,7 @@
   <main>
     <slot />
   </main>
-  <!--<MobileNav />-->
+  <MobileNav />
   <Footer/>
   <ScrollFade />
 </div>

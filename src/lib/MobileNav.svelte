@@ -5,63 +5,78 @@
   import { socialLinks } from "./constants";
 </script>
 
-<button>
-  <Icon name="menu-dots" --icon-size="1.8rem"/>
-</button>
+<div class="mobile-nav">
+  <Logo />
+  <nav>
+    <ul>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/now">Now</Link>
+      </li>
+    </ul>
+  </nav>
+  <button aria-label="View additional links">
+    <Icon name="dots-vertical" --icon-size="16"/>
+  </button>
+</div>
 
 <style>
-  button {
+  .mobile-nav svg {
+    justify-self: center;
+  }
+
+  .mobile-nav {
     position: fixed;
-    bottom: var(--padding-inline);
-    right: var(--padding-inline);
-    width: 4.8rem;
-    height: 4.8rem;
-    display: flex;
+    bottom: 3.2rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: calc(100% - (var(--padding-inline) * 2));
+    max-width: 24rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4rem 1fr 4rem;
+    height: 5.6rem;
+    padding: 0 1rem;
+    border-radius: 1.6rem;
+    box-shadow:
+      0px 0.4px 0.9px -10px rgba(0, 0, 0, 0.028),
+      0px 1.1px 2.1px -10px rgba(0, 0, 0, 0.04),
+      0px 2px 4px -10px rgba(0, 0, 0, 0.05),
+      0px 3.6px 7.1px -10px rgba(0, 0, 0, 0.06),
+      0px 6.7px 13.4px -10px rgba(0, 0, 0, 0.072),
+      0px 16px 32px -10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1);
+    border: var(--border);
     z-index: 1001;
+  }
+
+  button {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-neutral-100);
+    border: var(--border);
     justify-content: center;
     align-items: center;
     padding: 0;
-    background-color: rgba(255, 255, 255, 1);
-    /* -webkit-backdrop-filter: blur(.5rem);
-    backdrop-filter: blur(.5rem); */
     color: var(--color-neutral-700);
-    border: var(--border);
-    border-radius: 1.4rem;
-    box-shadow:
-      0px 0.4px 0.9px -10px rgba(0, 0, 0, 0.028),
-      0px 1.1px 2.1px -10px rgba(0, 0, 0, 0.04),
-      0px 2px 4px -10px rgba(0, 0, 0, 0.05),
-      0px 3.6px 7.1px -10px rgba(0, 0, 0, 0.06),
-      0px 6.7px 13.4px -10px rgba(0, 0, 0, 0.072),
-      0px 16px 32px -10px rgba(0, 0, 0, 0.1);
-
-    @media screen and (min-width: 800px) {
-      display: none;
-    }
+    border-radius: 1rem;
   }
 
-  /* .drawer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 7.2rem;
-    width: calc(100% - 3.2rem);
-    height: calc(100% - 9rem);
-    margin-inline: auto;
-    background-color: white;
-    padding: 2.4rem;
-    border-radius: 1.4rem;
-    border: var(--border);
-    box-shadow:
-      0px 0.4px 0.9px -10px rgba(0, 0, 0, 0.028),
-      0px 1.1px 2.1px -10px rgba(0, 0, 0, 0.04),
-      0px 2px 4px -10px rgba(0, 0, 0, 0.05),
-      0px 3.6px 7.1px -10px rgba(0, 0, 0, 0.06),
-      0px 6.7px 13.4px -10px rgba(0, 0, 0, 0.072),
-      0px 16px 32px -10px rgba(0, 0, 0, 0.1);
+  nav {
+    & ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
 
-    @media screen and (min-width: 800px) {
-      display: none;
+      & a {
+        padding: 1rem;
+      }
     }
-  } */
+  }
 </style>

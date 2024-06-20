@@ -22,7 +22,7 @@
     align-items: center;
     position: relative;
     min-height: 2.8rem;
-    min-width: 10ch;
+    /* min-width: 10ch; */
 
     &:hover {
       color: inherit;
