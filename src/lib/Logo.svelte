@@ -11,8 +11,8 @@
     justify-self: center;
 
     @media screen and (max-width: 799px) {
-      height: 3rem;
-      width: 3rem;
+      height: 2.8rem;
+      width: 2.8rem;
     }
   }
 </style>

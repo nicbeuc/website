@@ -185,7 +185,6 @@ main {
 
 	@media screen and (max-width: 799px) {
 		width: 100%;
-		min-height: unset;
 		padding-bottom: 3.2rem;
 		padding-top: 3.2rem;
 		flex-grow: 1;
@@ -217,7 +216,7 @@ article section + section {
 	padding-inline: var(--padding-inline)
 }
 
-*:is(p, ul) + *:is(p, ul) {
+article *:is(p, ul) + *:is(p, ul) {
 	margin-top: 1.6rem;
 }
 
