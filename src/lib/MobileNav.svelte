@@ -3,6 +3,60 @@
   import Logo from "./Logo.svelte";
   import Link from "./Link.svelte";
   import { socialLinks } from "./constants";
+  import { crossfade } from "svelte/transition";
+  import { cubicOut, cubicIn } from "svelte/easing";
+  import { onDestroy } from "svelte";
+
+  let overflowRef;
+  let overflowOpen = false;
+
+  function transition(node, { duration, easing }) {
+    return {
+      duration,
+      css: (t) => {
+        const eased = easing(t);
+
+        return `
+          opacity: ${eased};
+          transform: scale(${0.95 + (.05 * eased)}) translateY(${15 - (eased * 15)}px);
+          filter: blur(${10 - (eased * 10)}px);
+        `
+      }
+    }
+  };
+
+  const [send, receive] = crossfade({
+    duration: 150
+  });
+
+  function handleClickOutside(event) {
+    if (overflowOpen && overflowRef && !overflowRef.contains(event.target)) {
+      overflowOpen = false;
+      removeClickListener();
+    }
+  }
+
+  function addClickListener() {
+    if (typeof document !== 'undefined') {
+      document.body.addEventListener('click', handleClickOutside);
+    }
+  }
+
+  function removeClickListener() {
+    if (typeof document !== 'undefined') {
+      document.body.removeEventListener('click', handleClickOutside);
+    }
+  }
+
+  $: if (overflowOpen) {
+    addClickListener();
+  } else {
+    removeClickListener();
+  }
+
+  onDestroy(() => {
+    removeClickListener();
+  });
 </script>
 
 <div class="mobile-nav">
@@ -18,23 +72,31 @@
         </li>
       </ul>
     </nav>
-    <details>
-      <summary aria-label="View additional links">
-        <Icon name="dots-vertical" --icon-size="16"/>
-      </summary>
-      <div class="overflow">
-        <div class="overflow__info">
-          <p><span>Nick Beuchat</span></p>
-          <p>Designer & Creative Developer</p>
+    <button aria-label={!overflowOpen ? 'View additional links' : 'Close additional links'} on:click|stopPropagation={() => overflowOpen = !overflowOpen}>
+      {#if !overflowOpen}
+        <div in:send={{ key: 'icons' }} out:receive={{ key: 'icons' }}>
+          <Icon name="dots-vertical" --icon-size="16" />
         </div>
-        <ul>
-          <li><Link href={socialLinks.mail}>Email</Link></li>
-          <li><Link href={socialLinks.github} external>GitHub</Link></li>
-          <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
-        </ul>
-      </div>
-    </details>
+      {:else}
+        <div in:send={{ key: 'icons' }} out:receive={{ key: 'icons' }}>
+          <Icon name="close" --icon-size="16"/>
+        </div>
+      {/if}
+    </button>
   </div>
+  {#if overflowOpen}
+    <div class="overflow" in:transition={{ duration: 200, easing: cubicOut }} out:transition={{ duration: 200, easing: cubicIn }} bind:this={overflowRef}>
+      <div class="overflow__info">
+        <p><span>Nick Beuchat</span></p>
+        <p>Designer & Creative Developer</p>
+      </div>
+      <ul>
+        <li><Link href={socialLinks.mail}>Email</Link></li>
+        <li><Link href={socialLinks.github} external>GitHub</Link></li>
+        <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
+      </ul>
+    </div>
+  {/if}
 </div>
 
 <style>
@@ -56,6 +118,7 @@
     background-color: rgba(255, 255, 255, 1);
     border: var(--border);
     z-index: 1001;
+    isolation: isolate;
     @media screen and (min-width: 800px) {
       display: none;
     }
@@ -69,10 +132,12 @@
     height: 5.6rem;
     padding: 0 1rem;
     gap: 1rem;
+    z-index: 1;
   }
 
-  summary {
+  button {
     appearance: none;
+    position: relative;
     display: flex;
     width: 4rem;
     height: 4rem;
@@ -83,11 +148,19 @@
     padding: 0;
     color: var(--color-neutral-700);
     border-radius: 1rem;
+
+    & > div {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  details > div {
+  .overflow {
     position: absolute;
-    bottom: calc(100% + 1.6rem);
+    bottom: calc(100% + 1rem);
     left: 0;
     right: 0;
     padding: 2rem;
@@ -101,6 +174,7 @@
       0px 3.6px 7.1px -10px rgba(0, 0, 0, 0.06),
       0px 6.7px 13.4px -10px rgba(0, 0, 0, 0.072),
       0px 16px 32px -10px rgba(0, 0, 0, 0.1);
+    z-index: -1;
   }
 
   nav {
