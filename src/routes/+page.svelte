@@ -4,6 +4,7 @@
   <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing websites and user interfaces for Make Me Modern.</p>
 </section>
 <section>
+  <h2>Featured Work</h2>
   <div class="placeholder"></div>
 </section>
 

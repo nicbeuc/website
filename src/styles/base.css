@@ -36,8 +36,7 @@
 	--transition-fast: 250ms var(--transition-easing);
 
 	--font-size-body: 1.4rem;
-	--font-size-body-sm: 1.2rem;
-	--font-size-body-xs: 1rem;
+	--font-size-body-sm: 1rem;
 
 	--color-neutral-900: #141618;
 	--color-neutral-800: #343a40;
@@ -155,13 +154,18 @@ h6 {
 	font-size: inherit;
 }
 
+h2 {
+	color: var(--color-neutral-600);
+	margin-bottom: 2.4rem;
+}
+
 a {
 	font-size: inherit;
 	color: inherit;
 }
 
 small {
-	font-size: var(--font-size-body-xs);
+	font-size: var(--font-size-body-sm);
 }
 
 .sr-only {

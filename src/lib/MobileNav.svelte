@@ -102,7 +102,7 @@
 <style>
   .mobile-nav {
     position: fixed;
-    bottom: 3.2rem;
+    bottom: 2.4rem;
     left: 0;
     right: 0;
     margin-inline: auto;
