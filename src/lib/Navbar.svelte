@@ -65,7 +65,7 @@
 
   .navbar__info {
     margin-top: 3.2rem;
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
 
     & span {
       color: black;

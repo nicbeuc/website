@@ -83,20 +83,20 @@
         </div>
       {/if}
     </button>
-  </div>
-  {#if overflowOpen}
-    <div class="overflow" in:transition={{ duration: 200, easing: cubicOut }} out:transition={{ duration: 200, easing: cubicIn }} bind:this={overflowRef}>
-      <div class="overflow__info">
-        <p><span>Nick Beuchat</span></p>
-        <p>Designer & Creative Developer</p>
+    {#if overflowOpen}
+      <div class="overflow" in:transition={{ duration: 200, easing: cubicOut }} out:transition={{ duration: 200, easing: cubicIn }} bind:this={overflowRef}>
+        <div class="overflow__info">
+          <p><span>Nick Beuchat</span></p>
+          <p>Designer & Creative Developer</p>
+        </div>
+        <ul>
+          <li><Link href={socialLinks.mail}>Email</Link></li>
+          <li><Link href={socialLinks.github} external>GitHub</Link></li>
+          <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
+        </ul>
       </div>
-      <ul>
-        <li><Link href={socialLinks.mail}>Email</Link></li>
-        <li><Link href={socialLinks.github} external>GitHub</Link></li>
-        <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
-      </ul>
-    </div>
-  {/if}
+    {/if}
+  </div>
 </div>
 
 <style>
@@ -210,7 +210,7 @@
 
   .overflow__info {
     margin-bottom: 1.6rem;
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
 
     & span {
       color: black;
