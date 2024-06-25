@@ -45,6 +45,10 @@
       display: inline-block;
       margin-inline-start: .4em;
       transition: color var(--transition-fast);
+
+      &:first-child {
+        margin-inline-end: .4em;
+      }
     }
   }
 </style>

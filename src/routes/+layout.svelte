@@ -14,8 +14,8 @@
   <main>
     <slot />
   </main>
-  <MobileNav />
-  <Footer/>
+  <MobileNav/>
+  <Footer {data}/>
   <ScrollFade />
 </div>
 
