@@ -26,6 +26,10 @@
     margin-top: 4.8rem;
   }
 
+  section p + p {
+    margin-top: 2.4rem;
+  }
+
   .placeholder {
     width: 100%;
     background-color: var(--color-neutral-200);
