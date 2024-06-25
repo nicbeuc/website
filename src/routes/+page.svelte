@@ -5,7 +5,7 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  <div class="placeholder"></div>
+  <img src="/test-thumbnail.jpg" width="600" height="600">
 </section>
 
 <style>
@@ -30,10 +30,11 @@
     margin-top: 2.4rem;
   }
 
-  .placeholder {
+  img {
     width: 100%;
+    height: auto !important;
     background-color: var(--color-neutral-200);
     border-radius: 1.2rem;
-    height: 40rem;
+    aspect-ratio: 3/2;
   }
 </style>
