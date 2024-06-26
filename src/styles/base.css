@@ -183,7 +183,7 @@ small {
 main {
 	width: calc(min(100vw, var(--max-width)) - var(--navbar-width));
 	padding: var(--padding-inline);
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	display: grid;
 	margin-left: auto;
 	align-items: start;
@@ -192,7 +192,7 @@ main {
 		width: 100%;
 		padding-bottom: 3.2rem;
 		padding-top: 3.2rem;
-		flex-grow: 1;
+		/* flex-grow: 1; */
 	}
 }
 

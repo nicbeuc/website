@@ -5,7 +5,7 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  <img src="/test-thumbnail.jpg" width="600" height="600">
+  <img src="/test-thumbnail.jpg" width="600" height="400" alt="A test thumbnail">
 </section>
 
 <style>
@@ -36,5 +36,6 @@
     background-color: var(--color-neutral-200);
     border-radius: 1.2rem;
     aspect-ratio: 3/2;
+    border: var(--border);
   }
 </style>

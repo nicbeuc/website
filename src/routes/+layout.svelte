@@ -32,6 +32,7 @@
 
     @media screen and (max-width: 799px) {
       flex-direction: column;
+      justify-content: space-between;
       min-height: 100vh;
     }
   }
