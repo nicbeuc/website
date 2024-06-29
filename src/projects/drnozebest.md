@@ -1,10 +1,10 @@
 ---
-title: "R.Chiara"
+title: "Dr. Noze Best"
 date: "2024-01-01"
 tags: ["svelte", "project"]
 thumbnail: "/test-thumbnail.jpg"
 ---
 
-# Project 1
+# Project 2
 
-This is the content for Project 1.
+This is the content for Project 2.

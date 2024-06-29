@@ -1,4 +1,4 @@
-export const projects = async () => {
+export const fetchProjects = async () => {
 	const projectFiles = import.meta.glob('/src/projects/*.md'); /**/
 	const iterableProjectFiles = Object.entries(projectFiles);
 
@@ -8,8 +8,8 @@ export const projects = async () => {
 			const slug = path.split('/').at(-1)?.replace('.md', '');
 
 			return {
-				metadata: metadata,
-				slug: slug
+				...metadata,
+				slug
 			};
 		})
 	);

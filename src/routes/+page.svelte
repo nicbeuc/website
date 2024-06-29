@@ -1,3 +1,9 @@
+<script>
+  export let data;
+
+  $: ({ projects } = data);
+</script>
+
 <section>
   <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
   <p>Hi, I'm Nick Beuchat, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
@@ -5,7 +11,12 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  <img src="/test-thumbnail.jpg" width="600" height="400" alt="A test thumbnail">
+  <div>
+    {#each projects as {title, thumbnail}}
+      <h2>{title}</h2>
+      <img src={thumbnail} />
+    {/each}
+  </div>
 </section>
 
 <style>
