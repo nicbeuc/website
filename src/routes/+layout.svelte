@@ -1,5 +1,5 @@
 <script>
-  import '../styles/base.css';
+  import '$styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
   import MobileNav from '$lib/MobileNav.svelte';
