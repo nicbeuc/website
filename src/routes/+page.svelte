@@ -1,4 +1,5 @@
 <script>
+  import ProjectCard from '$/lib/ProjectCard.svelte';
   export let data;
 
   $: ({ projects } = data);
@@ -11,12 +12,9 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  <div>
-    {#each projects as {title, thumbnail}}
-      <h2>{title}</h2>
-      <img src={thumbnail} />
-    {/each}
-  </div>
+  {#each projects as project}
+    <ProjectCard {project} />
+  {/each}
 </section>
 
 <style>
@@ -45,7 +43,7 @@
     width: 100%;
     height: auto !important;
     background-color: var(--color-neutral-200);
-    border-radius: 1.2rem;
+    border-radius: 2.4rem;
     aspect-ratio: 3/2;
     border: var(--border);
   }

@@ -1,8 +1,8 @@
 <script>
-  import Icon from "./Icon.svelte";
-  import Logo from "./Logo.svelte";
-  import Link from "./Link.svelte";
-  import { socialLinks } from "./constants";
+  import Icon from "$lib/Icon.svelte";
+  import Logo from "$lib/Logo.svelte";
+  import Link from "$lib/Link.svelte";
+  import { socialLinks } from "$/constants";
   import { crossfade } from "svelte/transition";
   import { cubicOut, cubicIn } from "svelte/easing";
   import { onDestroy } from "svelte";

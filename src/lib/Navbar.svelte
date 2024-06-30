@@ -1,8 +1,8 @@
 <script>
   import Link from "$lib/Link.svelte";
-  import Logo from "./Logo.svelte";
-  import LastUpdated from "./LastUpdated.svelte";
-  import { socialLinks } from "./constants";
+  import Logo from "$lib/Logo.svelte";
+  import LastUpdated from "$lib/LastUpdated.svelte";
+  import { socialLinks } from "$/constants";
 
   export let data;
 </script>

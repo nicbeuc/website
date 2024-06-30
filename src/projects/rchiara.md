@@ -2,7 +2,7 @@
 title: "R.Chiara"
 date: "2024-01-01"
 tags: ["svelte", "project"]
-thumbnail: "/test-thumbnail.jpg"
+thumbnail: "rchiara-thumb"
 ---
 
 # Project 1

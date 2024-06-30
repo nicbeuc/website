@@ -19,7 +19,8 @@ const config = {
 		alias: {
 			$: 'src',
 			$styles: 'src/styles',
-			$utils: 'src/utils'
+			$utils: 'src/utils',
+			$images: 'src/images'
 		}
 	}
 };

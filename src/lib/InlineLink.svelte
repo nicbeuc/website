@@ -1,6 +1,4 @@
 <script lang="ts">
-  import Icon from "./Icon.svelte";
-
   export let href: string = '#';
   export let external = false;
 </script>
@@ -8,7 +6,6 @@
 {#if external}
   <a href={href ? href : '#'} target="_blank" rel="noopener">
     <slot />
-    <!--<Icon name="arrow-diagonal" title="false" />-->
   </a>
 {:else}
   <a href={href ? href : '#'}>

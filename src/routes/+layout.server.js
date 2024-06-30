@@ -1,5 +1,5 @@
 import { GITHUB_TOKEN } from '$env/static/private';
-import { githubAPIEndpoint } from '$lib/constants';
+import { githubAPIEndpoint } from '$/constants';
 
 export async function load() {
 	try {
