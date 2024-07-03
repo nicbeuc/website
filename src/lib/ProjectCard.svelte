@@ -70,7 +70,7 @@
   }
 
   dd,dt {
-    padding: .8rem 0;
+    padding: .6rem 0;
     border-bottom: var(--border-dashed);
   }
 
