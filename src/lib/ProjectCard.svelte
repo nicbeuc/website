@@ -1,5 +1,6 @@
 <script>
   import Image from "$lib/Image.svelte";
+  import Icon from "$lib/Icon.svelte";
   export let project;
 
   const {
@@ -7,6 +8,7 @@
       thumbnail,
       company,
       lead,
+      link,
       year,
       tags,
       slug
@@ -14,31 +16,41 @@
 </script>
 
 <article>
-  <a href="/project/{slug}" aria-label="View case study for {client}">
+  <div class="media-wrapper">
     <Image alt="Project thumbnail for {client}" name={thumbnail} --aspect-ratio="3/2"/>
-    <section>
-      <p>{lead}</p>
-      <dl class="meta">
-        <dt>Client</dt>
-        <dd>{client}</dd>
-        <dt>Year</dt>
-        <dd>{year}</dd>
-        <dt>With</dt>
-        <dd>{company}</dd>
-      </dl>
-      <dl class="tags">
-        {#each tags as tag}
-          <dd>{tag}</dd>
-        {/each}
-      </dl>
-    </section>
-  </a>
+    <div class="links">
+      <a href="/project/{slug}">View project <Icon name="eye" /></a>
+      <a href="{link}" target="_blank">View live site</a>
+    </div>
+  </div>
+  <section>
+    <p>{lead}</p>
+    <dl class="meta">
+      <dt>Year</dt>
+      <dd>{year}</dd>
+      <dt>For</dt>
+      <dd>{client}</dd>
+      <dt>With</dt>
+      <dd>{company}</dd>
+    </dl>
+    <dl class="tags">
+      {#each tags as tag}
+        <dd>{tag}</dd>
+      {/each}
+    </dl>
+  </section>
 </article>
 
 <style>
-  article a {
-    text-decoration: none;
+  article {
     display: block;
+    position: relative;
+  }
+
+  .media-wrapper {
+    border-radius: var(--border-radius-media);
+    overflow: hidden;
+    border: var(--border-subtle);
     position: relative;
   }
 

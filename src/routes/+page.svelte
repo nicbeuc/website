@@ -35,6 +35,6 @@
   }
 
   section p + p {
-    margin-top: 2.4rem;
+    margin-top: 1.6rem;
   }
 </style>
