@@ -66,6 +66,8 @@
 
 	--border: 0.1rem solid var(--color-neutral-300);
 	--border-dashed: 0.1rem dashed var(--color-neutral-200);
+	--border-subtle: 0.1rem solid var(--color-neutral-100);
+
 	--border-radius-media: 2.4rem;
 }
 
@@ -159,7 +161,6 @@ h6 {
 }
 
 h2 {
-	color: var(--color-neutral-600);
 	margin-bottom: 2.4rem;
 }
 
