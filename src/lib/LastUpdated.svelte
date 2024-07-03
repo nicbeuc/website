@@ -8,7 +8,7 @@
 
 <style>
   small {
-    font-size: var(--font-size-body-sm);
+    font-size: var(--font-size-body-xs);
     /* background-color: var(--color-neutral-100);
     border: var(--border);
     border-radius: 1rem; */

@@ -28,7 +28,6 @@
   section:first-of-type {
     padding-bottom: 4.8rem;
     border-bottom: var(--border);
-    border-bottom-style: dotted;
   }
 
   section + section {
@@ -37,14 +36,5 @@
 
   section p + p {
     margin-top: 2.4rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto !important;
-    background-color: var(--color-neutral-200);
-    border-radius: 2.4rem;
-    aspect-ratio: 3/2;
-    border: var(--border);
   }
 </style>

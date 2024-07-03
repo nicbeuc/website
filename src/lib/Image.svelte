@@ -19,6 +19,7 @@
 <style>
   .img {
     aspect-ratio: var(--aspect-ratio, unset);
+    border-radius: var(--border-radius, var(--border-radius-media));
     display: block;
     height: auto;
     object-fit: cover;

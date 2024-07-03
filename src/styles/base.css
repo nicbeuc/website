@@ -35,8 +35,10 @@
 	--transition-easing: cubic-bezier(0.36, 0.235, 0.035, 1);
 	--transition-fast: 250ms var(--transition-easing);
 
+	--font-size-body-lg: 1.6rem;
 	--font-size-body: 1.4rem;
-	--font-size-body-sm: 1rem;
+	--font-size-body-sm: 1.2rem;
+	--font-size-body-xs: 1rem;
 
 	--color-neutral-900: #141618;
 	--color-neutral-800: #343a40;
@@ -63,6 +65,8 @@
 	}
 
 	--border: 0.1rem solid var(--color-neutral-300);
+	--border-dashed: 0.1rem dashed var(--color-neutral-200);
+	--border-radius-media: 2.4rem;
 }
 
 html {
@@ -165,7 +169,7 @@ a {
 }
 
 small {
-	font-size: var(--font-size-body-sm);
+	font-size: var(--font-size-body-xs);
 }
 
 .sr-only {
