@@ -49,7 +49,7 @@
       right: var(--padding-inline);
       height: 1px;
       top: 0;
-      background-color: var(--color-neutral-300)
+      background-color: var(--color-neutral-200)
     }
 
     @media screen and (max-width: 799px) {
