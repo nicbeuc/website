@@ -27,6 +27,7 @@
       <li><InlineLink href="https://www.preciousm.co/" external>Precious Madubuike</InlineLink></li>
       <li><InlineLink href="https://eryc.cc/" external>ERYC</InlineLink></li>
       <li><InlineLink href="https://www.fabianschultz.com/" external>Fabian Schultz</InlineLink></li>
+      <li><InlineLink href="https://edgarlr.com/" external>Edgar Lopez</InlineLink></li>
     </ul>
   </section>
 </article>

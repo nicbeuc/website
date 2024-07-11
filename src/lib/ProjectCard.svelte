@@ -98,6 +98,15 @@
       "lead  meta"
       "tags  meta";
     align-items: start;
+
+    @media screen and (max-width: 949px) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      grid-template-areas:
+        "lead"
+        "meta"
+        "tags";
+    }
   }
 
   p {
@@ -111,23 +120,40 @@
     display: grid;
     grid-template-columns: auto 1fr;
     min-width: 20rem;
-    border-top: var(--border-dashed);
+
+    @media screen and (min-width: 950px) {
+      border-top: var(--border-dashed);
+    }
+
+    @media screen and (max-width: 949px) {
+      grid-auto-flow: column dense;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      column-gap: 3.2rem;
+      justify-content: start;
+    }
 
     & dd, & dt {
-      padding: .6rem 0;
-      border-bottom: var(--border-dashed);
+      @media screen and (min-width: 950px) {
+        border-bottom: var(--border-dashed);
+        padding: .6rem 0;
+      }
     }
 
     & dd {
-      text-align: right;
       color: black;
-      padding-inline-start: 2rem;
+      @media screen and (min-width: 950px) {
+        padding-inline-start: 2rem;
+        text-align: right;
+      }
     }
   }
 
   .tags {
     grid-area: tags;
-    margin-top: 1.6rem;
+    @media screen and (min-width: 950px) {
+      margin-top: 1.6rem;
+    }
 
     & dd {
       display: inline;
