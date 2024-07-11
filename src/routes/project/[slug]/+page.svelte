@@ -1,7 +1,7 @@
 <script>
 	export let data;
 
-  $: ({
+  const {
     client,
     thumbnail,
     company,
@@ -10,7 +10,7 @@
     year,
     tags,
     content
-  } = data);
+  } = data;
 </script>
 
 <article>
