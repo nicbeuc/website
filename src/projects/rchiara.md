@@ -8,6 +8,4 @@ company: "Make Me Modern"
 tags: ["Design", "Development", "Shopify"]
 ---
 
-# Project 1
-
 This is the content for Project 1.

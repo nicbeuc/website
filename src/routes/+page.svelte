@@ -1,5 +1,6 @@
 <script>
   import ProjectCard from '$/lib/ProjectCard.svelte';
+  import InlineLink from '$/lib/InlineLink.svelte';
   export let data;
 
   $: ({ projects } = data);
@@ -8,7 +9,7 @@
 <section>
   <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
   <p>Hi, I'm Nick Beuchat, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
-  <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing websites and user interfaces for Make Me Modern.</p>
+  <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing websites and user interfaces for <InlineLink href="https://makememodern.com" external>Make Me Modern.</InlineLink></p>
 </section>
 <section>
   <h2>Featured Work</h2>

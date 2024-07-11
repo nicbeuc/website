@@ -20,7 +20,8 @@ const config = {
 			$: 'src',
 			$styles: 'src/styles',
 			$utils: 'src/utils',
-			$images: 'src/images'
+			$images: 'src/images',
+			$projects: 'src/projects'
 		}
 	}
 };
