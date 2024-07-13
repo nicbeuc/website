@@ -1,6 +1,7 @@
 <script>
   import Image from "$lib/Image.svelte";
   import Icon from "$lib/Icon.svelte";
+  import Tags from "$lib/Tags.svelte";
   export let project;
 
   const {
@@ -31,11 +32,9 @@
         <dt>With</dt>
         <dd>{company}</dd>
       </dl>
-      <dl class="tags">
-        {#each tags as tag}
-          <dd>{tag}</dd>
-        {/each}
-      </dl>
+      <div class="tags">
+        <Tags {tags}/>
+      </div>
     </section>
   </a>
 </article>
@@ -154,16 +153,5 @@
     @media screen and (min-width: 950px) {
       margin-top: 1.6rem;
     }
-
-    & dd {
-      display: inline;
-      padding: .4rem .8rem;
-      border-radius: .4rem;
-      font-size: var(--font-size-body-sm);
-      color: var(--color-neutral-700);
-      background-color: var(--color-neutral-200);
-      margin-inline-end: .8rem;
-    }
   }
-
 </style>

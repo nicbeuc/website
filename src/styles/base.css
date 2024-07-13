@@ -165,7 +165,12 @@ h6 {
 	font-size: inherit;
 }
 
+h1 {
+	font-size: var(--font-size-body-lg);
+}
+
 h2 {
+	font-size: var(--font-size-body-lg);
 	margin-bottom: 2.4rem;
 }
 
