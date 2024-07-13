@@ -32,9 +32,7 @@
         <dt>With</dt>
         <dd>{company}</dd>
       </dl>
-      <div class="tags">
-        <Tags {tags}/>
-      </div>
+      <Tags {tags} ref="card-tags"/>
     </section>
   </a>
 </article>
@@ -148,7 +146,7 @@
     }
   }
 
-  .tags {
+  :global([ref="card-tags"]) {
     grid-area: tags;
     @media screen and (min-width: 950px) {
       margin-top: 1.6rem;

@@ -1,8 +1,8 @@
 <script>
-  export let tags;
+  export let tags, ref;
 </script>
 
-<dl>
+<dl {ref}>
   {#each tags as tag}
     <dd>{tag}</dd>
   {/each}
