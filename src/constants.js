@@ -6,3 +6,7 @@ export const socialLinks = {
 };
 
 export const githubAPIEndpoint = 'https://api.github.com/repos/nicbeuc/website/commits/heads/main';
+
+export const metaContent = {
+	title: 'Nick Beuchat · Designer & Creative Developer'
+}

@@ -1,5 +1,6 @@
 <script>
   import Tags from '$lib/Tags.svelte';
+  import { metaContent as meta } from '$/constants';
 	export let data;
 
   const {
@@ -13,6 +14,10 @@
     content
   } = data;
 </script>
+
+<svelte:head>
+  <title>{client} · {meta.title}</title>
+</svelte:head>
 
 <article>
   <header>
