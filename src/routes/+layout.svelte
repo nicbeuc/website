@@ -1,5 +1,6 @@
 <script>
   import { onNavigate } from '$app/navigation';
+  import { page, navigating } from '$app/stores';
   import '$styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
@@ -9,7 +10,7 @@
   export let data;
 
   onNavigate((navigation) => {
-    if (!document.startViewTransition) return;
+    if ($navigating.to.url.pathname === $page.url.pathname || !document.startViewTransition) return;
 
     return new Promise((resolve) => {
       document.startViewTransition(async () => {
