@@ -119,6 +119,7 @@
     border: var(--border);
     z-index: 1001;
     isolation: isolate;
+    view-transition-name: mobile-nav;
     @media screen and (min-width: 800px) {
       display: none;
     }

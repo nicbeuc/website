@@ -21,7 +21,7 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    min-height: 2.2em;
+    min-height: 2em;
     /* min-width: 10ch; */
 
     &:hover {

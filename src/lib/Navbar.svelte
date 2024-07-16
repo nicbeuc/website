@@ -113,6 +113,7 @@
     grid-template-areas:
       "timestamp timestamp"
       "links copyright";
+    row-gap: .4rem;
     align-items: center;
     justify-content: space-between;
 

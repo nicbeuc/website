@@ -24,6 +24,7 @@
     padding-top: 3.2rem;
     width: 100%;
     position: relative;
+    view-transition-name: footer;
 
     @media screen and (min-width: 800px) {
       display: none;
