@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Icon from "$lib/Icon.svelte";
   import { page } from "$app/stores";
+	import Icon from "$lib/Icon.svelte";
 
   export let href: string = '#';
   export let external = false;
