@@ -229,7 +229,8 @@ article section + section {
 }
 
 .page-title {
-	margin-bottom: 3.2rem;
+	font-size: var(--font-size-body-lg);
+	margin-bottom: 2.4rem;
 	line-height: 2.4rem;
 }
 

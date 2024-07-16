@@ -27,7 +27,7 @@
 
   @media screen and (min-width: 800px) {
     section p:first-of-type {
-      margin-top: 5.6rem;
+      margin-top: 4.8rem;
     }
   }
 
