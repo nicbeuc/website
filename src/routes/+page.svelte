@@ -1,10 +1,15 @@
 <script>
-  import ProjectCard from '$/lib/ProjectCard.svelte';
-  import InlineLink from '$/lib/InlineLink.svelte';
+  import ProjectCard from '$lib/ProjectCard.svelte';
+  import InlineLink from '$lib/InlineLink.svelte';
+  import { metaContent } from '$/constants';
   export let data;
 
-  $: ({ projects } = data);
+  const { projects } = data;
 </script>
+
+<svelte:head>
+  <title>{ metaContent.title }</title>
+</svelte:head>
 
 <section>
   <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
