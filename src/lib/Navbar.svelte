@@ -45,6 +45,7 @@
     top: 0;
     left: calc((max(100vw, var(--page-width)) - var(--page-width)) / 2);
     z-index: 1;
+    view-transition-name: navbar;
 
     @media screen and (max-width: 799px) {
       display: none;

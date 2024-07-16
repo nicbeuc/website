@@ -1,4 +1,5 @@
 <script>
+  import { onNavigate } from '$app/navigation';
   import '$styles/base.css';
   import Navbar from "$lib/Navbar.svelte";
   import ScrollFade from '$lib/ScrollFade.svelte';
@@ -6,6 +7,17 @@
 	import Footer from '$lib/Footer.svelte';
 
   export let data;
+
+  onNavigate((navigation) => {
+    if (!document.startViewTransition) return;
+
+    return new Promise((resolve) => {
+      document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+    });
+  });
 </script>
 
 <div class="wrapper">
@@ -35,5 +47,38 @@
       justify-content: space-between;
       min-height: 100vh;
     }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(20px);
+    }
+  }
+
+  @keyframes slide-up {
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+  :root::view-transition-old(root) {
+    animation: 100ms cubic-bezier(0.4, 0, 1, 1) both fade-out, 300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-up;
+  }
+
+  :root::view-transition-new(root) {
+    animation: 200ms cubic-bezier(0, 0, 0.2, 1) 100ms both fade-in, 300ms cubic-bezier(0.4, 0, 0.2, 1) both
+        slide-down;
   }
 </style>
