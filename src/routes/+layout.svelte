@@ -73,12 +73,14 @@
     }
   }
 
-  :root::view-transition-old(root) {
-    animation: 100ms cubic-bezier(0.4, 0, 1, 1) both fade-out, 300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-up;
-  }
+  @media (prefers-reduced-motion: no-preference) {
+    :root::view-transition-old(root) {
+      animation: 100ms cubic-bezier(0.4, 0, 1, 1) both fade-out, 350ms cubic-bezier(0.4, 0, 0.2, 1) both slide-up;
+    }
 
-  :root::view-transition-new(root) {
-    animation: 200ms cubic-bezier(0, 0, 0.2, 1) 100ms both fade-in, 300ms cubic-bezier(0.4, 0, 0.2, 1) both
-        slide-down;
+    :root::view-transition-new(root) {
+      animation: 250ms cubic-bezier(0, 0, 0.2, 1) 100ms both fade-in, 350ms cubic-bezier(0.4, 0, 0.2, 1) both
+          slide-down;
+    }
   }
 </style>
