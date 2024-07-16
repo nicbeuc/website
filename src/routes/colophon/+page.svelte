@@ -18,7 +18,7 @@
   </section>
   <section>
     <h2>Technical</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>This site is built using the beautifully intuitive SvelteKit, which I've had an absolute blast learning while continuing to develop my portfolio. The project pages on the site are written in markdown, made possible with the powerful <InlineLink href="https://mdsvex.pngwn.io/" external>mdsvex</InlineLink> package.</p>
   </section>
   <section>
     <h2>Inspiration</h2>
@@ -28,6 +28,9 @@
       <li><InlineLink href="https://eryc.cc/" external>ERYC</InlineLink></li>
       <li><InlineLink href="https://www.fabianschultz.com/" external>Fabian Schultz</InlineLink></li>
       <li><InlineLink href="https://edgarlr.com/" external>Edgar Lopez</InlineLink></li>
+      <li><InlineLink href="https://www.amelieschlueter.com/" external>Amelie Schlüter</InlineLink></li>
+      <li><InlineLink href="https://nelson.co/" external>Gavin Nelson</InlineLink></li>
+      <li><InlineLink href="https://linusrogge.com/" external>Linus Rogge</InlineLink></li>
     </ul>
   </section>
 </article>
