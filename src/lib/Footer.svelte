@@ -6,7 +6,9 @@
 </script>
 
 <footer class="page-width">
-  <LastUpdated commitData={data}/>
+  {#if !data.error}
+    <LastUpdated commitData={data}/>
+  {/if}
   <small><Link href="/colophon">Colophon</Link></small>
   <small class="copyright">© {new Date().getFullYear()}</small>
 </footer>

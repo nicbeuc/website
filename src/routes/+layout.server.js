@@ -9,7 +9,7 @@ export async function load() {
 			}
 		});
 
-		const commitData = await response.json();
+		const commitData = await response.json()
 		const timestamp = new Date(commitData.commit.committer.date).toLocaleDateString('en-US', {
 			year: 'numeric',
 			month: 'long',
@@ -26,6 +26,10 @@ export async function load() {
 			url
 		};
 	} catch (error) {
-		console.error('Error fetching timestamp');
+		return {
+			error: {
+				message: 'Could not fetch timestamp'
+			}
+		}
 	}
 }

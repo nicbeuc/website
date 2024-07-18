@@ -25,7 +25,7 @@
     <Link href={socialLinks.readcv} external>Read.cv</Link>
   </nav>
   <div class="navbar__footer">
-    {#if data}
+    {#if !data.error}
       <LastUpdated commitData={data}/>
     {/if}
     <small><Link href="/colophon">Colophon</Link></small>
