@@ -5,6 +5,8 @@
   import { socialLinks } from "$/constants";
 
   export let data;
+
+  const { commitData } = data;
 </script>
 
 <header>
@@ -25,8 +27,8 @@
     <Link href={socialLinks.readcv} external>Read.cv</Link>
   </nav>
   <div class="navbar__footer">
-    {#if !data.error}
-      <LastUpdated commitData={data}/>
+    {#if !commitData.error}
+      <LastUpdated {commitData}/>
     {/if}
     <small><Link href="/colophon">Colophon</Link></small>
     <small class="copyright">© {new Date().getFullYear()}</small>

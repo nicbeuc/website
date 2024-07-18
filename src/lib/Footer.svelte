@@ -3,11 +3,13 @@
   import LastUpdated from "$lib/LastUpdated.svelte";
 
   export let data;
+
+  const { commitData } = data;
 </script>
 
 <footer class="page-width">
-  {#if !data.error}
-    <LastUpdated commitData={data}/>
+  {#if !commitData.error}
+    <LastUpdated {commitData}/>
   {/if}
   <small><Link href="/colophon">Colophon</Link></small>
   <small class="copyright">© {new Date().getFullYear()}</small>

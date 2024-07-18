@@ -4,7 +4,9 @@
   import { metaContent } from '$/constants';
   export let data;
 
-  const { projects } = data;
+  const projects = data.projects;
+
+  console.log(data);
 </script>
 
 <svelte:head>
@@ -18,9 +20,11 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  {#each projects as project}
-    <ProjectCard {project} />
-  {/each}
+  {#if projects.length}
+    {#each projects as project}
+      <ProjectCard {project} />
+    {/each}
+  {/if}
 </section>
 
 <style>

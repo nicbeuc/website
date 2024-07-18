@@ -5,7 +5,7 @@ export const socialLinks = {
 	mail: 'mailto:nick.beuchat@gmail.com'
 };
 
-export const githubAPIEndpoint = 'https://api.github.com/repos/nicbeuc/website/commits/heads/mains';
+export const githubAPIEndpoint = 'https://api.github.com/repos/nicbeuc/website/commits/heads/main';
 
 export const metaContent = {
 	title: 'Nick Beuchat · Designer & Creative Developer'

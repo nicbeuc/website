@@ -21,14 +21,18 @@ export async function load() {
 		const url = commitData.html_url;
 
 		return {
-			timestamp,
-			id,
-			url
+			commitData: {
+				timestamp,
+				id,
+				url
+			}
 		};
 	} catch (error) {
 		return {
-			error: {
-				message: 'Could not fetch timestamp'
+			commitData: {
+				error: {
+					message: "Could not fetch timestamp."
+				}
 			}
 		}
 	}
