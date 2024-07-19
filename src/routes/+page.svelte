@@ -5,8 +5,6 @@
   export let data;
 
   const projects = data.projects;
-
-  console.log(data);
 </script>
 
 <svelte:head>
@@ -28,13 +26,6 @@
 </section>
 
 <style>
-
-  @media screen and (min-width: 800px) {
-    section p:first-of-type {
-      margin-top: 4.8rem;
-    }
-  }
-
   section:first-of-type {
     padding-bottom: 4.8rem;
     border-bottom: var(--border);

@@ -200,7 +200,7 @@ img {
 
 main {
 	width: calc(min(100vw, var(--max-width)) - var(--navbar-width));
-	padding: var(--padding-inline);
+	padding: 9.6rem var(--padding-inline) var(--padding-inline);
 	/* min-height: 100vh; */
 	display: grid;
 	margin-left: auto;
@@ -229,9 +229,7 @@ article section + section {
 }
 
 .page-title {
-	font-size: var(--font-size-body-lg);
-	margin-bottom: 2.4rem;
-	line-height: 2.4rem;
+	margin-bottom: 4.8rem;
 }
 
 .page-width {

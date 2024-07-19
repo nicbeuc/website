@@ -11,8 +11,8 @@
 <style>
   dd {
     display: inline;
-    padding: .4rem .8rem;
-    border-radius: .4rem;
+    padding: .6rem 1rem;
+    border-radius: .8rem;
     font-size: var(--font-size-body-sm);
     color: var(--color-neutral-700);
     background-color: var(--color-neutral-200);
