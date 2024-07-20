@@ -266,3 +266,12 @@ article li::before {
 	left: -1em;
 	transform: translateY(-50%);
 }
+
+figcaption {
+	font-size: var(--font-size-body-sm);
+	color: var(--color-neutral-600);
+	margin-top: 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: .4em;
+}
