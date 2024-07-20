@@ -216,7 +216,7 @@ main {
 
 article p,
 section p {
-	max-width: 56ch;
+	max-width: 64ch;
 }
 
 article :is(h2, h3, h4, h5, h6) {

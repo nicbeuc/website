@@ -36,11 +36,10 @@
       <Link href={link} external>View live site</Link>
     {/if}
   </header>
-  <figure>
-    <Image alt="Image of the {client} site" name={thumbnail} />
-    <figcaption><Icon name="image" />A look at the completed site</figcaption>
-  </figure>
-	<svelte:component this={content} />
+  <Image alt="Image of the {client} site" name={thumbnail} caption="A look at the final site" />
+  <section>
+    <svelte:component this={content} />
+  </section>
 </article>
 
 <style>
@@ -53,6 +52,14 @@
     grid-template-areas:
       "title title"
       "meta   link";
+
+    @media screen and (max-width: 499px) {
+      grid-template-areas:
+        "title"
+        "meta"
+        "link";
+    }
+
     & h1 {
       grid-area: title;
     }
@@ -60,6 +67,10 @@
     & a {
       grid-area: link;
       align-self: end;
+
+      @media screen and (max-width: 499px) {
+        margin-top: 2.4rem;
+      }
     }
   }
 
@@ -74,8 +85,16 @@
     column-gap: 4.8rem;
     justify-content: start;
 
+    @media screen and (max-width: 499px) {
+      column-gap: 2.4rem;
+    }
+
     & dd {
       color: black;
     }
+  }
+
+  section {
+    margin-top: 3.2rem;
   }
 </style>

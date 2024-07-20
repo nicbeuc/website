@@ -8,4 +8,6 @@ company: "Make Me Modern"
 tags: ["Design", "Development", "Shopify"]
 ---
 
-This is the content for Project 1.
+## Challenge
+
+As a blossoming boutique jewelry brand based in NYC’s diamond district, r.chiara needed a refreshed website that better showcased their uniquely handcrafted pieces, while also providing an agile backend framework for quick and seamless promotional changeovers throughout the year.

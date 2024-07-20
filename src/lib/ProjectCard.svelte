@@ -61,9 +61,7 @@
   }
 
   .media-wrapper {
-    border-radius: var(--border-radius-media);
     overflow: hidden;
-    border: var(--border-subtle);
     position: relative;
 
     & span {
