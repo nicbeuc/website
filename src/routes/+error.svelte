@@ -28,6 +28,7 @@
   }
 
   p {
+    font-size: var(--font-size-heading);
     color: var(--color-neutral-600);
   }
 </style>

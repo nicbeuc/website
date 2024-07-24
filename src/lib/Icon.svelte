@@ -23,7 +23,6 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   style="width: var(--icon-size, 1.4rem);"
-  stroke="currentColor"
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
@@ -70,5 +69,6 @@
 <style>
   svg {
     height: var(--icon-size, 1.4rem);
+    stroke: var(--icon-color, currentColor);
   }
 </style>

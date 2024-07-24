@@ -6,6 +6,7 @@
 	export let data;
 
   const {
+    title,
     client,
     thumbnail,
     company,
@@ -23,7 +24,7 @@
 
 <article>
   <header>
-    <h1 class="page-title">{client}</h1>
+    <h1 class="page-title">{title}</h1>
     <dl class="meta">
       <dt>Client</dt>
       <dd>{client}</dd>
@@ -44,7 +45,7 @@
 
 <style>
   header {
-    padding-bottom: 3.2rem;
+    padding-bottom: 2.4rem;
     margin-bottom: 4.8rem;
     border-bottom: var(--border);
     display: grid;
@@ -69,7 +70,7 @@
       align-self: end;
 
       @media screen and (max-width: 499px) {
-        margin-top: 2.4rem;
+        margin-top: 1.6rem;
       }
     }
   }

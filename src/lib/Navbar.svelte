@@ -98,6 +98,11 @@
     align-items: start;
     justify-content: center;
 
+    & a {
+      padding-top: .4rem;
+      padding-bottom: .4rem;
+    }
+
     & a span {
       margin-inline-start: .4em;
       color: var(--color-neutral-500)
@@ -115,7 +120,7 @@
     grid-template-areas:
       "timestamp timestamp"
       "links copyright";
-    row-gap: .4rem;
+    row-gap: .8rem;
     align-items: center;
     justify-content: space-between;
 

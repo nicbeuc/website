@@ -21,8 +21,7 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    min-height: 2em;
-    gap: .2rem;
+    gap: .4rem;
     /* min-width: 10ch; */
 
     &:hover {

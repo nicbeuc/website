@@ -4,6 +4,7 @@ export const load = async ({ params }) => {
   try {
     const project = await import(`../../../projects/${params.slug}.md`);
     const {
+      title,
       client,
       thumbnail,
       company,
@@ -15,6 +16,7 @@ export const load = async ({ params }) => {
     const content = project.default;
 
     return {
+      title,
       client,
       thumbnail,
       company,

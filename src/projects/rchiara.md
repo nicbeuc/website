@@ -1,4 +1,5 @@
 ---
+title: "Reimagining a jeweler's online presence"
 client: "r. chiara"
 lead: "An NYC-based fine jewelry boutique needed a refreshed website that better showcased their bespoke pieces, along with an agile backend framework for seamless promotional changeovers."
 link: "https://rchiara.com"

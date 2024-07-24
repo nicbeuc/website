@@ -25,12 +25,12 @@
     <section>
       <p>{lead}</p>
       <dl class="meta">
+        <dt>Client</dt>
+        <dd>{client}</dd>
+        <dt>Team</dt>
+        <dd>{company}</dd>
         <dt>Year</dt>
         <dd>{year}</dd>
-        <dt>For</dt>
-        <dd>{client}</dd>
-        <dt>With</dt>
-        <dd>{company}</dd>
       </dl>
       <Tags {tags} ref="card-tags"/>
     </section>

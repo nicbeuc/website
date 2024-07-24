@@ -23,6 +23,7 @@
     grid-template-areas:
       "updated updated"
       "links copyright";
+    row-gap: .8rem;
     align-items: center;
     margin-bottom: 3.2rem;
     padding-top: 3.2rem;

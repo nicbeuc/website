@@ -36,6 +36,7 @@
 	--transition-fast: 250ms var(--transition-easing);
 	--transition-mid: 350ms var(--transition-easing);
 
+	--font-size-heading: 1.8rem;
 	--font-size-body-lg: 1.6rem;
 	--font-size-body: 1.4rem;
 	--font-size-body-sm: 1.2rem;
@@ -230,6 +231,8 @@ article section + section {
 
 .page-title {
 	margin-bottom: 4.8rem;
+	font-size: var(--font-size-heading);
+	letter-spacing: 0;
 }
 
 .page-width {

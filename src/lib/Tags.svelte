@@ -15,7 +15,8 @@
     border-radius: .8rem;
     font-size: var(--font-size-body-sm);
     color: var(--color-neutral-700);
-    background-color: var(--color-neutral-200);
+    background-color: var(--color-neutral-100);
+    border: var(--border);
     margin-inline-end: .8rem;
   }
 </style>
