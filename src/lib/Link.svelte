@@ -22,6 +22,7 @@
     align-items: center;
     position: relative;
     min-height: 2em;
+    gap: .2rem;
     /* min-width: 10ch; */
 
     &:hover {
@@ -43,12 +44,7 @@
     & svg {
       color: var(--color-neutral-500);
       display: inline-block;
-      margin-inline-start: .4em;
       transition: color var(--transition-fast);
-
-      &:first-child {
-        margin-inline-end: .4em;
-      }
     }
   }
 </style>

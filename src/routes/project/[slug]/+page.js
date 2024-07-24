@@ -1,3 +1,5 @@
+import { error as svelteError } from '@sveltejs/kit';
+
 export const load = async ({ params }) => {
   try {
     const project = await import(`../../../projects/${params.slug}.md`);
@@ -23,6 +25,6 @@ export const load = async ({ params }) => {
       content
     };
   } catch (error) {
-    throw new Error('Project not found.');
+    throw svelteError(404, 'Project not found.');
   }
 }

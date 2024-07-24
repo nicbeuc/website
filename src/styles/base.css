@@ -275,3 +275,10 @@ figcaption {
 	align-items: center;
 	gap: .4em;
 }
+
+/* Error page */
+
+main:has(.error-page) {
+	height: 100vh;
+	place-content: center;
+}

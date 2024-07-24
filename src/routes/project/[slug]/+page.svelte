@@ -45,7 +45,7 @@
 <style>
   header {
     padding-bottom: 3.2rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
     border-bottom: var(--border);
     display: grid;
     grid-template-columns: 1fr auto;
@@ -95,6 +95,6 @@
   }
 
   section {
-    margin-top: 3.2rem;
+    margin-top: 4.8rem;
   }
 </style>
