@@ -7,7 +7,7 @@
 <div class="error-page">
   <hgroup>
     <p>{$page.status}</p>
-    <h1>Couldn't find that page.</h1>
+    <h1>{$page.error.message}</h1>
   </hgroup>
   <Link href="/">
     <Icon name="undo"/>

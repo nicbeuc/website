@@ -27,6 +27,6 @@ export const load = async ({ params }) => {
       content
     };
   } catch (error) {
-    throw svelteError(404, 'Project not found.');
+    throw svelteError(404, "Couldn't find that project.");
   }
 }
