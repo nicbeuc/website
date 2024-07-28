@@ -11,7 +11,8 @@ export const load = async ({ params }) => {
       lead,
       link,
       year,
-      tags
+      tags,
+      role
     } = project.metadata;
     const content = project.default;
 
@@ -24,6 +25,7 @@ export const load = async ({ params }) => {
       link,
       year,
       tags,
+      role,
       content
     };
   } catch (error) {

@@ -6,6 +6,7 @@ link: "https://rchiara.com"
 year: "2023"
 thumbnail: "rchiara-thumb"
 company: "Make Me Modern"
+role: "Design, Development"
 tags: ["Design", "Development", "Shopify"]
 ---
 

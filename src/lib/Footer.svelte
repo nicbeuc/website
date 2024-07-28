@@ -59,7 +59,7 @@
     }
 
     @media screen and (max-width: 799px) {
-      margin-bottom: 10rem;
+      margin-bottom: 11rem;
     }
   }
 

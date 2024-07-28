@@ -14,7 +14,8 @@
     link,
     year,
     tags,
-    content
+    content,
+    role
   } = data;
 </script>
 
@@ -32,6 +33,8 @@
       <dd>{company}</dd>
       <dt>Year</dt>
       <dd>{year}</dd>
+      <dt>Role</dt>
+      <dd>{role}</dd>
     </dl>
     {#if link}
       <Link href={link} external>View live site</Link>
@@ -70,7 +73,7 @@
       align-self: end;
 
       @media screen and (max-width: 499px) {
-        margin-top: 1.6rem;
+        margin-top: 2.4rem;
       }
     }
   }
@@ -85,6 +88,15 @@
     grid-template-rows: auto auto;
     column-gap: 4.8rem;
     justify-content: start;
+
+    @media screen and (max-width: 949px) {
+      grid-template-rows: repeat(4, auto);
+      column-gap: 6.4rem;
+
+      & dt:nth-of-type(even) {
+        margin-top: 1.2rem;
+      }
+    }
 
     @media screen and (max-width: 499px) {
       column-gap: 2.4rem;

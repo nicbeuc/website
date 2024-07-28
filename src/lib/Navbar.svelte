@@ -16,7 +16,7 @@
     </a>
   </div>
   <div class="navbar__info">
-    <p><span>Nick Beuchat</span></p>
+    <p>Nick Beuchat</p>
     <p>Designer & Creative Developer</p>
   </div>
   <nav class="navbar__links">
@@ -70,8 +70,9 @@
     margin-top: 2.4rem;
     color: var(--color-neutral-600);
 
-    & span {
+    & p:first-of-type {
       color: black;
+      line-height: 2.4rem;
 
       @media screen and (max-width: 799px) {
         font-size: 1.2rem;
@@ -81,6 +82,7 @@
     & p + p {
       margin-top: 0;
       font-size: 1.2rem;
+      line-height: 2rem;
     }
 
     @media screen and (max-width: 799px) {

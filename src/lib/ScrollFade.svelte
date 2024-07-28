@@ -5,14 +5,15 @@
     position: fixed;
     width: min(100vw, var(--page-width));
     height: var(--padding-inline);
-    backdrop-filter: blur(10px);
     z-index: 1000;
     pointer-events: none;
+    isolation: isolate;
 
     &::before {
       content: "";
       position: absolute;
       inset: 0px;
+      z-index: 1;
     }
 
     &:first-child {
@@ -20,12 +21,11 @@
       top: 0;
 
       &::before {
-        background: linear-gradient(to bottom, var(--color-bg), rgba(255, 255, 255, .5));
+        background: linear-gradient(to bottom, var(--color-bg), rgba(255, 255, 255, .75));
       }
 
       @media screen and (max-width: 799px) {
         display: none;
-
       }
     }
 
@@ -34,12 +34,12 @@
       bottom: 0;
 
       &::before {
-        background: linear-gradient(to top, var(--color-bg), rgba(255, 255, 255, .5));
+        background: linear-gradient(to top, var(--color-bg), rgba(255, 255, 255, .75));
       }
     }
 
     @media screen and (max-width: 799px) {
-      height: 3.2rem;
+      height: 11rem;
     }
   }
 </style>

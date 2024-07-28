@@ -38,4 +38,8 @@
   section p + p {
     margin-top: 1.6rem;
   }
+
+  section h2 {
+    color: var(--color-neutral-600);
+  }
 </style>

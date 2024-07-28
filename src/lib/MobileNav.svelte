@@ -176,6 +176,11 @@
       0px 6.7px 13.4px -10px rgba(0, 0, 0, 0.072),
       0px 16px 32px -10px rgba(0, 0, 0, 0.1);
     z-index: -1;
+
+    & a {
+      padding-top: .4rem;
+      padding-bottom: .4rem;
+    }
   }
 
   nav {
