@@ -1,7 +1,6 @@
 <script>
   import Image from "$lib/Image.svelte";
   import Icon from "$lib/Icon.svelte";
-  import Tags from "$lib/Tags.svelte";
   export let project;
 
   const {
@@ -10,9 +9,11 @@
       company,
       lead,
       link,
+      title,
       year,
       tags,
-      slug
+      slug,
+      roles
     } = project;
 </script>
 
@@ -23,16 +24,24 @@
       <span id="view-project">View project <Icon name="eye" /></span>
     </div>
     <section>
-      <p>{lead}</p>
+      <div class="info">
+        <h3>{title}</h3>
+        <p>{lead}</p>
+      </div>
       <dl class="meta">
         <dt>Client</dt>
         <dd>{client}</dd>
+        <dt>Role{roles.length > 1 && 's'}</dt>
+        <dd>
+          {#each roles as role, i}
+            {i + 1 !== roles.length ? role + ', ' : role}
+          {/each}
+        </dd>
         <dt>Team</dt>
         <dd>{company}</dd>
         <dt>Year</dt>
         <dd>{year}</dd>
       </dl>
-      <Tags {tags} ref="card-tags"/>
     </section>
   </a>
 </article>
@@ -90,22 +99,30 @@
     grid-template-columns: 1fr auto;
     column-gap: 3.2rem;
     grid-template-areas:
-      "lead  meta"
-      "tags  meta";
+      "info  meta";
     align-items: start;
 
-    @media screen and (max-width: 949px) {
+    @media screen and (max-width: 999px) {
       grid-template-columns: 1fr;
       row-gap: 2rem;
       grid-template-areas:
-        "lead"
-        "meta"
-        "tags";
+        "info"
+        "meta";
     }
   }
 
-  p {
-    grid-area: lead;
+  .info {
+    grid-area: info;
+
+    & h3 {
+      font-size: var(--font-size-heading);
+      margin-bottom: 1.2rem;
+      color: black;
+    }
+
+    & p {
+      color: var(--color-neutral-700);
+    }
   }
 
   .meta {
@@ -114,22 +131,26 @@
     grid-area: meta;
     display: grid;
     grid-template-columns: auto 1fr;
-    min-width: 20rem;
+    min-width: 22rem;
 
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 1000px) {
       border-top: var(--border-dashed);
     }
 
-    @media screen and (max-width: 949px) {
+    @media screen and (max-width: 999px) {
       grid-auto-flow: column dense;
       grid-template-columns: auto;
-      grid-template-rows: auto auto;
-      column-gap: 3.2rem;
+      column-gap: 4.8rem;
       justify-content: start;
+      grid-template-rows: repeat(4, auto);
+
+      & dt:nth-of-type(even) {
+        margin-top: 1.2rem;
+      }
     }
 
     & dd, & dt {
-      @media screen and (min-width: 950px) {
+      @media screen and (min-width: 1000px) {
         border-bottom: var(--border-dashed);
         padding: .6rem 0;
       }
@@ -137,17 +158,17 @@
 
     & dd {
       color: black;
-      @media screen and (min-width: 950px) {
+      @media screen and (min-width: 1000px) {
         padding-inline-start: 2rem;
         text-align: right;
       }
     }
   }
 
-  :global([ref="card-tags"]) {
+  /* :global([ref="card-tags"]) {
     grid-area: tags;
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 1000px) {
       margin-top: 1.6rem;
     }
-  }
+  } */
 </style>

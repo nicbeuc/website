@@ -15,7 +15,7 @@
     year,
     tags,
     content,
-    role
+    roles
   } = data;
 </script>
 
@@ -33,8 +33,12 @@
       <dd>{company}</dd>
       <dt>Year</dt>
       <dd>{year}</dd>
-      <dt>Role</dt>
-      <dd>{role}</dd>
+      <dt>Role{roles.length > 1 && 's'}</dt>
+      <dd>
+        {#each roles as role, i}
+          {i + 1 !== roles.length ? role + ', ' : role}
+        {/each}
+      </dd>
     </dl>
     {#if link}
       <Link href={link} external>View live site</Link>
@@ -91,7 +95,6 @@
 
     @media screen and (max-width: 949px) {
       grid-template-rows: repeat(4, auto);
-      column-gap: 6.4rem;
 
       & dt:nth-of-type(even) {
         margin-top: 1.2rem;

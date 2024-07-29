@@ -127,7 +127,7 @@ body {
 	min-height: 100vh;
 	font-weight: 400;
 	overscroll-behavior: none;
-	letter-spacing: 0.04ch;
+	letter-spacing: 0.02ch;
 	display: flex;
 	flex-direction: column;
 	color: black;
