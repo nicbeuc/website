@@ -112,5 +112,9 @@
 
   section {
     margin-top: 4.8rem;
+
+    & * + h2 {
+      margin-top: 3.2rem;
+    }
   }
 </style>
