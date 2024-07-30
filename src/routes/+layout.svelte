@@ -35,7 +35,7 @@
 <style>
   .wrapper {
     --max-width: var(--page-width);
-    --navbar-width: 32rem;
+    --navbar-width: 30rem;
     max-width: var(--max-width);
     display: flex;
     align-items: flex-start;

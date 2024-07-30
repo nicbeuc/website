@@ -51,18 +51,6 @@
 
     @media screen and (max-width: 799px) {
       display: none;
-      position: relative;
-      grid-template-columns: auto 1fr;
-      grid-template-rows: 100%;
-      width: 100%;
-      gap: 1.6rem;
-      align-items: center;
-      padding: 0 var(--padding-inline);
-      height: 7.2rem;
-      z-index: 1001;
-      margin-inline: auto;
-      margin-bottom: 4.8rem;
-      left: unset;
     }
   }
 
