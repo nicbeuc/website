@@ -42,6 +42,8 @@
 	--font-size-body-sm: 1.2rem;
 	--font-size-body-xs: 1rem;
 
+	--prose-width: 64ch;
+
 	--color-neutral-900: #141618;
 	--color-neutral-800: #343a40;
 	--color-neutral-700: #565c63;
@@ -217,7 +219,7 @@ main {
 
 article p,
 section p {
-	max-width: 64ch;
+	max-width: var(--prose-width);
 }
 
 article :is(h2, h3, h4, h5, h6) {
@@ -246,13 +248,39 @@ article section + section {
 	padding-inline: var(--padding-inline);
 }
 
-article *:is(p, ul) + *:is(p, ul) {
-	margin-top: 1.6rem;
+article *:is(p, ul, ol) + *:is(p, ul, ol) {
+	margin-top: 2.4rem;
 }
 
-article ul {
-	padding-left: 2.4rem;
+article *:is(ul,ol) {
+	padding-left: 2em;
+	max-width: var(--prose-width);
 	list-style: none;
+}
+
+article ol li {
+	counter-increment: num;
+}
+
+article ol li:before {
+	content: counter(num) ". ";
+	position: absolute;
+	top: .2em;
+	left: -2.5em;
+	color: var(--color-neutral-700);
+	font-weight: 600;
+	width: 1.75em;
+	height: 1.75em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-neutral-200);
+	font-size: .8em;
+	border-radius: .4em;
+}
+
+article ol {
+	counter-reset: num;
 }
 
 article li {
@@ -260,19 +288,18 @@ article li {
 }
 
 article li + li {
-	margin-top: 0.4rem;
+	margin-top: 0.6rem;
 }
 
-article li::before {
+article ul li::before {
 	content: '';
 	position: absolute;
 	width: 0.4em;
 	height: 0.4em;
 	background-color: var(--color-neutral-400);
 	border-radius: 0.125em;
-	top: 50%;
-	left: -1em;
-	transform: translateY(-50%);
+	top: 1cap;
+	left: -1.25em;
 }
 
 figcaption {
@@ -282,6 +309,10 @@ figcaption {
 	display: flex;
 	align-items: center;
 	gap: .4em;
+}
+
+strong {
+	font-weight: 500;
 }
 
 /* Error page */

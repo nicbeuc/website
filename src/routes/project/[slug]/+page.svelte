@@ -111,10 +111,10 @@
   }
 
   section {
-    margin-top: 4.8rem;
+    margin-top: 5.6rem;
 
     & * + h2 {
-      margin-top: 3.2rem;
+      margin-top: 4rem;
     }
   }
 </style>
