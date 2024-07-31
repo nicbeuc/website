@@ -12,7 +12,7 @@
     <LastUpdated {commitData}/>
   {/if}
   <small><Link href="/colophon">Colophon</Link></small>
-  <small class="copyright">© {new Date().getFullYear()}</small>
+  <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
 </footer>
 
 <style>
