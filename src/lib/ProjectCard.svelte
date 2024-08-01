@@ -4,17 +4,17 @@
   export let project;
 
   const {
-      client,
-      thumbnail,
-      company,
-      lead,
-      link,
-      title,
-      year,
-      tags,
-      slug,
-      roles
-    } = project;
+    client,
+    thumbnail,
+    company,
+    lead,
+    link,
+    title,
+    year,
+    tags,
+    slug,
+    roles
+  } = project;
 </script>
 
 <article>
