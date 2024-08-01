@@ -36,6 +36,10 @@
       &::before {
         background: linear-gradient(to top, var(--color-bg), rgba(255, 255, 255, .75));
       }
+
+      @media screen and (max-width: 799px) {
+        mask-image: linear-gradient(to top, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0));
+      }
     }
 
     @media screen and (max-width: 799px) {
