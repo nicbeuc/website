@@ -21,7 +21,8 @@ const config = {
 			$styles: 'src/styles',
 			$utils: 'src/utils',
 			$images: 'src/images',
-			$projects: 'src/projects'
+			$projects: 'src/projects',
+			$videos: 'src/videos'
 		}
 	}
 };

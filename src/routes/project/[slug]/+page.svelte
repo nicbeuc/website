@@ -113,7 +113,8 @@
   section {
     margin-top: 5.6rem;
 
-    & * + h2 {
+    & * + h2,
+    * + .video-wrapper {
       margin-top: 4rem;
     }
   }

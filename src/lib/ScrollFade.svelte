@@ -8,6 +8,8 @@
     z-index: 1000;
     pointer-events: none;
     isolation: isolate;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     &::before {
       content: "";
@@ -21,7 +23,7 @@
       top: 0;
 
       &::before {
-        background: linear-gradient(to bottom, var(--color-bg), rgba(255, 255, 255, .75));
+        background: linear-gradient(to bottom, var(--color-bg), rgba(255, 255, 255, 0));
       }
 
       @media screen and (max-width: 799px) {
@@ -34,7 +36,7 @@
       bottom: 0;
 
       &::before {
-        background: linear-gradient(to top, var(--color-bg), rgba(255, 255, 255, .75));
+        background: linear-gradient(to top, var(--color-bg), rgba(255, 255, 255, 0));
       }
 
       @media screen and (max-width: 799px) {
