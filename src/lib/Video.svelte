@@ -1,5 +1,8 @@
 <script lang="ts">
   export let name: string;
+  export let caption: string;
+
+  import Icon from "$lib/Icon.svelte";
 
   const allMp4s = import.meta.glob('$videos/*.mp4', {
 		import: 'default',
@@ -20,35 +23,42 @@
 	let srcPoster = Object.entries(allPosters).filter(([k, _]) => k.includes(name)).map(([_, v]) => v as string)[0];
 </script>
 
-<div class="video-wrapper">
-  {#if srcMp4 || srcMp4}
-    <video
-      width="100%"
-      height="100%"
-      poster={srcPoster ? srcPoster : null}
-      autoplay
-      loop
-      muted
-      defaultmuted
-      playsinline
-      preload="auto"
-    >
-      {#if srcWebm}
-        <source src={srcWebm} type="video/webm"/>
-      {/if}
-      {#if srcMp4}
-        <source src={srcMp4} type="video/mp4"/>
-      {/if}
-    </video>
-  {:else}
-    <p>Video not found.</p>
+<div class="video">
+  <div class="video-wrapper">
+    {#if srcMp4 || srcMp4}
+      <video
+        width="100%"
+        height="100%"
+        poster={srcPoster ? srcPoster : null}
+        autoplay
+        loop
+        muted
+        defaultmuted
+        playsinline
+        preload="auto"
+      >
+        {#if srcWebm}
+          <source src={srcWebm} type="video/webm"/>
+        {/if}
+        {#if srcMp4}
+          <source src={srcMp4} type="video/mp4"/>
+        {/if}
+      </video>
+    {:else}
+      <p style="color:red;">Video not found.</p>
+    {/if}
+  </div>
+  {#if caption}
+  <p class="media-caption"><Icon name="video" --icon-size="12"/>{caption}</p>
   {/if}
 </div>
 
+
 <style>
-  div {
+  .video-wrapper {
     overflow: hidden;
     border-radius: var(--border-radius, var(--border-radius-media));
+    border: var(--border);
   }
 
   video {

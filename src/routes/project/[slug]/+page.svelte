@@ -114,7 +114,7 @@
     margin-top: 5.6rem;
 
     & * + h2,
-    * + .video-wrapper {
+    * + .video {
       margin-top: 4rem;
     }
   }
