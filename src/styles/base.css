@@ -55,7 +55,6 @@
 	--color-neutral-100: #f8f9fa;
 	--color-select-text: #0d47a1;
 	--color-select-bg: #bbdefb;
-
 	--color-bg: white;
 
 	--padding-inline: 4.8rem;
@@ -68,6 +67,13 @@
 		--padding-inline: 2rem;
 	}
 
+	--shadow-low: 0px 0.2px 0.7px -4px rgba(0, 0, 0, 0.014),
+  0px 0.5px 1.6px -4px rgba(0, 0, 0, 0.02),
+  0px 1px 3px -4px rgba(0, 0, 0, 0.025),
+  0px 1.8px 5.4px -4px rgba(0, 0, 0, 0.03),
+  0px 3.3px 10px -4px rgba(0, 0, 0, 0.036),
+  0px 8px 24px -4px rgba(0, 0, 0, 0.05);
+
 	--border: 0.1rem solid var(--color-neutral-200);
 	--border-dashed: 0.1rem dashed var(--color-neutral-200);
 	--border-subtle: 0.1rem solid var(--color-neutral-100);
@@ -77,6 +83,8 @@
 	@media screen and (max-width: 499px) {
 		--border-radius-media: 1.2rem;
 	}
+
+	--filter-blur-mid: blur(10px);
 }
 
 html {

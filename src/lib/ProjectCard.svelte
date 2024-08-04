@@ -89,7 +89,7 @@
       transition: all var(--transition-fast);
       transform: translateX(-50%) scale(0.9);
       filter: blur(10px);
-      backdrop-filter: blur(10px);
+      backdrop-filter: var(--filter-blur-mid);
     }
   }
 
