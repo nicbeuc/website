@@ -35,6 +35,6 @@ One of the weakest aspects of the existing site was the search experience. Tryin
 
 <Video name="rchiara-video-search" caption="The new predictive search feature in action"/>
 
-Similarly, product filtering and sorting on the existing site was severely limited; shoppers were only given the option to sort products based on a handful of paramaters. Our revamped experience put the power back in the shopper's hands, which most importantly allowed them to find pieces within a specific price range and ones that featured a certain metal type.
+Similarly, product filtering and sorting on the existing site was severely limited; shoppers were only given the option to sort products based on a handful of parameters. Our revamped experience put the power back in the shopper's hands, which most importantly allowed them to find pieces within a specific price range and ones that featured a certain metal type.
 
 <Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>

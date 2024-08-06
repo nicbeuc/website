@@ -113,7 +113,7 @@
   section {
     margin-top: 5.6rem;
 
-    & * + *:is(.video, figure) {
+    & * + *:is(.video, figure, h2) {
       margin-top: 4rem;
     }
 
