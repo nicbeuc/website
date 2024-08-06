@@ -34,3 +34,7 @@ After conducting a thorough audit of the existing site, three primary opportunit
 One of the weakest aspects of the existing site was the search experience. Trying to search for a jewelry piece was a multi-step process that lacked modern ecommerce search features, such as search suggestions and predictive search. When building the updated search experience, our goal was to give the shopper a variety of pathways to find the perfect piece; whether they are looking for a specific ring, a collection for inspiration, or a page to learn more about the business.
 
 <Video name="rchiara-video-search" caption="The new predictive search feature in action"/>
+
+Similarly, product filtering and sorting on the existing site was severely limited; shoppers were only given the option to sort products based on a handful of paramaters. Our revamped experience put the power back in the shopper's hands, which most importantly allowed them to find pieces within a specific price range and ones that featured a certain metal type.
+
+<Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>

@@ -113,9 +113,13 @@
   section {
     margin-top: 5.6rem;
 
-    & * + h2,
-    * + .video {
+    & * + *:is(.video, figure) {
       margin-top: 4rem;
     }
+
+    & * + *:is(.video, figure):has(+ *:not(.video, figure)) {
+      margin-bottom: 4rem;
+    }
+
   }
 </style>

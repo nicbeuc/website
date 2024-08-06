@@ -1,4 +1,6 @@
 <script lang="ts">
+  // To do: stop video playback if not in viewport
+
   import Icon from "$lib/Icon.svelte";
   import { crossfade } from "svelte/transition";
 
@@ -97,13 +99,13 @@
   video {
     display: block;
     height: auto !important;
-    aspect-ratio: 16/9;
     width: 100%;
     object-fit: cover;
     transform: scale(1.003);
   }
 
   button {
+    padding: 0;
     position: absolute;
     bottom: 1.6rem;
     right: 1.6rem;
@@ -119,6 +121,7 @@
     cursor: pointer;
     box-shadow: var(--shadow-low);
     backdrop-filter: var(--filter-blur-mid);
+    color: black;
 
     & .button-inner {
       width: 100%;
