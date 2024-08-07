@@ -120,6 +120,5 @@
     & * + *:is(.video, figure):has(+ *:not(.video, figure)) {
       margin-bottom: 4rem;
     }
-
   }
 </style>
