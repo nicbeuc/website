@@ -82,7 +82,7 @@
     {/if}
   </div>
   {#if caption}
-  <p class="media-caption"><Icon name="video" --icon-size="12"/>{caption}</p>
+  <p class="media-caption">{caption}</p>
   {/if}
 </div>
 

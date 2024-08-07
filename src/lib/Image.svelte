@@ -1,6 +1,4 @@
 <script lang="ts">
-  import Icon from "$lib/Icon.svelte";
-
   export let name: string;
   export let alt: string = '';
   export let caption: any = null;
@@ -17,7 +15,7 @@
   <figure>
     <enhanced:img class="img" {src} {alt} />
     {#if caption}
-      <figcaption><Icon name="image" --icon-size="12"/>{caption}</figcaption>
+      <figcaption>{caption}</figcaption>
     {/if}
   </figure>
 {:else}
