@@ -19,17 +19,15 @@ tags: ["Design", "Development", "Shopify"]
 
 As a growing boutique jewelry brand based in NYC’s competitive diamond district, r.chiara needed a refreshed website that better showcased their uniquely handcrafted pieces, while also providing an agile backend framework for quick and seamless promotional changeovers throughout the year.
 
-## The Process
-
-
-
 ## Discovered Opportunities
 
 After conducting a thorough audit of the existing site, three primary opportunities to help better meet the client's business needs were highlighted:
 
-1. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a product detail page culminated in a frustrating shopping experience.
-2. **Capturing new leads**: The site lacked a dedicated funnel to promote their jewelry resetting services — a vital part of their business.
+1. **Crafting a cohesive design language**: The site lacked a consistency in its design language, leaving the brand feeling confused and without a clear voice.
+2. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a rudimentary product detail page culminated in a frustrating shopping experience.
 3. **Supercharging the CMS**: The theme was overly rigid in its customization capabilities — limited settings for each module in the backend meant that updating the site to align with promotional or seasonal changeovers was often too time-consuming or altogether impossible.
+
+## The Process
 
 <Divider />
 
@@ -42,3 +40,7 @@ One of the weakest aspects of the existing site was the search experience. Tryin
 Similarly, product filtering and sorting on the existing site was severely limited; shoppers were only given the option to sort products based on a handful of parameters. Our revamped experience put the power back in the shopper's hands, which most importantly allowed them to find pieces within a specific price range and ones that featured a certain metal type.
 
 <Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>
+
+Our proudest enhancement was the product detail page. The client requested the ability to include high definition videos to showcase their products, while also maintaining the ability to zoom in to photos of the pieces. Our solution was a robust media gallery that gave the shopper an up-close look at the piece they were interested in.
+
+<Video name="rchiara-video-pdp" caption="An enhanced shopping experience on the main product page"/>
