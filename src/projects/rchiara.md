@@ -27,7 +27,11 @@ After conducting a thorough audit of the existing site, three primary opportunit
 2. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a rudimentary product detail page culminated in a frustrating shopping experience.
 3. **Supercharging the CMS**: The theme was overly rigid in its customization capabilities — limited settings for each module in the backend meant that updating the site to align with promotional or seasonal changeovers was often too time-consuming or altogether impossible.
 
-## The Process
+<Divider />
+
+## Crafting a Cohesive Design Language
+
+There was really no dinstict design language or brand voice on the existing site, which left the store feeling soulless and a bit like an unfinished template. The client really wanted a design style that spoke to the quality and uniqueness of their pieces, while also still letting the beauty of their jewelry shine through.
 
 <Divider />
 
@@ -41,6 +45,6 @@ Similarly, product filtering and sorting on the existing site was severely limit
 
 <Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>
 
-Our proudest enhancement was the product detail page. The client requested the ability to include high definition videos to showcase their products, while also maintaining the ability to zoom in to photos of the pieces. Our solution was a robust media gallery that gave the shopper an up-close look at the piece they were interested in.
+Perhaps our proudest enhancement was the product detail page. The client requested the ability to include high definition videos to showcase their products, while also maintaining the ability to zoom in to photos of the pieces. Our solution was a robust media gallery that gave the shopper an up-close look at the piece they were interested in.
 
 <Video name="rchiara-video-pdp" caption="An enhanced shopping experience on the main product page"/>
