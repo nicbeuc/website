@@ -31,20 +31,24 @@ After conducting a thorough audit of the existing site, three primary opportunit
 
 ## Crafting a Cohesive Design Language
 
-There was really no dinstict design language or brand voice on the existing site, which left the store feeling soulless and a bit like an unfinished template. The client really wanted a design style that spoke to the quality and uniqueness of their pieces, while also still letting the beauty of their jewelry shine through.
+The original site was missing a distinct design language and brand voice, which left it feeling unfinished and devoid of character. As a part of the redesign, the client sought to establish a design style that would convey the quality and uniqueness of their pieces while still allowing the beauty of their jewelry to take center stage.
+
+We started by gathering inspiration from a variety of sources, including the client's reference sites, to assemble a moodboard from which we could derive a distinct design direction.
+
+The end result was a design system that echoed the quality and elegance of the brand, featuring a clean and sophisticated serif font for headings, and accented by various shades of the boutique's signature pink, plum and powder colors.
 
 <Divider />
 
 ## Elevating the Shopping Experience
 
-One of the weakest aspects of the existing site was the search experience. Trying to search for a jewelry piece was a multi-step process that lacked modern ecommerce search features, such as search suggestions and predictive search. When building the updated search experience, our goal was to give the shopper a variety of pathways to find the perfect piece; whether they are looking for a specific ring, a collection for inspiration, or a page to learn more about the business.
+One of the major shortcomings of the original site was its search experience. Finding a jewelry piece required too many steps and lacked modern eCommerce features like search suggestions and predictive results. In designing the updated search experience, our goal was to provide shoppers with various pathways to discover the perfect piece—whether they're searching for a specific ring, exploring a collection for inspiration, or looking to inquire about custom bridal pieces.
 
 <Video name="rchiara-video-search" caption="The new predictive search feature in action"/>
 
-Similarly, product filtering and sorting on the existing site was severely limited; shoppers were only given the option to sort products based on a handful of parameters. Our revamped experience put the power back in the shopper's hands, which most importantly allowed them to find pieces within a specific price range and ones that featured a certain metal type.
+Product filtering and sorting on the previous site were notably limited, providing just a handful of options. Our redesigned experience gave shoppers more control, enabling them to easily filter products by price range and metal type, ensuring they could find exactly what they were looking for.
 
 <Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>
 
-Perhaps our proudest enhancement was the product detail page. The client requested the ability to include high definition videos to showcase their products, while also maintaining the ability to zoom in to photos of the pieces. Our solution was a robust media gallery that gave the shopper an up-close look at the piece they were interested in.
+A key highlight of our redesign was the transformation of the product detail page, where we aimed to enhance the way shoppers interact with and appreciate the jewelry. The client desired the capability to include high-resolution videos to showcase their jewelry, along with the option to zoom in on images. Our solution was a comprehensive media gallery that allowed shoppers to explore each piece in stunning detail.
 
 <Video name="rchiara-video-pdp" caption="An enhanced shopping experience on the main product page"/>
