@@ -10,6 +10,8 @@ roles: ["Design", "Development"]
 tags: ["Design", "Development", "Shopify"]
 ---
 
+<!-- markdownlint-disable no-inline-html -->
+
 <script>
   import Divider from '$lib/Divider.svelte';
   import Video from '$lib/Video.svelte';
@@ -23,8 +25,8 @@ As a growing boutique jewelry brand based in NYC’s competitive diamond distric
 
 After conducting a thorough audit of the existing site, three primary opportunities to help better meet the client's business needs were highlighted:
 
-1. **Crafting a cohesive design language**: The site lacked a consistency in its design language, leaving the brand feeling confused and without a clear voice.
-2. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a rudimentary product detail page culminated in a frustrating shopping experience.
+1. **Crafting a cohesive design language**: The site's design was fragmented, with no consistent visual or thematic elements to tie the brand together. This lack of coherence left the brand feeling unclear and disconnected.
+2. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a simplistic product detail page culminated in a frustrating shopping experience.
 3. **Supercharging the CMS**: The theme was overly rigid in its customization capabilities — limited settings for each module in the backend meant that updating the site to align with promotional or seasonal changeovers was often too time-consuming or altogether impossible.
 
 <Divider />
@@ -52,3 +54,7 @@ Product filtering and sorting on the previous site were notably limited, providi
 A key highlight of our redesign was the transformation of the product detail page, where we aimed to enhance the way shoppers interact with and appreciate the jewelry. The client desired the capability to include high-resolution videos to showcase their jewelry, along with the option to zoom in on images. Our solution was a comprehensive media gallery that allowed shoppers to explore each piece in stunning detail.
 
 <Video name="rchiara-video-pdp" caption="An enhanced shopping experience on the main product page"/>
+
+<Divider />
+
+## Supercharging the CMS
