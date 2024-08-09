@@ -19,11 +19,11 @@ tags: ["Design", "Development", "Shopify"]
 
 ## The Challenge
 
-As a growing boutique jewelry brand based in NYC’s competitive diamond district, r.chiara needed a refreshed website that better showcased their uniquely handcrafted pieces, while also providing an agile backend framework for quick and seamless promotional changeovers throughout the year.
+As a boutique fine jewelry brand based in the heart of NYC’s famous diamond district, r. chiara needed a refreshed website that better showcased their uniquely handcrafted pieces while also providing an agile backend framework to facilitate quick and seamless promotional changeovers throughout the year.
 
 ## Discovered Opportunities
 
-After conducting a thorough audit of the existing site, three primary opportunities to help better meet the client's business needs were highlighted:
+After conducting a thorough audit of the existing site, three primary opportunities to help make the site better meet the client's business needs were highlighted:
 
 1. **Crafting a cohesive design language**: The site's design was fragmented, with no consistent visual or thematic elements to tie the brand together. This lack of coherence left the brand feeling unclear and disconnected.
 2. **Elevating the shopping experience**: The user experience of the site lacked a clear understanding of the product and the intricacies of shopping for jewelry online — a poor search experience, the lack of controls to filter products and a simplistic product detail page culminated in a frustrating shopping experience.
