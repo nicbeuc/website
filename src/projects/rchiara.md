@@ -15,6 +15,7 @@ tags: ["Design", "Development", "Shopify"]
 <script>
   import Divider from '$lib/Divider.svelte';
   import Video from '$lib/Video.svelte';
+  import Image from '$lib/Image.svelte';
 </script>
 
 ## The Challenge
@@ -37,7 +38,11 @@ The original site was missing a distinct design language and brand voice, which 
 
 We started by gathering inspiration from a variety of sources, including the client's reference sites, to assemble a moodboard from which we could derive a distinct design direction.
 
+<Image name="rchiara-process-1" caption="A look into our ideation space" alt="Screenshot of Figma page that contains various design inspiration components" />
+
 The end result was a design system that echoed the quality and elegance of the brand, featuring a clean and sophisticated serif font for headings, and accented by various shades of the boutique's signature pink, plum and powder colors.
+
+<Image name="rchiara-styleguide" caption="A sampling of design elements used across the site" alt="r.chiara website style guide" />
 
 <Divider />
 
