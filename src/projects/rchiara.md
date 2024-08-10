@@ -44,6 +44,8 @@ The end result was a design system that echoed the quality and elegance of the b
 
 <Image name="rchiara-styleguide" caption="A sampling of design elements used across the site" alt="r.chiara website style guide" />
 
+With the help of the new design system, we composed a suite of visually consistent modules the client could use out-of-the-box throughout the site in a variety of combinations.  This gave nearly limitless possibilities for various promotions or releases throughout the season.
+
 <Divider />
 
 ## Elevating the Shopping Experience
