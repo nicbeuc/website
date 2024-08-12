@@ -38,13 +38,15 @@ The original site was missing a distinct design language and brand voice, which 
 
 We started by gathering inspiration from a variety of sources, including the client's reference sites, to assemble a moodboard from which we could derive a distinct design direction.
 
-<Image name="rchiara-process-1" caption="A look into our ideation space" alt="Screenshot of Figma page that contains various design inspiration components" />
+<Image name="rchiara-process-1" caption="A look into our ideation space" alt="Figma page that contains various design inspiration components" />
 
 The end result was a design system that echoed the quality and elegance of the brand, featuring a clean and sophisticated serif font for headings, and accented by various shades of the boutique's signature pink, plum and powder colors.
 
 <Image name="rchiara-styleguide" caption="A sampling of design elements used across the site" alt="r.chiara website style guide" />
 
 With the help of the new design system, we composed a suite of visually consistent modules the client could use out-of-the-box throughout the site in a variety of combinations.  This gave nearly limitless possibilities for various promotions or releases throughout the season.
+
+<Image name="rchiara-modules" caption="A look at a few of the content modules used on the site" alt="Isolated views of design modules" />
 
 <Divider />
 
@@ -65,3 +67,7 @@ A key highlight of our redesign was the transformation of the product detail pag
 <Divider />
 
 ## Supercharging the CMS
+
+<Divider />
+
+## Outcomes
