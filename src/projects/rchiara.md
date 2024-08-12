@@ -68,6 +68,8 @@ A key highlight of our redesign was the transformation of the product detail pag
 
 ## Supercharging the CMS
 
+A crucial component of the redesign was ensuring the client had control over the content and layout via Shopify's content management system. The previous theme was purchased through Shopify's theme market, meaning it lacked a lot of the settings that we were able to offer with a bespoke theme.
+
 <Divider />
 
 ## Outcomes

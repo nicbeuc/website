@@ -177,7 +177,7 @@ h4,
 h5,
 h6 {
 	font-weight: normal;
-	font-size: inherit;
+	font-size: var(--font-size-body-lg);
 }
 
 h2 {
@@ -228,11 +228,13 @@ main {
 article p,
 section p {
 	max-width: var(--prose-width);
+	font-size: var(--font-size-body-lg);
 }
 
 article :is(h2, h3, h4, h5, h6) {
 	margin-bottom: 1rem;
 	color: var(--color-neutral-600);
+	font-size: var(--font-size-body-lg);
 }
 
 article section + section {
@@ -264,6 +266,7 @@ article *:is(ul,ol) {
 	padding-left: 2em;
 	max-width: var(--prose-width);
 	list-style: none;
+	font-size: var(--font-size-body-lg);
 }
 
 article ol li {
