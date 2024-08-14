@@ -1,6 +1,8 @@
 import { GITHUB_TOKEN } from '$env/static/private';
 import { githubAPIEndpoint } from '$/constants';
 
+export const prerender = true;
+
 export async function load() {
 	try {
 		const response = await fetch(githubAPIEndpoint, {
