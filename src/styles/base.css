@@ -25,6 +25,15 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'SK Modernist Mono';
+	src:
+		url('/fonts/sk-modernist-mono.woff2') format('woff2'),
+		url('/fonts/sk-modernist-mono.woff') format('woff');
+	font-weight: 400;
+	font-display: swap;
+}
+
 :root {
 	--page-width: 110rem;
 
@@ -207,13 +216,32 @@ img {
 	user-select: none;
 }
 
+code, pre {
+	font-family: 'SK Modernist Mono', monospace;
+}
+
+p > code {
+	display: inline-block;
+	white-space: nowrap;
+	line-height: 1.35;
+	border-radius: .35em;
+	padding-inline: .35em;
+	letter-spacing: -.025ch;
+	background-color: var(--color-neutral-100);
+	box-shadow: 0 0 0 1px var(--color-neutral-300);
+	margin-inline-start: .1em;
+	margin-inline-end: .1em;
+	color: purple;
+	font-size: 1.5rem;
+}
+
 /* ############### */
 
 main {
 	width: calc(min(100vw, var(--max-width)) - var(--navbar-width));
 	padding: 11rem var(--padding-inline) var(--padding-inline);
 	/* min-height: 100vh; */
-	display: grid;
+	/* display: grid; */
 	margin-left: auto;
 	align-items: start;
 

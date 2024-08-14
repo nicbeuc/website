@@ -70,6 +70,8 @@ A key highlight of our redesign was the transformation of the product detail pag
 
 A crucial component of the redesign was ensuring the client had control over the content and layout via Shopify's content management system. The previous theme was purchased through Shopify's theme market, meaning it lacked a lot of the settings that we were able to offer with a bespoke theme.
 
+To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors.
+
 <Divider />
 
 ## Outcomes
