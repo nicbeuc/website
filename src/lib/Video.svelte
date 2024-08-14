@@ -88,13 +88,26 @@
 
 
 <style>
+  @media screen and (max-width: 499px) {
+    .video {
+      margin-inline: calc(var(--padding-inline) * -1);
+    }
+
+    p {
+      padding-inline: var(--padding-inline);
+    }
+  }
+
   .video-wrapper {
     overflow: hidden;
-    border-radius: var(--border-radius, var(--border-radius-media));
-    border: var(--border);
     position: relative;
     isolation: isolate;
+    @media screen and (min-width: 500px) {
+      border-radius: var(--border-radius, var(--border-radius-media));
+      border: var(--border);
+    }
   }
+
 
   video {
     display: block;

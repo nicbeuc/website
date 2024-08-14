@@ -23,12 +23,25 @@
 {/if}
 
 <style>
+
+  @media screen and (max-width: 499px) {
+    figure {
+      margin-inline: calc(var(--padding-inline) * -1);
+    }
+
+    figcaption {
+      padding-inline: var(--padding-inline);
+    }
+  }
   .img {
     aspect-ratio: var(--aspect-ratio, unset);
-    border-radius: var(--border-radius, var(--border-radius-media));
     display: block;
     height: auto;
     object-fit: cover;
-    border: var(--border);
+
+    @media screen and (min-width: 500px) {
+      border-radius: var(--border-radius, var(--border-radius-media));
+      border: var(--border);
+    }
   }
 </style>

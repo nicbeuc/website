@@ -73,6 +73,10 @@
     overflow: hidden;
     position: relative;
 
+    @media screen and (max-width: 499px) {
+      overflow: visible;
+    }
+
     & span {
       display: flex;
       gap: .4rem;
