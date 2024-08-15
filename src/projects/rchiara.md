@@ -74,7 +74,7 @@ To help differentiate sections on each page and break up large areas of white sp
 
 This gave the client the freedom to test out different looks and color combinations across the site without having to get in touch with one of our developers first.
 
-<Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="Isolated views of design modules" />
+<Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="View of the color scheme creation process" />
 
 <Divider />
 
