@@ -70,7 +70,11 @@ A key highlight of our redesign was the transformation of the product detail pag
 
 A crucial component of the redesign was ensuring the client had control over the content and layout via Shopify's content management system. The previous theme was purchased through Shopify's theme market, meaning it lacked a lot of the settings that we were able to offer with a bespoke theme.
 
-To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors.
+To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors. They could even create their own color schemes if they desired.
+
+This gave the client the freedom to test out different looks and color combinations across the site without having to get in touch with one of our developers first.
+
+<Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="Isolated views of design modules" />
 
 <Divider />
 
