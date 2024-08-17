@@ -72,9 +72,11 @@ A crucial component of the redesign was ensuring the client had control over the
 
 To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors. They could even create their own color schemes if they desired.
 
-This gave the client the freedom to test out different looks and color combinations across the site without having to get in touch with one of our developers first.
+This gave the client the freedom to test out different looks and color combinations across the site without having to go through our development team.
 
 <Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="View of the color scheme creation process" />
+
+Along the same lines, we intentionally designed the content modules to support a few different layouts that gave the client a variety of options to display copy and media across the site.
 
 <Divider />
 
