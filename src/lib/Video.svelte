@@ -1,14 +1,14 @@
 <script lang="ts">
-  // To do: stop video playback if not in viewport
-
   import Icon from "$lib/Icon.svelte";
+  import { onMount } from "svelte";
   import { crossfade } from "svelte/transition";
 
   export let name: string;
   export let caption: string;
 
-  let paused = false;
-  let video;
+  let isVisible = false;
+  let manuallyPaused = false;
+  let video: HTMLVideoElement;
 
   const [send, receive] = crossfade({
     duration: 150
@@ -33,8 +33,29 @@
 	let srcPoster = Object.entries(allPosters).filter(([k, _]) => k.includes(name)).map(([_, v]) => v as string)[0];
 
   function handleMediaControlClick() {
-    paused ? video.play() : video.pause();
-    paused = !paused;
+    manuallyPaused ? video.play() : video.pause();
+    manuallyPaused = !manuallyPaused;
+  }
+
+  onMount(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+    }, {
+      root: null,
+      threshold: 0.5
+    });
+
+    if (video) observer.observe(video);
+
+    return () => {
+      observer.disconnect();
+    }
+  });
+
+  $: if (isVisible && !manuallyPaused) {
+    video?.play();
+  } else {
+    video?.pause();
   }
 </script>
 
@@ -45,13 +66,11 @@
         width="100%"
         height="100%"
         poster={srcPoster ? srcPoster : null}
-        autoplay
         loop
         muted
         defaultmuted
         playsinline
         preload="auto"
-        bind:paused
         bind:this={video}
       >
         {#if srcWebm}
@@ -66,7 +85,7 @@
       >
         <span class="sr-only">Pause the video</span>
         <div class="button-inner">
-          {#if paused}
+          {#if manuallyPaused}
             <div in:send={{ key: 'mediaButtonIcons' }} out:receive={{ key: 'mediaButtonIcons' }}>
               <Icon name="play"/>
             </div>
