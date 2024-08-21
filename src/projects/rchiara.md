@@ -74,9 +74,17 @@ To help differentiate sections on each page and break up large areas of white sp
 
 This gave the client the freedom to test out different looks and color combinations across the site without having to go through our development team.
 
-<Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="View of the color scheme creation process" />
+<Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="Color scheme creation process" />
 
 Along the same lines, we intentionally designed the content modules to support a few different layouts that gave the client a variety of options to display copy and media across the site.
+
+The hero module, for example, came packaged with a selection of layouts that could accomodate images with varying focal points. Given that one of the client's chief complaints with the old theme was that the text in the hero section was often blocking important parts of the image, it was imperative that we developed a toolkit that remedied these recurring issues.
+
+<Image name="rchiara-hero" caption="Our new hero module opened up hundreds of new possibilies" alt="Views of a variety of different hero section lockups that are possible" />
+
+To keep everything regarding the site's customization capabilities organized and easily accessible for the client, we set aside ample time to carefully document each module and it's various settings on a dedicated GitBook microsite.
+
+<Image name="rchiara-docs" caption="A look at the GitBook site containing documentation for the store's CMS" alt="View of the r.chiara GitBook on a page titled Popups" />
 
 <Divider />
 
