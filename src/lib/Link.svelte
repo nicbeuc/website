@@ -9,7 +9,7 @@
 <a href={href ? href : '#'} target={external ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
   <slot />
   {#if external}
-    <Icon name="arrow-diagonal" --icon-size=".8em"/>
+    <Icon name="arrow-top-right" --icon-size=".8em"/>
   {/if}
 </a>
 

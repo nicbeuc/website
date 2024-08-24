@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
 	export type IconName =
-    | 'arrow-diagonal'
+    | 'arrow-top-right'
+    | 'arrow-bottom-right'
     | 'menu-dots'
     | 'dots-vertical'
     | 'close'
@@ -30,8 +31,11 @@
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  {#if name == 'arrow-diagonal'}
+  {#if name == 'arrow-top-right'}
     <path d="M5.63605 18.364L18.364 5.63603M18.364 5.63603L8.46446 5.63604M18.364 5.63603V15.5355"></path>
+  {/if}
+  {#if name == 'arrow-bottom-right'}
+    <path d="M18.5 18.5L5.5 5.5M18.5 18.5H8.5M18.5 18.5V8.5"></path>
   {/if}
   {#if name == 'menu-dots'}
     <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"></path>

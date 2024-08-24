@@ -16,6 +16,8 @@ tags: ["Design", "Development", "Shopify"]
   import Divider from '$lib/Divider.svelte';
   import Video from '$lib/Video.svelte';
   import Image from '$lib/Image.svelte';
+  import MetricsWrapper from '$lib/MetricsWrapper.svelte';
+  import Metric from '$lib/Metric.svelte';
 </script>
 
 ## The Challenge
@@ -89,3 +91,17 @@ To keep everything regarding the site's customization capabilities organized and
 <Divider />
 
 ## Outcomes
+
+After two months of work, we shipped a fully customized Shopify theme that was built on the foundations of cohesive design, an elevated shopping experience, and a content management system that was developed with the future in mind. Not only did we completely revamp the store, but we also developed a set of docs that the client could easily refer to when making changes to the store post-launch, with the goal of reducing the need to go through our development team first for the more trivial updates and giving the power of content back to the client.
+
+Looking back two months after we launched the new theme, we were pleased to find that the store had improved on three key metrics when compared to the final two-month period sporting the old theme:
+
+<MetricsWrapper>
+  <Metric name="Total Sales" delta={49} />
+  <Metric name="Avg Order Value" delta={88} />
+  <Metric name="Returning Customer Rate" delta={42} />
+</MetricsWrapper>
+
+<Divider />
+
+## Learnings
