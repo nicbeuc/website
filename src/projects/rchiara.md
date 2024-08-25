@@ -18,6 +18,7 @@ tags: ["Design", "Development", "Shopify"]
   import Image from '$lib/Image.svelte';
   import MetricsWrapper from '$lib/MetricsWrapper.svelte';
   import Metric from '$lib/Metric.svelte';
+  import Disclaimer from '$lib/Disclaimer.svelte';
 </script>
 
 ## The Challenge
@@ -102,6 +103,10 @@ Looking back two months after we launched the new theme, we were pleased to find
   <Metric name="Returning Customer Rate" delta={42} />
 </MetricsWrapper>
 
+<Disclaimer>as of August 24, 2024</Disclaimer>
+
 <Divider />
 
-## Learnings
+## Takeaways
+
+Above all, this project was a prime example of how crucial a proper CMS is to a successful website redesign. One the client's biggest issues with the old site was the lack of control they had over different aspects of the store and its content. Building around a robust content management system challenged a lot of our initial design choices, but ultimately helped us develop a storefront that was built to handle a variety of configurations over time. It was a valuable lesson in putting both the user and client experience at the forefront of the design process.
