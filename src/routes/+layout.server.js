@@ -11,11 +11,11 @@ export async function load() {
 			}
 		});
 
-		const commitData = await response.json()
+		const commitData = await response.json();
 		const timestamp = new Date(commitData.commit.committer.date).toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
+			year: '2-digit',
+			month: '2-digit',
+			day: '2-digit'
 		});
 
 		const id = commitData.sha.slice(0, 7);
@@ -33,9 +33,9 @@ export async function load() {
 		return {
 			commitData: {
 				error: {
-					message: "Could not fetch timestamp."
+					message: 'Could not fetch timestamp.'
 				}
 			}
-		}
+		};
 	}
 }

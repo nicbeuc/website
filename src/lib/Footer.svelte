@@ -18,17 +18,19 @@
 <style>
   footer {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       "updated updated"
       "links copyright";
     row-gap: .8rem;
+    column-gap: .8rem;
     align-items: center;
     margin-bottom: 3.2rem;
     padding-top: 3.2rem;
     width: 100%;
     position: relative;
+    justify-content: center;
     /* view-transition-name: footer; */
 
     @media screen and (min-width: 800px) {
@@ -45,7 +47,7 @@
 
     & *:nth-child(3) {
       grid-area: copyright;
-      justify-self: end;
+      /* justify-self: end; */
     }
 
     &::after {
