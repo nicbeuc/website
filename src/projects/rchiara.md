@@ -63,7 +63,7 @@ Product filtering and sorting on the previous site were notably limited, providi
 
 <Video name="rchiara-video-filter" caption="Shoppers can filter by price, metal, gemstone and more"/>
 
-A key highlight of our redesign was the transformation of the product detail page, where we aimed to enhance the way shoppers interact with and appreciate the jewelry. The client desired the capability to include high-resolution videos to showcase their jewelry, along with the option to zoom in on images. Our solution was a comprehensive media gallery that allowed shoppers to explore each piece in stunning detail.
+A key highlight of our redesign was the transformation of the product detail page, where we aimed to enhance the way shoppers interact with and appreciate the jewelry. The client wanted to include high-resolution videos to showcase their jewelry on the product pages, along with the option to zoom in on images. Our solution was a comprehensive media gallery that allowed shoppers to explore each piece in extra-fine detail.
 
 <Video name="rchiara-video-pdp" caption="An enhanced shopping experience on the main product page"/>
 
@@ -71,21 +71,21 @@ A key highlight of our redesign was the transformation of the product detail pag
 
 ## Supercharging the CMS
 
-A crucial component of the redesign was ensuring the client had control over the content and layout via Shopify's content management system. The previous theme was purchased through Shopify's theme market, meaning it lacked a lot of the settings that we were able to offer with a bespoke theme.
+A crucial component of the redesign was ensuring the client had control over the content and layout via Shopify's content management system. The previous theme was purchased through Shopify's theme market, but it lacked a lot of the settings that a fully bespoke theme could offer.
 
-To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors. They could even create their own color schemes if they desired.
+An example of just one of these enhanced settings was a global color scheme library. To help differentiate sections on each page and break up large areas of white space, nearly every module included a `color_scheme` setting to change the foreground, background and accent colors. They could even create their own color schemes if they desired.
 
 This gave the client the freedom to test out different looks and color combinations across the site without having to go through our development team.
 
 <Image name="rchiara-cms-colors" caption="Shopify's global settings schema allowed us to compose the color schemes used on the store" alt="Color scheme creation process" />
 
-Along the same lines, we intentionally designed the content modules to support a few different layouts that gave the client a variety of options to display copy and media across the site.
+Along the same lines, we intentionally designed the content modules to support different layouts that gave the client a variety of options to display copy and media across the site.
 
-The hero module, for example, came packaged with a selection of layouts that could accomodate images with varying focal points. Given that one of the client's chief complaints with the old theme was that the text in the hero section was often blocking important parts of the image, it was imperative that we developed a toolkit that remedied these recurring issues.
+The hero module, for example, came pre-packaged with a selection of layouts that could accomodate images with varying focal points. Given that one of the client's chief complaints with the old theme was that the text in the hero section was often blocking important parts of the image, it was imperative that we developed a toolkit that remedied these recurring issues.
 
 <Image name="rchiara-hero" caption="Our new hero module opened up hundreds of new possibilies" alt="Views of a variety of different hero section lockups that are possible" />
 
-To keep everything regarding the site's customization capabilities organized and easily accessible for the client, we set aside ample time to carefully document each module and it's various settings on a dedicated GitBook microsite.
+To keep everything regarding the site's customization capabilities organized and easily accessible for the client, we set aside ample time to create documentations for each module and it's various settings.
 
 <Image name="rchiara-docs" caption="A look at the GitBook site containing documentation for the store's CMS" alt="View of the r.chiara GitBook on a page titled Popups" />
 
@@ -93,9 +93,9 @@ To keep everything regarding the site's customization capabilities organized and
 
 ## Outcomes
 
-After two months of work, we shipped a fully customized Shopify theme that was built on the foundations of cohesive design, an elevated shopping experience, and a content management system that was developed with the future in mind. Not only did we completely revamp the store, but we also developed a set of docs that the client could easily refer to when making changes to the store post-launch, with the goal of reducing the need to go through our development team first for the more trivial updates and giving the power of content back to the client.
+After two months of work, we shipped a fully customized Shopify theme that was built on the foundations of cohesive design, an elevated shopping experience, and a future-proof content management setup. Not only did we completely revamp the store, but we also developed a set of docs that the client could easily refer to when making changes to the store post-launch. This ultimately reduced the frequency of needing to get in touch with our development team for the more trivial updates across the site, giving the power of content back to the client.
 
-Looking back two months after we launched the new theme, we were pleased to find that the store had improved on three key metrics when compared to the final two-month period sporting the old theme:
+Two months after launching the new theme, we were pleased to see improvements in three key metrics compared to the last two months with the old theme:
 
 <MetricsWrapper>
   <Metric name="Total Sales" delta={49} />
@@ -109,4 +109,4 @@ Looking back two months after we launched the new theme, we were pleased to find
 
 ## Takeaways
 
-Above all, this project was a prime example of how crucial a proper CMS is to a successful website redesign. One the client's biggest issues with the old site was the lack of control they had over different aspects of the store and its content. Building around a robust content management system challenged a lot of our initial design choices, but ultimately helped us develop a storefront that was built to handle a variety of configurations over time. It was a valuable lesson in putting both the user and client experience at the forefront of the design process.
+Above all, this project was a prime example of how crucial a proper CMS is to a successful website redesign. One the client's biggest issues with the old site was the lack of control they had over different aspects of the store and its content. Building around a more robust content management system challenged a lot of our initial design choices, but ultimately helped us develop a storefront that was built to handle a variety of configurations over time. It was a valuable lesson in putting both the user and client experience at the forefront of the design process.

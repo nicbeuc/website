@@ -76,12 +76,9 @@
 		--padding-inline: 2rem;
 	}
 
-	--shadow-low: 0px 0.2px 0.7px -4px rgba(0, 0, 0, 0.014),
-  0px 0.5px 1.6px -4px rgba(0, 0, 0, 0.02),
-  0px 1px 3px -4px rgba(0, 0, 0, 0.025),
-  0px 1.8px 5.4px -4px rgba(0, 0, 0, 0.03),
-  0px 3.3px 10px -4px rgba(0, 0, 0, 0.036),
-  0px 8px 24px -4px rgba(0, 0, 0, 0.05);
+	--shadow-low: 0px 0.2px 0.7px -4px rgba(0, 0, 0, 0.014), 0px 0.5px 1.6px -4px rgba(0, 0, 0, 0.02),
+		0px 1px 3px -4px rgba(0, 0, 0, 0.025), 0px 1.8px 5.4px -4px rgba(0, 0, 0, 0.03),
+		0px 3.3px 10px -4px rgba(0, 0, 0, 0.036), 0px 8px 24px -4px rgba(0, 0, 0, 0.05);
 
 	--border: 0.1rem solid var(--color-neutral-200);
 	--border-dashed: 0.1rem dashed var(--color-neutral-200);
@@ -216,7 +213,8 @@ img {
 	user-select: none;
 }
 
-code, pre {
+code,
+pre {
 	font-family: 'SK Modernist Mono', monospace;
 }
 
@@ -224,13 +222,13 @@ p > code {
 	display: inline-block;
 	white-space: nowrap;
 	line-height: 1.35;
-	border-radius: .35em;
-	padding-inline: .35em;
-	letter-spacing: -.025ch;
+	border-radius: 0.35em;
+	padding-inline: 0.35em;
+	letter-spacing: -0.025ch;
 	background-color: var(--color-neutral-100);
 	box-shadow: 0 0 0 1px var(--color-neutral-300);
-	margin-inline-start: .1em;
-	margin-inline-end: .1em;
+	margin-inline-start: 0.1em;
+	margin-inline-end: 0.1em;
 	color: purple;
 	font-size: 1.5rem;
 }
@@ -290,7 +288,7 @@ article *:is(p, ul, ol) + *:is(p, ul, ol) {
 	margin-top: 2.4rem;
 }
 
-article *:is(ul,ol) {
+article *:is(ul, ol) {
 	padding-left: 2em;
 	max-width: var(--prose-width);
 	list-style: none;
@@ -302,9 +300,9 @@ article ol li {
 }
 
 article ol li:before {
-	content: counter(num) ". ";
+	content: counter(num) '. ';
 	position: absolute;
-	top: .2em;
+	top: 0.2em;
 	left: -2.5em;
 	color: var(--color-neutral-700);
 	font-weight: 600;
@@ -314,8 +312,8 @@ article ol li:before {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-neutral-200);
-	font-size: .8em;
-	border-radius: .4em;
+	font-size: 0.8em;
+	border-radius: 0.4em;
 }
 
 article ol {
@@ -327,7 +325,7 @@ article li {
 }
 
 article li + li {
-	margin-top: 0.6rem;
+	margin-top: 1rem;
 }
 
 article ul li::before {
