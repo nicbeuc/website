@@ -47,7 +47,7 @@
 
     & *:nth-child(3) {
       grid-area: copyright;
-      /* justify-self: end; */
+      justify-self: end;
     }
 
     &::after {
