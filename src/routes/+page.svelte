@@ -24,6 +24,9 @@
     {/each}
   {/if}
 </section>
+<section>
+  <h2>Personal Projects</h2>
+</section>
 
 <style>
   section:first-of-type {
