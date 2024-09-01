@@ -29,13 +29,10 @@
 </section>
 
 <style>
-  section:first-of-type {
-    padding-bottom: 4.8rem;
-    border-bottom: var(--border);
-  }
-
   section + section {
+    border-top: var(--border);
     margin-top: 4.8rem;
+    padding-top: 4.8rem;
   }
 
   section p + p {
