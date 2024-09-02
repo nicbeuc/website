@@ -5,10 +5,6 @@
 <article>
   <h1 class="page-title">Colophon</h1>
   <section>
-    <h2>Typography</h2>
-    <p>This website is set in <InlineLink href="https://seankanedesign.gumroad.com/l/sk-modernist" external>SK Modernist</InlineLink>, a beautiful geometric sans-serif font with a pinch of character, designed by <InlineLink href="https://seankanedesign.gumroad.com/" external>Sean Kane</InlineLink>. All fonts used on the site were purchased and are properly licensed.</p>
-  </section>
-  <section>
     <h2>Icons</h2>
     <p>This website features <InlineLink href="https://basicons.xyz/" external>Basicons</InlineLink>, a simple and sharp icon suite created by <InlineLink href="https://www.preciousm.co/" external>Precious Madubuike</InlineLink> and <InlineLink href="https://www.linkedin.com/in/solomon-omojola-6255198a/" external>Solomon Omojola</InlineLink>.</p>
   </section>
