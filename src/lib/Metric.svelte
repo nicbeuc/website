@@ -5,12 +5,11 @@
   export let delta: number;
 
   const icon = delta > 0 ? 'arrow-top-right' : 'arrow-bottom-right';
-  const deltaPercentage = delta + '%';
 </script>
 
 <dl>
   <dt>{name}</dt>
-  <dd><Icon name={icon} --icon-size=".65em"/><span>{deltaPercentage}</span></dd>
+  <dd><Icon name={icon} --icon-size=".65em"/><span>{delta}<span>%</span></span></dd>
 </dl>
 
 <style>
@@ -42,6 +41,14 @@
     align-items: baseline;
     line-height: 1;
     gap: .2em;
-    letter-spacing: -.05ch;
+    /* letter-spacing: -.05ch; */
+    font-weight: 400;
+    /* font-family: var(--font-family-mono); */
+  }
+
+  dd span span {
+    font-size: .75em;
+    margin-inline-start: .15em;
+    color: var(--color-neutral-600);
   }
 </style>

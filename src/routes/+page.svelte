@@ -1,6 +1,7 @@
 <script>
   import ProjectCard from '$lib/ProjectCard.svelte';
   import InlineLink from '$lib/InlineLink.svelte';
+  import UnderConstruction from '$lib/UnderConstruction.svelte';
   import { metaContent } from '$/constants';
   export let data;
 
@@ -26,6 +27,7 @@
 </section>
 <section>
   <h2>Personal Projects</h2>
+  <UnderConstruction>Coming Soon</UnderConstruction>
 </section>
 
 <style>
