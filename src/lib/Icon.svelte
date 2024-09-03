@@ -12,7 +12,8 @@
     | 'video'
     | 'pause'
     | 'play'
-    | 'asterisk';
+    | 'asterisk'
+    | 'cone';
 </script>
 
 <script lang="ts">
@@ -83,6 +84,9 @@
   {/if}
   {#if name == 'asterisk'}
     <path d="M12 4V20M18 6L6.00001 18M20 12L4 12M18 18L6.00001 6.00001"></path>
+  {/if}
+  {#if name == 'cone'}
+    <path d="M3 21H21M7 15H17M9 9H15M19 21L13.3162 3.94868C13.1274 3.38214 12.5972 3 12 3C11.4028 3 10.8726 3.38214 10.6838 3.94868L5 21"></path>
   {/if}
 </svg>
 

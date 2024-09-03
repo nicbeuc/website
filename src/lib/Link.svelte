@@ -17,7 +17,7 @@
   a {
     text-decoration: none;
     color: var(--color-neutral-600);
-    transition: color var(--transition-fast);
+    transition: color var(--transition-fast), font-weight var(--transition-fast);
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -34,6 +34,7 @@
 
     &[aria-current] {
       color: inherit;
+      font-weight: 500;
     }
 
     &[target="_blank"] {
