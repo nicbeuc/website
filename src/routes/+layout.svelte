@@ -5,6 +5,7 @@
   import ScrollFade from '$lib/ScrollFade.svelte';
   import MobileNav from '$lib/MobileNav.svelte';
 	import Footer from '$lib/Footer.svelte';
+  import ogImage from '$images/og-image.jpg';
   import '$styles/base.css';
 
   export let data;
@@ -22,13 +23,7 @@
 </script>
 
 <svelte:head>
-  <meta property="og:url" content="https://nickbeuchat.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Nick Beuchat · Designer & Creative Developer" />
-  <meta property="og:description" content="Nick Beuchat is a designer and creative developer with a passion for crafting simple, inclusive solutions for the web." />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta property="og:image:secure_url" content="/og-image.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image" content={ogImage} />
 </svelte:head>
 
 <div class="wrapper">
