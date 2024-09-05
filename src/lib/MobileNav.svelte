@@ -147,7 +147,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
     border-radius: 1rem;
 
     & > div {

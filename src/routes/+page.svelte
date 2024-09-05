@@ -10,6 +10,7 @@
 
 <svelte:head>
   <title>{ metaContent.title }</title>
+  <meta name="description" content="Nick Beuchat is a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.">
 </svelte:head>
 
 <section>
