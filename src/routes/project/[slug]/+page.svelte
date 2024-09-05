@@ -21,6 +21,7 @@
 
 <svelte:head>
   <title>{client} · {meta.title}</title>
+  <meta name="description" content={lead}>
 </svelte:head>
 
 <article>
