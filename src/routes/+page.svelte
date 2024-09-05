@@ -43,6 +43,6 @@
   }
 
   section h2 {
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
   }
 </style>

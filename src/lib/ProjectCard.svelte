@@ -131,7 +131,7 @@
 
   .meta {
     font-size: var(--font-size-body-sm);
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
     grid-area: meta;
     display: grid;
     grid-template-columns: auto 1fr;
