@@ -5,6 +5,7 @@
   import ScrollFade from '$lib/ScrollFade.svelte';
   import MobileNav from '$lib/MobileNav.svelte';
 	import Footer from '$lib/Footer.svelte';
+  import ogImage from '$images/og-image.jpg';
   import '$styles/base.css';
 
   export let data;
@@ -20,6 +21,10 @@
     });
   });
 </script>
+
+<svelte:head>
+  <meta property="og:image" content={ogImage} />
+</svelte:head>
 
 <div class="wrapper">
   <ScrollFade />
