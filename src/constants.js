@@ -9,5 +9,5 @@ export const githubAPIEndpoint = 'https://api.github.com/repos/nicbeuc/website/c
 
 export const metaContent = {
 	title: 'Nick Beuchat · Designer & Creative Developer',
-	ogImage: 'https://www.nickbeuchat.com/og-image.jpg'
+	ogImage: 'https://nickbeuchat.com/og-image.jpg'
 };
