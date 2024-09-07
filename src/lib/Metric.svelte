@@ -30,7 +30,7 @@
   }
 
   dt {
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
     font-size: var(--font-size-body-sm);
     line-height: 1.2;
   }
