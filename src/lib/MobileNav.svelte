@@ -2,6 +2,7 @@
   import Icon from "$lib/Icon.svelte";
   import Logo from "$lib/Logo.svelte";
   import Link from "$lib/Link.svelte";
+  import CopyEmail from "$lib/CopyEmail.svelte";
   import { socialLinks } from "$/constants";
   import { crossfade } from "svelte/transition";
   import { cubicOut, cubicIn } from "svelte/easing";
@@ -90,7 +91,8 @@
           <p>Designer & Creative Developer</p>
         </div>
         <ul>
-          <li><Link href={socialLinks.mail}>Email</Link></li>
+          <!-- <li><Link href={socialLinks.mail}>Email</Link></li> -->
+          <li><CopyEmail>Email</CopyEmail></li>
           <li><Link href={socialLinks.github} external>GitHub</Link></li>
           <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
         </ul>

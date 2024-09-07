@@ -2,6 +2,7 @@
   import Link from "$lib/Link.svelte";
   import Logo from "$lib/Logo.svelte";
   import LastUpdated from "$lib/LastUpdated.svelte";
+  import CopyEmail from "$lib/CopyEmail.svelte";
   import { socialLinks } from "$/constants";
 
   export let data;
@@ -22,7 +23,8 @@
   <nav class="navbar__links">
     <Link href="/">Home</Link>
     <Link href="/now">Now</Link>
-    <Link href={socialLinks.mail}>Email</Link>
+    <!-- <Link href={socialLinks.mail}>Email</Link> -->
+    <CopyEmail>Email</CopyEmail>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
   </nav>
