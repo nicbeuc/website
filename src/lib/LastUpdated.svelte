@@ -31,6 +31,7 @@
     & a {
       margin-inline-start: .5em;
       justify-content: end;
+      color: var(--color-neutral-700);
     }
 
     & svg {
