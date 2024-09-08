@@ -1,6 +1,5 @@
 <script>
   import Icon from "$lib/Icon.svelte";
-  import Link from "$lib/Link.svelte";
   export let project;
 
   const {
@@ -15,25 +14,23 @@
 </script>
 
 <article>
-  <h3>{title}</h3>
+  <h3>
+    {#if link}
+      <a href={link} target="_blank">
+        {title}
+        <Icon name="arrow-top-right" --icon-size=".9em"/>
+      </a>
+    {:else}
+      {title}
+    {/if}
+  </h3>
   {#if info?.length > 0}
     <p>{info}</p>
   {/if}
-  <!-- <dl>
-    <dt>Role{roles.length > 1 ? 's' : ''}</dt>
-    <dd>
-      {#each roles as role, i}
-        {i + 1 !== roles.length ? role + ', ' : role}
-      {/each}
-    </dd>
-    <dt>Team</dt>
-    <dd>{team}</dd>
-    <dt>Year</dt>
+  <dl>
+    <dt class="sr-only">Year</dt>
     <dd>{year}</dd>
-  </dl> -->
-  {#if link}
-    <Link href={link} external>View live site</Link>
-  {/if}
+  </dl>
 </article>
 
 <style>
@@ -41,31 +38,23 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
-      "title link"
-      "info  info"
-      "meta  meta";
+      "title meta"
+      "info  meta";
+    column-gap: 1rem;
+    row-gap: .8rem;
 
     @media screen and (max-width: 499px) {
+      row-gap: 1.2rem;
+      grid-template-columns: 1fr;
       grid-template-areas:
         "title"
         "info"
-        "meta"
-        "link";
+        "meta";
     }
 
     &:not(:first-of-type) {
       margin-top: 3.2rem;
       /* border-top: var(--border); */
-    }
-
-    & a {
-      grid-area: link;
-      align-self: baseline;
-      line-height: 1.8rem;
-
-      @media screen and (max-width: 499px) {
-        margin-top: 1.6rem;
-      }
     }
   }
 
@@ -76,39 +65,60 @@
   }
 
   dl {
-    font-size: var(--font-size-body-sm);
-    color: var(--color-neutral-600);
-    display: grid;
+    display: flex;
+    align-items: start;
     grid-area: meta;
-    grid-auto-flow: column dense;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    column-gap: 2.4rem;
-    justify-content: start;
-    margin-top: 1.6rem;
+  }
 
-    /* @media screen and (max-width: 949px) {
-      grid-template-rows: repeat(4, auto);
-
-      & dt:nth-of-type(even) {
-        margin-top: 1.2rem;
-      }
-    } */
-
-    @media screen and (max-width: 499px) {
-      column-gap: 2.4rem;
-    }
-
-    & dd {
-      color: black;
-    }
+  dd {
+    display: block;
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-700);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .2rem .8rem;
+    border-radius: 100vw;
+    box-shadow: 0 0 0 .1rem var(--color-neutral-300);
   }
 
   h3 {
     grid-area: title;
     color: black;
     font-size: var(--font-size-body-lg);
-    margin-bottom: .8rem;
     line-height: 1.8rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+
+    & a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: .35em;
+
+      & svg {
+        color: var(--color-neutral-500);
+        transition: color var(--transition-fast);
+      }
+
+      &:hover svg {
+        color: black;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: relative;
+      align-self: stretch;
+      flex-grow: 1;
+      border-bottom: var(--border-dashed);
+    }
+
+    @media screen and (max-width: 499px) {
+      &::after {
+        display: none;
+      }
+    }
   }
 </style>

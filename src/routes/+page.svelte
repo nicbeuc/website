@@ -51,6 +51,7 @@
 
   section h2 {
     color: var(--color-neutral-600);
+    margin-bottom: 3.2rem;
   }
 
   ul {
