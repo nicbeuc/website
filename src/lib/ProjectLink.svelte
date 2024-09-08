@@ -1,5 +1,6 @@
 <script>
   import Icon from "$lib/Icon.svelte";
+  import M3Icon from "$lib/M3Icon.svelte";
   export let project;
 
   const {
@@ -28,6 +29,8 @@
     <p>{info}</p>
   {/if}
   <dl>
+    <dt class="sr-only">Team</dt>
+    <dd><span class="sr-only">Make Me Modern</span><M3Icon /></dd>
     <dt class="sr-only">Year</dt>
     <dd>{year}</dd>
   </dl>
@@ -53,7 +56,7 @@
     }
 
     &:not(:first-of-type) {
-      margin-top: 3.2rem;
+      margin-top: 2.8rem;
       /* border-top: var(--border); */
     }
   }
@@ -68,6 +71,7 @@
     display: flex;
     align-items: start;
     grid-area: meta;
+    gap: .4rem;
   }
 
   dd {
@@ -76,9 +80,19 @@
     color: var(--color-neutral-700);
     font-size: 1rem;
     font-weight: 500;
-    padding: .2rem .8rem;
+    line-height: 2rem;
+    padding: 0 .6rem;
     border-radius: 100vw;
     box-shadow: 0 0 0 .1rem var(--color-neutral-300);
+
+    &:has(svg) {
+      padding: 0;
+    }
+
+    & svg {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   h3 {
@@ -110,9 +124,10 @@
     &::after {
       content: '';
       position: relative;
-      align-self: stretch;
+      align-self: center;
       flex-grow: 1;
       border-bottom: var(--border-dashed);
+      margin-top: .1rem;
     }
 
     @media screen and (max-width: 499px) {

@@ -41,8 +41,8 @@
 <style>
   section + section {
     border-top: var(--border);
-    margin-top: 4.8rem;
-    padding-top: 4.8rem;
+    margin-top: 5.6rem;
+    padding-top: 5.6rem;
   }
 
   section p + p {
@@ -52,6 +52,7 @@
   section h2 {
     color: var(--color-neutral-600);
     margin-bottom: 3.2rem;
+    font-weight: 300;
   }
 
   ul {
