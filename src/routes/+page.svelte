@@ -1,8 +1,9 @@
 <script>
   import ProjectCard from '$lib/ProjectCard.svelte';
+  import ProjectLink from '$lib/ProjectLink.svelte';
   import InlineLink from '$lib/InlineLink.svelte';
   import UnderConstruction from '$lib/UnderConstruction.svelte';
-  import { metaContent } from '$/constants';
+  import { metaContent, otherProjects } from '$/constants';
   export let data;
 
   const projects = data.projects;
@@ -20,15 +21,21 @@
 </section>
 <section>
   <h2>Featured Work</h2>
-  {#if projects.length}
+  {#if projects.length > 0}
     {#each projects as project}
       <ProjectCard {project} />
     {/each}
   {/if}
 </section>
 <section>
-  <h2>Personal Projects</h2>
-  <UnderConstruction>Coming Soon</UnderConstruction>
+  <h2>Other Work</h2>
+  <ul>
+    {#if otherProjects.length > 0}
+      {#each otherProjects as project}
+        <ProjectLink {project} />
+      {/each}
+    {/if}
+  </ul>
 </section>
 
 <style>
@@ -44,5 +51,11 @@
 
   section h2 {
     color: var(--color-neutral-600);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 </style>

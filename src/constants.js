@@ -34,20 +34,20 @@ export const otherProjects = [
 	{
 		title: 'Breezy Golf',
 		client: 'Doing Things Media',
-		info: '',
+		info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		link: 'https://breezygolf.com/',
 		year: '2023',
 		team: 'Make Me Modern',
-		roles: ['Design, Development']
+		roles: ['Design', 'Development']
 	},
 	{
 		title: 'Dr. Noze Best',
 		client: 'Dr. Noze Best',
-		info: '',
+		info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		link: 'https://drnozebest.com/',
 		year: '2023',
 		team: 'Make Me Modern',
-		roles: ['Design', 'Development', 'Project Management']
+		roles: ['Design', 'Development']
 	}
 	// Wet Tennis
 ];
