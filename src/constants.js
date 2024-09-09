@@ -25,7 +25,7 @@ export const otherProjects = [
 	{
 		title: 'Shop The Sims',
 		client: 'Electronic Arts',
-		info: 'A Shopify store for a line of merchandise that celebrates The Sims, one of the best selling video games of all time.',
+		info: 'A Shopify store for a line of merchandise that celebrates The Sims, one of the best selling video game franchises of all time.',
 		link: 'https://shopthesims.com/',
 		year: '2023',
 		team: 'Make Me Modern',
