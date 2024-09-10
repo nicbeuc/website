@@ -33,6 +33,12 @@
     <dd><span class="sr-only">Make Me Modern</span><M3Icon /></dd>
     <dt class="sr-only">Year</dt>
     <dd>{year}</dd>
+    <dt class="sr-only">Roles</dt>
+    <dd>
+      {#each roles as role, i}
+        {i + 1 !== roles.length ? role + ', ' : role}
+      {/each}
+    </dd>
   </dl>
 </article>
 
@@ -57,7 +63,10 @@
 
     &:not(:first-of-type) {
       margin-top: 2.8rem;
-      /* border-top: var(--border); */
+
+      @media screen and (max-width: 499px) {
+        margin-top: 3.2rem;
+      }
     }
   }
 
@@ -71,7 +80,11 @@
     display: flex;
     align-items: start;
     grid-area: meta;
-    gap: .4rem;
+    gap: .1rem;
+
+    @media screen and (max-width: 499px) {
+      gap: .6rem;
+    }
   }
 
   dd {
@@ -79,7 +92,7 @@
     background-color: var(--color-neutral-100);
     color: var(--color-neutral-700);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2rem;
     padding: 0 .6rem;
     border-radius: 100vw;
@@ -103,15 +116,19 @@
     margin-bottom: 0;
     display: flex;
     align-items: baseline;
+    line-height: 1.2;
     gap: 1rem;
 
     & a {
       text-decoration: none;
-      display: flex;
+      /* display: flex; */
       align-items: center;
       gap: .35em;
 
       & svg {
+        display: inline;
+        vertical-align: middle;
+        transform: translateY(-.1rem);
         color: var(--color-neutral-500);
         transition: color var(--transition-fast);
       }

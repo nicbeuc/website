@@ -329,3 +329,20 @@ main:has(.error-page) {
 	height: 100vh;
 	place-content: center;
 }
+
+/* Icon wrapper */
+
+.icon-wrapper {
+	display: inline-flex;
+	vertical-align: middle;
+	border-radius: 100vw;
+	overflow: hidden;
+	outline: 0.1rem solid var(--color-neutral-300);
+	margin-inline-end: 0.4em;
+}
+
+.icon-wrapper svg {
+	display: inline;
+	width: 1.2em;
+	height: 1.2em;
+}

@@ -16,7 +16,7 @@ export const otherProjects = [
 	{
 		title: 'Shack Store - Shake Shack Merch',
 		client: 'Shake Shack',
-		info: `A Shopify store for Shake Shack's line of merchandise.`,
+		info: `Online store featuring exclusive Shake Shack merchandise, designed for a leading global food brand with no shortage of superfans.`,
 		link: 'https://shackstore.shakeshack.com/',
 		year: '2023',
 		team: 'Make Me Modern',
@@ -25,7 +25,7 @@ export const otherProjects = [
 	{
 		title: 'Shop The Sims',
 		client: 'Electronic Arts',
-		info: 'A Shopify store for a line of merchandise that celebrates The Sims, one of the best selling video game franchises of all time.',
+		info: 'Online store showcasing merchandise and accessories that celebrate The Sims, one of the best selling video game franchises of all time.',
 		link: 'https://shopthesims.com/',
 		year: '2023',
 		team: 'Make Me Modern',
@@ -34,7 +34,7 @@ export const otherProjects = [
 	{
 		title: 'Breezy Golf',
 		client: 'Doing Things Media',
-		info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		info: 'Online store for the performance athletic wear brand created by the personalities behind the viral YouTube sensation Bob Does Sports.',
 		link: 'https://breezygolf.com/',
 		year: '2023',
 		team: 'Make Me Modern',
@@ -43,11 +43,19 @@ export const otherProjects = [
 	{
 		title: 'Dr. Noze Best',
 		client: 'Dr. Noze Best',
-		info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		info: 'Online store for the physician-founded baby health brand on a mission to bring relief to snotty kids and their busy parents.',
 		link: 'https://drnozebest.com/',
 		year: '2023',
 		team: 'Make Me Modern',
 		roles: ['Design', 'Development']
+	},
+	{
+		title: 'Wet Tennis',
+		client: 'SOFI TUKKER',
+		info: `Online store featuring exclusive merchandise for electronic duo SOFI TUKKER’s vibrant sophomore album, Wet Tennis.`,
+		link: 'https://wettennis.club/',
+		year: '2022',
+		team: 'Make Me Modern',
+		roles: ['Design', 'Development']
 	}
-	// Wet Tennis
 ];
