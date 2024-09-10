@@ -1,8 +1,10 @@
 <script>
   import ProjectCard from '$lib/ProjectCard.svelte';
+  import ProjectLink from '$lib/ProjectLink.svelte';
   import InlineLink from '$lib/InlineLink.svelte';
   import UnderConstruction from '$lib/UnderConstruction.svelte';
-  import { metaContent } from '$/constants';
+  import M3Icon from '$lib/M3Icon.svelte';
+  import { metaContent, otherProjects } from '$/constants';
   export let data;
 
   const projects = data.projects;
@@ -16,26 +18,32 @@
 <section>
   <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
   <p>Hi, I'm Nick Beuchat, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
-  <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing and developing user experiences for <InlineLink href="https://makememodern.com" external>Make Me Modern.</InlineLink></p>
+  <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing and developing user experiences for <span class="icon-wrapper"><M3Icon /></span><InlineLink href="https://makememodern.com" external>Make Me Modern.</InlineLink></p>
 </section>
 <section>
   <h2>Featured Work</h2>
-  {#if projects.length}
+  {#if projects.length > 0}
     {#each projects as project}
       <ProjectCard {project} />
     {/each}
   {/if}
 </section>
 <section>
-  <h2>Personal Projects</h2>
-  <UnderConstruction>Coming Soon</UnderConstruction>
+  <h2>Other Work</h2>
+  <ul>
+    {#if otherProjects.length > 0}
+      {#each otherProjects as project}
+        <ProjectLink {project} />
+      {/each}
+    {/if}
+  </ul>
 </section>
 
 <style>
   section + section {
     border-top: var(--border);
-    margin-top: 4.8rem;
-    padding-top: 4.8rem;
+    margin-top: 5.6rem;
+    padding-top: 5.6rem;
   }
 
   section p + p {
@@ -44,5 +52,13 @@
 
   section h2 {
     color: var(--color-neutral-600);
+    margin-bottom: 3.2rem;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 </style>
