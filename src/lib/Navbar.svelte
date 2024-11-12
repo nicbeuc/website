@@ -56,6 +56,10 @@
     }
   }
 
+  .navbar__header {
+    display: flex;
+  }
+
   .navbar__info {
     margin-top: 2.4rem;
     color: var(--color-neutral-600);
