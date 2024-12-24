@@ -84,7 +84,7 @@
 
   dl {
     font-size: var(--font-size-body-sm);
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-600);
     display: grid;
     grid-area: meta;
     grid-auto-flow: column dense;

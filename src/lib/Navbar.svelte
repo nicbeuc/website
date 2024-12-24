@@ -17,9 +17,9 @@
     </a>
     <nav class="navbar__links">
       <Link href="/">Home</Link>
+      <Link>About</Link>
       <Link>Notes</Link>
       <Link>Lab</Link>
-      <Link>Work</Link>
     </nav>
   </div>
   <div class="navbar__footer">
@@ -61,11 +61,12 @@
   }
 
   .navbar__header .navbar__links {
-    margin-top: 1.6rem;
+    margin-top: 2.4rem;
   }
 
   .navbar__logo {
-    display: inline-block;
+    display: flex;
+    width: fit-content;
   }
 
   .navbar__info {

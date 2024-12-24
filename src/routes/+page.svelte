@@ -17,7 +17,7 @@
 
 <section>
   <h1 class="sr-only">Nick Beuchat - Designer and Creative Developer</h1>
-  <p>Hi, I'm Nick Beuchat, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
+  <p><strong>Hi, I'm Nick Beuchat</strong>, a designer and creative developer with a passion for crafting simple, inclusive solutions for the web.</p>
   <p>Currently, I'm living and working in my hometown of Knoxville, TN, designing and developing user experiences for <span class="icon-wrapper"><M3Icon /></span><InlineLink href="https://makememodern.com" external>Make Me Modern.</InlineLink></p>
 </section>
 <section class="dotted-border-top">
@@ -52,7 +52,8 @@
   section h2 {
     color: var(--color-neutral-600);
     margin-bottom: 3.2rem;
-    font-weight: 300;
+    font-weight: 200;
+    font-size: inherit;
   }
 
   ul {

@@ -25,7 +25,7 @@
     /* min-width: 10ch; */
 
     &:hover {
-      color: inherit;
+      color: black;
 
       & * {
         color: inherit;
@@ -33,8 +33,8 @@
     }
 
     &[aria-current] {
-      color: inherit;
-      /* font-weight: 500; */
+      color: black;
+      font-weight: 400;
     }
 
     &[target="_blank"] {
