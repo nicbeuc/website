@@ -34,16 +34,16 @@
   <Navbar {data}/>
   <main>
     <slot />
+    <Footer {data}/>
   </main>
   <MobileNav/>
-  <Footer {data}/>
   <ScrollFade />
 </div>
 
 <style>
   .wrapper {
     --max-width: var(--page-width);
-    --navbar-width: 30rem;
+    --navbar-width: 24rem;
     max-width: var(--max-width);
     display: flex;
     align-items: flex-start;

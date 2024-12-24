@@ -4,10 +4,6 @@
   import LastUpdated from "$lib/LastUpdated.svelte";
   import CopyEmail from "$lib/CopyEmail.svelte";
   import { socialLinks } from "$/constants";
-
-  export let data;
-
-  const { commitData } = data;
 </script>
 
 <header>
@@ -22,24 +18,18 @@
   </div>
   <nav class="navbar__links">
     <Link href="/">Home</Link>
-    <Link href="/now">Now</Link>
-    <!-- <Link href={socialLinks.mail}>Email</Link> -->
+    <Link>Notes</Link>
+    <Link>Lab</Link>
+    <Link>Work</Link>
     <CopyEmail>Email</CopyEmail>
     <Link href={socialLinks.github} external>GitHub</Link>
     <Link href={socialLinks.readcv} external>Read.cv</Link>
   </nav>
-  <div class="navbar__footer">
-    {#if !commitData.error}
-      <LastUpdated {commitData}/>
-    {/if}
-    <small><Link href="/colophon">Colophon</Link></small>
-    <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
-  </div>
 </header>
 
 <style>
   header {
-    padding: var(--padding-inline);
+    padding: 3.2rem 0 3.2rem var(--padding-inline);
     height: 100vh;
     width: var(--navbar-width);
     display: grid;

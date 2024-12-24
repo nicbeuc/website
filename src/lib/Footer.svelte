@@ -7,12 +7,12 @@
   const { commitData } = data;
 </script>
 
-<footer class="page-width">
+<footer>
   {#if !commitData.error}
     <LastUpdated {commitData}/>
   {/if}
-  <small><Link href="/colophon">Colophon</Link></small>
-  <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
+  <Link href="/colophon">Colophon</Link>
+  <p>© {new Date().getFullYear()} Nick Beuchat</p>
 </footer>
 
 <style>
@@ -26,16 +26,15 @@
     row-gap: .8rem;
     column-gap: .8rem;
     align-items: center;
-    margin-bottom: 3.2rem;
-    padding-top: 3.2rem;
+    margin-bottom: 4.8rem;
+    margin-top: 4.8rem;
+    border-top: var(--border);
+    padding-top: 4.8rem;
     width: 100%;
     position: relative;
     justify-content: center;
+    font-size: var(--font-size-body-sm);
     /* view-transition-name: footer; */
-
-    @media screen and (min-width: 800px) {
-      display: none;
-    }
 
     & *:first-child {
       grid-area: updated;
@@ -50,18 +49,8 @@
       justify-self: end;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      left: var(--padding-inline);
-      right: var(--padding-inline);
-      height: 1px;
-      top: 0;
-      background-color: var(--color-neutral-200)
-    }
-
-    @media screen and (max-width: 799px) {
-      margin-bottom: 11rem;
+    & p {
+      color: var(--color-neutral-600);
     }
   }
 
