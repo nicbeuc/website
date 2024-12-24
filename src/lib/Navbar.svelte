@@ -22,7 +22,7 @@
       <Link>Lab</Link>
     </nav>
   </div>
-  <div class="navbar__footer">
+  <div class="navbar__footer dotted-border-top">
     <div class="navbar__links">
       <CopyEmail>Email</CopyEmail>
       <Link href={socialLinks.github} external>GitHub</Link>
@@ -119,6 +119,8 @@
   }
 
   .navbar__footer {
+    padding-top: 2.4rem;
+    margin-top: 2.4rem;
     @media screen and (max-width: 799px) {
       display: none;
     }
