@@ -1,4 +1,5 @@
 <script>
+  import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
   import { onNavigate } from '$app/navigation';
   import { page, navigating } from '$app/stores';
   import Navbar from "$lib/Navbar.svelte";
@@ -20,6 +21,8 @@
       });
     });
   });
+
+  injectSpeedInsights();
 </script>
 
 <svelte:head>
