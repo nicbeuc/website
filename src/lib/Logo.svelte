@@ -5,9 +5,9 @@
 
 <style>
   svg {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: var(--color-neutral-400);
+    height: 3.2rem;
+    width: 3.2rem;
+    color: var(--color-neutral-500);
     justify-self: center;
 
     @media screen and (max-width: 799px) {

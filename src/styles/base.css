@@ -15,7 +15,7 @@
 }
 
 :root {
-	--page-width: 96rem;
+	--page-width: 110rem;
 
 	@media screen and (max-width: 799px) {
 		--page-width: 50rem;
@@ -28,7 +28,7 @@
 	--font-family-copy: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-family-mono: 'Geist Mono', monospace;
-	--font-size-heading: 1.8rem;
+	--font-size-heading: 1.6rem;
 	--font-size-body-lg: 1.6rem;
 	--font-size-body: 1.4rem;
 	--font-size-body-sm: 1.2rem;
@@ -153,7 +153,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
+	letter-spacing: -.015ch;
+	font-weight: 300;
 	font-size: var(--font-size-body-lg);
 }
 
@@ -209,7 +210,7 @@ p > code {
 
 main {
 	width: calc(min(100vw, var(--max-width)) - var(--navbar-width));
-	padding: 11rem var(--padding-inline) var(--padding-inline);
+	padding: 4.8rem var(--padding-inline) var(--padding-inline);
 	/* min-height: 100vh; */
 	/* display: grid; */
 	margin-left: auto;
@@ -226,7 +227,7 @@ main {
 article p,
 section p {
 	max-width: var(--prose-width);
-	font-size: var(--font-size-body-lg);
+	font-size: var(--font-size-body);
 }
 
 article :is(h2, h3, h4, h5, h6) {
@@ -261,10 +262,10 @@ article *:is(p, ul, ol) + *:is(p, ul, ol) {
 }
 
 article *:is(ul, ol) {
-	padding-left: 2em;
+	padding-left: 1.6em;
 	max-width: var(--prose-width);
 	list-style: none;
-	font-size: var(--font-size-body-lg);
+	font-size: inherit;
 }
 
 article ol li {
@@ -274,18 +275,11 @@ article ol li {
 article ol li:before {
 	content: counter(num) '. ';
 	position: absolute;
-	top: 0.2em;
-	left: -2.5em;
-	color: var(--color-neutral-700);
-	font-weight: 600;
-	width: 1.75em;
-	height: 1.75em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--color-neutral-200);
-	font-size: 0.8em;
-	border-radius: 0.4em;
+	top: 0.125em;
+	left: -1.6em;
+	color: inherit;
+	font-weight: 500;
+	font-size: .9em;
 }
 
 article ol {
@@ -314,7 +308,8 @@ article ul li::before {
 figcaption,
 .media-caption {
 	font-size: var(--font-size-body-sm);
-	color: var(--color-neutral-700);
+	color: var(--color-neutral-600);
+	font-weight: 200;
 	margin-top: 1.2rem;
 	line-height: 1.25;
 }
@@ -345,4 +340,33 @@ main:has(.error-page) {
 	display: inline;
 	width: 1.2em;
 	height: 1.2em;
+}
+
+/* Utility classes */
+
+[class*="dotted-border"] {
+	--__dotted-border-color: var(--dotted-border-color, var(--color-neutral-400));
+	--__dotted-border-gap: var(--dotted-border-gap, 4px);
+	background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+	background-repeat: no-repeat;
+}
+
+.dotted-border-bottom {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(180deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(270deg, var(--__dotted-border-color), var(--__dotted-border-color) 1px, transparent 0, transparent var(--__dotted-border-gap), var(--__dotted-border-color) 0);
+	background-position: 0 0, 0 0, 100% 0, 0 100%;
+}
+
+.dotted-border-top {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(180deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(270deg, var(--__dotted-border-color), var(--__dotted-border-color) 1px, transparent 0, transparent var(--__dotted-border-gap), var(--__dotted-border-color) 0);
+	background-position: 100% 0, 100% 0, 0 0, 0 0;
+}
+
+.dotted-border-right {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(180deg, var(--__dotted-border-color), var(--__dotted-border-color) 1px, transparent 0, transparent var(--__dotted-border-gap), var(--__dotted-border-color) 0), repeating-linear-gradient(270deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0);
+	background-position: 0 0, 0 0, 100% 0, 0 100%;
+}
+
+.dotted-border-left {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(180deg, var(--__dotted-border-color), var(--__dotted-border-color) 1px, transparent 0, transparent var(--__dotted-border-gap), var(--__dotted-border-color) 0), repeating-linear-gradient(270deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0);
+	background-position: 100% 0, 100% 0, 0 0, 0 0;
 }

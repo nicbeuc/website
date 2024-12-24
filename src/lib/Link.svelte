@@ -34,7 +34,7 @@
 
     &[aria-current] {
       color: inherit;
-      font-weight: 500;
+      /* font-weight: 500; */
     }
 
     &[target="_blank"] {

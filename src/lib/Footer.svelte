@@ -7,12 +7,15 @@
   const { commitData } = data;
 </script>
 
-<footer>
-  {#if !commitData.error}
-    <LastUpdated {commitData}/>
-  {/if}
-  <Link href="/colophon">Colophon</Link>
-  <p>© {new Date().getFullYear()} Nick Beuchat</p>
+<footer class="dotted-border-top">
+  <div class="footer__copyright">
+    {#if !commitData.error}
+      <LastUpdated {commitData}/>
+    {/if}
+    <p>© {new Date().getFullYear()} Nick Beuchat</p>
+    <span>•</span>
+    <Link href="/colophon">Colophon</Link>
+  </div>
 </footer>
 
 <style>
@@ -26,15 +29,17 @@
     row-gap: .8rem;
     column-gap: .8rem;
     align-items: center;
-    margin-bottom: 4.8rem;
-    margin-top: 4.8rem;
-    border-top: var(--border);
-    padding-top: 4.8rem;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    padding-top: 3.2rem;
     width: 100%;
     position: relative;
     justify-content: center;
-    font-size: var(--font-size-body-sm);
     /* view-transition-name: footer; */
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
 
     & *:first-child {
       grid-area: updated;
@@ -49,12 +54,22 @@
       justify-self: end;
     }
 
-    & p {
-      color: var(--color-neutral-600);
+    @media screen and (max-width: 799px) {
+      margin-bottom: 8rem;
     }
   }
 
-  .copyright {
+  .footer__copyright {
     color: var(--color-neutral-600);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .5em;
+    font-size: var(--font-size-body-xs);
+    font-weight: 200;
+
+    & > * {
+      display: inline;
+    }
   }
 </style>

@@ -25,7 +25,7 @@
 </svelte:head>
 
 <article>
-  <header>
+  <header class="dotted-border-bottom">
     <h1 class="page-title">{title}</h1>
     <dl class="meta">
       <dt>Client</dt>
@@ -55,7 +55,6 @@
   header {
     padding-bottom: 2.4rem;
     margin-bottom: 4.8rem;
-    border-bottom: var(--border);
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
@@ -85,7 +84,7 @@
 
   dl {
     font-size: var(--font-size-body-sm);
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-500);
     display: grid;
     grid-area: meta;
     grid-auto-flow: column dense;
