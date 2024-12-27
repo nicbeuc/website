@@ -264,7 +264,7 @@ article *:is(p, ul, ol) + *:is(p, ul, ol) {
 }
 
 article *:is(ul, ol) {
-	padding-left: 1.6em;
+	padding-left: 1.2em;
 	max-width: var(--prose-width);
 	list-style: none;
 	font-size: inherit;
@@ -278,7 +278,7 @@ article ol li:before {
 	content: counter(num) '. ';
 	position: absolute;
 	top: 0.125em;
-	left: -1.6em;
+	left: -1.3em;
 	color: inherit;
 	font-weight: 400;
 	font-size: .9em;
@@ -293,18 +293,18 @@ article li {
 }
 
 article li + li {
-	margin-top: 1rem;
+	margin-top: .8rem;
 }
 
 article ul li::before {
 	content: '';
 	position: absolute;
-	width: 0.4em;
-	height: 0.4em;
+	width: 0.35em;
+	height: 0.35em;
 	background-color: var(--color-neutral-400);
-	border-radius: 0.125em;
+	border-radius: 100vw;
 	top: 1cap;
-	left: -1.25em;
+	left: -1.1em;
 }
 
 figcaption,
@@ -344,7 +344,7 @@ main:has(.error-page) {
 	height: 1.2em;
 }
 
-/* Utility classes */
+/* Dotted borders */
 
 [class*="dotted-border"] {
 	--__dotted-border-color: var(--dotted-border-color, var(--color-neutral-400));

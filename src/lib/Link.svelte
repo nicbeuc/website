@@ -4,14 +4,22 @@
 
   export let href: string = '#';
   export let external = false;
+  export let locked = false;
 </script>
 
-<a href={href ? href : '#'} target={external ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
-  <slot />
-  {#if external}
-    <Icon name="arrow-top-right" --icon-size=".8em"/>
-  {/if}
-</a>
+{#if locked}
+  <span>
+    <slot />
+    <Icon name="lock" --icon-size=".8em"/>
+  </span>
+{:else}
+  <a href={href ? href : '#'} target={external ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
+    <slot />
+    {#if external}
+      <Icon name="arrow-top-right" --icon-size=".8em"/>
+    {/if}
+  </a>
+{/if}
 
 <style>
   a {
@@ -21,7 +29,7 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    gap: .4rem;
+    gap: .6rem;
     /* min-width: 10ch; */
 
     &:hover {
@@ -43,6 +51,21 @@
 
     & svg {
       color: var(--color-neutral-500);
+      display: inline-block;
+      transition: color var(--transition-fast);
+    }
+  }
+
+  span {
+    color: var(--color-neutral-500);
+    cursor: not-allowed;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    gap: .6rem;
+
+    & svg {
+      color: var(--color-neutral-400);
       display: inline-block;
       transition: color var(--transition-fast);
     }

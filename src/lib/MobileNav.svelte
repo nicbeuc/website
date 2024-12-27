@@ -19,8 +19,8 @@
 
         return `
           opacity: ${eased};
-          transform: scale(${0.95 + (.05 * eased)}) translateY(${15 - (eased * 15)}px);
-          filter: blur(${10 - (eased * 10)}px);
+          transform: scale(${0.9 + (.1 * eased)}) translateY(${15 - (eased * 15)}px);
+          filter: blur(${20 - (eased * 20)}px);
         `
       }
     }
@@ -209,10 +209,11 @@
       }
 
       & a {
-        width: 6.4rem;
+        padding-inline: 1rem;
         height: 100%;
         justify-content: center;
         border-radius: 1rem;
+        font-size: 1.2rem;
 
         &[aria-current] {
           background-color: var(--color-neutral-100);

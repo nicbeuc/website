@@ -122,6 +122,7 @@
       font-size: var(--font-size-heading);
       margin-bottom: 1.2rem;
       color: black;
+      font-weight: 300;
     }
 
     & p {

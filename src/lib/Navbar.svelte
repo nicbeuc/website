@@ -17,9 +17,9 @@
     </a>
     <nav class="navbar__links">
       <Link href="/">Home</Link>
-      <Link>About</Link>
-      <Link>Notes</Link>
-      <Link>Lab</Link>
+      <Link locked>About</Link>
+      <Link locked>Notes</Link>
+      <Link locked>Lab</Link>
     </nav>
   </div>
   <div class="navbar__footer dotted-border-top">
@@ -103,7 +103,7 @@
     align-items: start;
     justify-content: center;
 
-    & a {
+    & > * {
       padding-top: .25rem;
       padding-bottom: .25rem;
     }
