@@ -14,7 +14,9 @@
     | 'play'
     | 'asterisk'
     | 'cone'
-    | 'copy';
+    | 'copy'
+    | 'lock'
+    | 'download';
 </script>
 
 <script lang="ts">
@@ -92,11 +94,18 @@
   {#if name == 'copy'}
     <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5M11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22Z"></path>
   {/if}
+  {#if name == 'lock'}
+    <path d="M7 11.0001V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V11.0001M5 22.0001H19C20.1046 22.0001 21 21.1046 21 20.0001V13.0001C21 11.8955 20.1046 11.0001 19 11.0001H5C3.89543 11.0001 3 11.8955 3 13.0001V20.0001C3 21.1046 3.89543 22.0001 5 22.0001Z"></path>
+  {/if}
+  {#if name == 'download'}
+    <path d="M12 3V17M12 17L6 11M12 17L18 11M3 21H21"></path>
+  {/if}
 </svg>
 
 <style>
   svg {
     height: var(--icon-size, 16px);
     stroke: var(--icon-color, currentColor);
+    stroke-width: 1.5;
   }
 </style>

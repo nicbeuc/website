@@ -5,14 +5,14 @@
 
 <style>
   svg {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: var(--color-neutral-400);
+    height: 3.2rem;
+    width: 3.2rem;
+    color: black;
     justify-self: center;
 
     @media screen and (max-width: 799px) {
-      height: 2.8rem;
-      width: 2.8rem;
+      height: 2.4rem;
+      width: 2.4rem;
     }
   }
 </style>

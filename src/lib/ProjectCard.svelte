@@ -28,19 +28,19 @@
         <h3>{title}</h3>
         <p>{lead}</p>
       </div>
-      <dl class="meta">
-        <dt>Client</dt>
-        <dd>{client}</dd>
-        <dt>Role{roles.length > 1 && 's'}</dt>
-        <dd>
+      <dl class="meta dotted-border-top">
+        <dt class="dotted-border-bottom">Client</dt>
+        <dd class="dotted-border-bottom">{client}</dd>
+        <dt class="dotted-border-bottom">Role{roles.length > 1 && 's'}</dt>
+        <dd class="dotted-border-bottom">
           {#each roles as role, i}
             {i + 1 !== roles.length ? role + ', ' : role}
           {/each}
         </dd>
-        <dt>Team</dt>
-        <dd>{company}</dd>
-        <dt>Year</dt>
-        <dd>{year}</dd>
+        <dt class="dotted-border-bottom">Team</dt>
+        <dd class="dotted-border-bottom">{company}</dd>
+        <dt class="dotted-border-bottom">Year</dt>
+        <dd class="dotted-border-bottom">{year}</dd>
       </dl>
     </section>
   </a>
@@ -122,6 +122,7 @@
       font-size: var(--font-size-heading);
       margin-bottom: 1.2rem;
       color: black;
+      font-weight: 300;
     }
 
     & p {
@@ -137,11 +138,8 @@
     grid-template-columns: auto 1fr;
     min-width: 22rem;
 
-    @media screen and (min-width: 1000px) {
-      border-top: var(--border-dashed);
-    }
-
     @media screen and (max-width: 999px) {
+      background-image: none !important;
       grid-auto-flow: column dense;
       grid-template-columns: auto;
       column-gap: 4.8rem;
@@ -151,11 +149,14 @@
       & dt:nth-of-type(even) {
         margin-top: 1.2rem;
       }
+
+      & * {
+        background-image: none !important;
+      }
     }
 
     & dd, & dt {
       @media screen and (min-width: 1000px) {
-        border-bottom: var(--border-dashed);
         padding: .6rem 0;
       }
     }

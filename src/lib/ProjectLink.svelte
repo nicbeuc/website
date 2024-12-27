@@ -118,6 +118,7 @@
     align-items: baseline;
     line-height: 1.2;
     gap: 1rem;
+    font-weight: 300;
 
     & a {
       text-decoration: none;

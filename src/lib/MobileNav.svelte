@@ -19,8 +19,8 @@
 
         return `
           opacity: ${eased};
-          transform: scale(${0.95 + (.05 * eased)}) translateY(${15 - (eased * 15)}px);
-          filter: blur(${10 - (eased * 10)}px);
+          transform: scale(${0.9 + (.1 * eased)}) translateY(${15 - (eased * 15)}px);
+          filter: blur(${20 - (eased * 20)}px);
         `
       }
     }
@@ -69,7 +69,22 @@
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/now">Now</Link>
+          <span>
+            About
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
+        </li>
+        <li>
+          <span>
+            Notes
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
+        </li>
+        <li>
+          <span>
+            Lab
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
         </li>
       </ul>
     </nav>
@@ -95,6 +110,7 @@
           <li><CopyEmail>Email</CopyEmail></li>
           <li><Link href={socialLinks.github} external>GitHub</Link></li>
           <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
+          <li><Link href="/resume.pdf" download>Resumé</Link></li>
         </ul>
       </div>
     {/if}
@@ -200,17 +216,27 @@
         height: 100%;
         padding-top: .8rem;
         padding-bottom: .8rem;
-      }
 
-      & a {
-        width: 6.4rem;
-        height: 100%;
-        justify-content: center;
-        border-radius: 1rem;
+        & > * {
+          padding-inline: 1rem;
+          height: 100%;
+          justify-content: center;
+          border-radius: 1rem;
+          font-size: 1.2rem;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          gap: .4em;
 
-        &[aria-current] {
-          background-color: var(--color-neutral-100);
-          border: var(--border);
+          &[aria-current] {
+            background-color: var(--color-neutral-100);
+            border: var(--border);
+            font-weight: 400;
+          }
+        }
+
+        & span {
+          color: var(--color-neutral-500);
         }
       }
     }

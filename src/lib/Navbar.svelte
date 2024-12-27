@@ -10,41 +10,46 @@
   const { commitData } = data;
 </script>
 
-<header>
+<header class="dotted-border-right">
   <div class="navbar__header">
-    <a href="/" title="Go to the homepage">
+    <a class="navbar__logo" href="/" title="Go to the homepage">
       <Logo />
     </a>
+    <nav class="navbar__links">
+      <Link href="/">Home</Link>
+      <Link locked>About</Link>
+      <Link locked>Notes</Link>
+      <Link locked>Lab</Link>
+    </nav>
   </div>
-  <div class="navbar__info">
-    <p>Nick Beuchat</p>
-    <p>Designer & Creative Developer</p>
-  </div>
-  <nav class="navbar__links">
-    <Link href="/">Home</Link>
-    <Link href="/now">Now</Link>
-    <!-- <Link href={socialLinks.mail}>Email</Link> -->
-    <CopyEmail>Email</CopyEmail>
-    <Link href={socialLinks.github} external>GitHub</Link>
-    <Link href={socialLinks.readcv} external>Read.cv</Link>
-  </nav>
-  <div class="navbar__footer">
-    {#if !commitData.error}
-      <LastUpdated {commitData}/>
-    {/if}
-    <small><Link href="/colophon">Colophon</Link></small>
-    <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
+  <div class="navbar__footer dotted-border-top">
+    <div class="navbar__links">
+      <CopyEmail>Email</CopyEmail>
+      <Link href={socialLinks.github} external>GitHub</Link>
+      <Link href={socialLinks.readcv} external>Read.cv</Link>
+      <Link href="/resume.pdf" download>Resumé</Link>
+    </div>
+    <div class="navbar__copyright dotted-border-top">
+      {#if !commitData.error}
+        <LastUpdated {commitData}/>
+      {/if}
+      <p>© {new Date().getFullYear()} Nick Beuchat</p>
+      <span>•</span>
+      <Link href="/colophon">Colophon</Link>
+    </div>
   </div>
 </header>
 
 <style>
   header {
-    padding: var(--padding-inline);
-    height: 100vh;
+    margin-top: 4.8rem;
+    margin-bottom: 4.8rem;
+    padding: 0 var(--padding-inline);
+    height: calc(100vh - 9.6rem);
     width: var(--navbar-width);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto 1fr auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: calc((max(100vw, var(--page-width)) - var(--page-width)) / 2);
@@ -56,8 +61,13 @@
     }
   }
 
-  .navbar__header {
+  .navbar__header .navbar__links {
+    margin-top: 2.4rem;
+  }
+
+  .navbar__logo {
     display: flex;
+    width: fit-content;
   }
 
   .navbar__info {
@@ -94,7 +104,7 @@
     align-items: start;
     justify-content: center;
 
-    & a {
+    & > * {
       padding-top: .4rem;
       padding-bottom: .4rem;
     }
@@ -110,23 +120,26 @@
   }
 
   .navbar__footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "timestamp timestamp"
-      "links copyright";
-    row-gap: .8rem;
-    align-items: center;
-    justify-content: space-between;
-
-    & .copyright {
-      color: var(--color-neutral-600);
-      justify-self: end;
-    }
-
+    padding-top: 2.4rem;
+    margin-top: 2.4rem;
     @media screen and (max-width: 799px) {
       display: none;
+    }
+  }
+
+  .navbar__copyright {
+    color: var(--color-neutral-600);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .5em;
+    padding-top: 2.4rem;
+    margin-top: 2.4rem;
+    font-size: var(--font-size-body-xs);
+    font-weight: 200;
+
+    & > * {
+      display: inline;
     }
   }
 </style>

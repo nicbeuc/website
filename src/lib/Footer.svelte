@@ -7,12 +7,15 @@
   const { commitData } = data;
 </script>
 
-<footer class="page-width">
-  {#if !commitData.error}
-    <LastUpdated {commitData}/>
-  {/if}
-  <small><Link href="/colophon">Colophon</Link></small>
-  <small class="copyright">© {new Date().getFullYear()} Nick Beuchat</small>
+<footer class="dotted-border-top">
+  <div class="footer__copyright">
+    {#if !commitData.error}
+      <LastUpdated {commitData}/>
+    {/if}
+    <p>© {new Date().getFullYear()} Nick Beuchat</p>
+    <span>•</span>
+    <Link href="/colophon">Colophon</Link>
+  </div>
 </footer>
 
 <style>
@@ -26,6 +29,7 @@
     row-gap: .8rem;
     column-gap: .8rem;
     align-items: center;
+    margin-top: 3.2rem;
     margin-bottom: 3.2rem;
     padding-top: 3.2rem;
     width: 100%;
@@ -50,22 +54,22 @@
       justify-self: end;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      left: var(--padding-inline);
-      right: var(--padding-inline);
-      height: 1px;
-      top: 0;
-      background-color: var(--color-neutral-200)
-    }
-
     @media screen and (max-width: 799px) {
-      margin-bottom: 11rem;
+      margin-bottom: 8rem;
     }
   }
 
-  .copyright {
+  .footer__copyright {
     color: var(--color-neutral-600);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .5em;
+    font-size: var(--font-size-body-xs);
+    font-weight: 200;
+
+    & > * {
+      display: inline;
+    }
   }
 </style>

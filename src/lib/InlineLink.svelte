@@ -15,14 +15,11 @@
 
 <style>
   a {
-    text-decoration-line: underline;
-    text-decoration-color: currentColor;
-    text-decoration-style: dashed;
-    text-underline-offset: .25em;
     color: var(--color-neutral-600);
     transition: all var(--transition-fast);
     display: inline-block;
     position: relative;
+    text-decoration: none;
 
     &:hover,
     &:focus-visible {
@@ -31,6 +28,10 @@
 
       &::after {
         opacity: 1;
+      }
+
+      &::before {
+        opacity: 0;
       }
     }
 
@@ -49,6 +50,21 @@
       transition-timing-function: inherit;
       z-index: -1;
       border-radius: .4em;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 1px;
+      background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+      background-repeat: no-repeat;
+      background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent 4px, transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent 4px, transparent 0), repeating-linear-gradient(180deg, transparent, transparent 1px, transparent 0, transparent 4px, transparent 0), repeating-linear-gradient(270deg, currentColor, currentColor 1px, transparent 0, transparent 4px, currentColor 0);
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      transition-property: opacity;
+      transition-duration: inherit;
+      transition-timing-function: inherit;
     }
 
     & svg {
