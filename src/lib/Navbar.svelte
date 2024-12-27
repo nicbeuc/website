@@ -27,6 +27,7 @@
       <CopyEmail>Email</CopyEmail>
       <Link href={socialLinks.github} external>GitHub</Link>
       <Link href={socialLinks.readcv} external>Read.cv</Link>
+      <Link href="/resume.pdf" download>Resumé</Link>
     </div>
     <div class="navbar__copyright dotted-border-top">
       {#if !commitData.error}

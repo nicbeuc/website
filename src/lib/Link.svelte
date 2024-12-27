@@ -5,6 +5,7 @@
   export let href: string = '#';
   export let external = false;
   export let locked = false;
+  export let download = false;
 </script>
 
 {#if locked}
@@ -13,10 +14,12 @@
     <Icon name="lock" --icon-size=".8em"/>
   </span>
 {:else}
-  <a href={href ? href : '#'} target={external ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
+  <a href={href ? href : '#'} target={external || download ? "_blank" : null} rel={external ? "noopener" : null} aria-current={$page.url.pathname === href || null}>
     <slot />
     {#if external}
       <Icon name="arrow-top-right" --icon-size=".8em"/>
+    {:else if download}
+      <Icon name="download" --icon-size=".8em"/>
     {/if}
   </a>
 {/if}

@@ -14,18 +14,24 @@
 
 <style>
   dl {
-    padding: 2rem;
-    border: 1px dashed var(--color-neutral-500);
-    background-color: var(--color-neutral-100);
-    border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1.2rem;
 
+    &:not(:last-of-type) {
+      --__dotted-border-color: var(--dotted-border-color, var(--color-neutral-400));
+      --__dotted-border-gap: var(--dotted-border-gap, 4px);
+      background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+      background-repeat: no-repeat;
+	    background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(90deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0), repeating-linear-gradient(180deg, var(--__dotted-border-color), var(--__dotted-border-color) 1px, transparent 0, transparent var(--__dotted-border-gap), var(--__dotted-border-color) 0), repeating-linear-gradient(270deg, transparent, transparent 1px, transparent 0, transparent var(--__dotted-border-gap), transparent 0);
+	    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    }
+
     @media screen and (max-width: 799px) {
       flex-direction: row;
       align-items: baseline;
+      background-image: none !important;
     }
   }
 

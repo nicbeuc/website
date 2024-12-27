@@ -110,6 +110,7 @@
           <li><CopyEmail>Email</CopyEmail></li>
           <li><Link href={socialLinks.github} external>GitHub</Link></li>
           <li><Link href={socialLinks.readcv} external>Read.cv</Link></li>
+          <li><Link href="/resume.pdf" download>Resumé</Link></li>
         </ul>
       </div>
     {/if}
