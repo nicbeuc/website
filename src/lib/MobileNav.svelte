@@ -69,13 +69,22 @@
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="#">About</Link>
+          <span>
+            About
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
         </li>
         <li>
-          <Link href="#">Notes</Link>
+          <span>
+            Notes
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
         </li>
         <li>
-          <Link href="#">Lab</Link>
+          <span>
+            Lab
+            <!-- <Icon name="lock" --icon-size="1rem" /> -->
+          </span>
         </li>
       </ul>
     </nav>
@@ -206,18 +215,27 @@
         height: 100%;
         padding-top: .8rem;
         padding-bottom: .8rem;
-      }
 
-      & a {
-        padding-inline: 1rem;
-        height: 100%;
-        justify-content: center;
-        border-radius: 1rem;
-        font-size: 1.2rem;
+        & > * {
+          padding-inline: 1rem;
+          height: 100%;
+          justify-content: center;
+          border-radius: 1rem;
+          font-size: 1.2rem;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          gap: .4em;
 
-        &[aria-current] {
-          background-color: var(--color-neutral-100);
-          border: var(--border);
+          &[aria-current] {
+            background-color: var(--color-neutral-100);
+            border: var(--border);
+            font-weight: 400;
+          }
+        }
+
+        & span {
+          color: var(--color-neutral-500);
         }
       }
     }

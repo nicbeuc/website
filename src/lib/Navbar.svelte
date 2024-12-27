@@ -104,8 +104,8 @@
     justify-content: center;
 
     & > * {
-      padding-top: .25rem;
-      padding-bottom: .25rem;
+      padding-top: .4rem;
+      padding-bottom: .4rem;
     }
 
     & a span {
