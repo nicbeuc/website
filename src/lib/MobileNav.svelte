@@ -69,7 +69,13 @@
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/now">Now</Link>
+          <Link href="#">About</Link>
+        </li>
+        <li>
+          <Link href="#">Notes</Link>
+        </li>
+        <li>
+          <Link href="#">Lab</Link>
         </li>
       </ul>
     </nav>
