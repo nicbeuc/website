@@ -4,7 +4,7 @@
   export let name: string;
   export let delta: number;
 
-  const icon = delta > 0 ? 'arrow-top-right' : 'arrow-bottom-right';
+  const icon = delta > 0 ? 'arrow-up' : 'arrow-down';
 </script>
 
 <dl>
@@ -15,9 +15,9 @@
 <style>
   dl {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: .8rem;
 
     &:not(:last-of-type) {
       --__dotted-border-color: var(--dotted-border-color, var(--color-neutral-400));
@@ -53,8 +53,9 @@
   }
 
   dd span span {
-    font-size: .75em;
+    font-size: .65em;
     margin-inline-start: .15em;
     color: var(--color-neutral-600);
+    font-weight: 200;
   }
 </style>

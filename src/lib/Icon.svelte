@@ -2,6 +2,8 @@
 	export type IconName =
     | 'arrow-top-right'
     | 'arrow-bottom-right'
+    | 'arrow-up'
+    | 'arrow-down'
     | 'menu-dots'
     | 'dots-vertical'
     | 'close'
@@ -16,7 +18,8 @@
     | 'cone'
     | 'copy'
     | 'lock'
-    | 'download';
+    | 'download'
+    | 'check';
 </script>
 
 <script lang="ts">
@@ -41,6 +44,12 @@
   {/if}
   {#if name == 'arrow-bottom-right'}
     <path d="M18.5 18.5L5.5 5.5M18.5 18.5H8.5M18.5 18.5V8.5"></path>
+  {/if}
+  {#if name == 'arrow-up'}
+    <path d="M12 3V21M12 3L5 10M12 3L19 10"></path>
+  {/if}
+  {#if name == 'arrow-down'}
+    <path d="M12 21V3M12 21L5 14M12 21L19 14"></path>
   {/if}
   {#if name == 'menu-dots'}
     <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"></path>
@@ -99,6 +108,9 @@
   {/if}
   {#if name == 'download'}
     <path d="M12 3V17M12 17L6 11M12 17L18 11M3 21H21"></path>
+  {/if}
+  {#if name == 'check'}
+    <path d="M3 12L9 18L21 6"></path>
   {/if}
 </svg>
 
