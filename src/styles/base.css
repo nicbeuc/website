@@ -67,7 +67,7 @@
 	--border-dashed: 0.1rem dashed var(--color-neutral-300);
 	--border-subtle: 0.1rem solid var(--color-neutral-100);
 
-	--border-radius-media: 1.6rem;
+	--border-radius-media: .8rem;
 
 	@media screen and (max-width: 499px) {
 		--border-radius-media: 1.2rem;
