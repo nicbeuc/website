@@ -2,6 +2,7 @@
 	export type IconName =
     | 'arrow-top-right'
     | 'arrow-bottom-right'
+    | 'arrow-right'
     | 'arrow-up'
     | 'arrow-down'
     | 'menu-dots'
@@ -50,6 +51,9 @@
   {/if}
   {#if name == 'arrow-down'}
     <path d="M12 21V3M12 21L5 14M12 21L19 14"></path>
+  {/if}
+  {#if name == 'arrow-right'}
+    <path d="M5 12H19M12 5L19 12L12 19"></path>
   {/if}
   {#if name == 'menu-dots'}
     <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"></path>
