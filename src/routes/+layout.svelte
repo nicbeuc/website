@@ -8,6 +8,7 @@
 	import Footer from '$lib/Footer.svelte';
   import { metaContent } from '$/constants';
   import '$styles/base.css';
+	import SkipToContent from '$/lib/SkipToContent.svelte';
 
   export let data;
 
@@ -30,9 +31,10 @@
 </svelte:head>
 
 <div class="wrapper">
+  <SkipToContent />
   <ScrollFade />
   <Navbar {data}/>
-  <main>
+  <main id="main">
     <slot />
     <Footer {data}/>
   </main>
@@ -43,7 +45,6 @@
 <style>
   .wrapper {
     --max-width: var(--page-width);
-    --navbar-width: 26rem;
     max-width: var(--max-width);
     display: flex;
     align-items: flex-start;

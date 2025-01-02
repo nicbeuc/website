@@ -35,6 +35,7 @@
 	--font-size-body-xs: 1rem;
 
 	--prose-width: 58ch;
+	--navbar-width: 26rem;
 
 	--color-neutral-900: #141618;
 	--color-neutral-800: #343a40;
@@ -203,7 +204,6 @@ p > code {
 	margin-inline-start: 0.1em;
 	margin-inline-end: 0.1em;
 	color: purple;
-	font-size: 1.5rem;
 }
 
 /* ############### */

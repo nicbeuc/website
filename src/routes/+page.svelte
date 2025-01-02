@@ -27,8 +27,6 @@
       <ProjectCard {project} />
     {/each}
   {/if}
-</section>
-<section class="dotted-border-top">
   <h2>Other Work</h2>
   <ul>
     {#if otherProjects.length > 0}
@@ -54,6 +52,10 @@
     margin-bottom: 3.2rem;
     font-weight: 200;
     font-size: inherit;
+
+    &:not(:first-of-type) {
+      margin-top: 6.4rem;
+    }
   }
 
   ul {

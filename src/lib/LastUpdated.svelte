@@ -20,37 +20,4 @@
     color: inherit;
     margin-bottom: .4rem;
   }
-
-  small {
-    font-size: var(--font-size-body-xs);
-    background-color: var(--color-neutral-100);
-    border: var(--border);
-    border-radius: 100vw;
-    align-items: center;
-    width: 100%;
-    grid-area: timestamp;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .4rem;
-    padding: .4rem .8rem;
-    gap: .8rem;
-
-    & a {
-      margin-inline-start: .5em;
-      justify-content: end;
-      color: var(--color-neutral-700);
-    }
-
-    & svg {
-      width: 1em;
-      height: 1em;
-      color: var(--color-neutral-500);
-    }
-
-    @media screen and (max-width: 799px) {
-      width: auto;
-      justify-content: start;
-      justify-self: start;
-    }
-  }
 </style>

@@ -70,34 +70,6 @@
     width: fit-content;
   }
 
-  .navbar__info {
-    margin-top: 2.4rem;
-    color: var(--color-neutral-600);
-
-    & p:first-of-type {
-      color: black;
-      line-height: 2.4rem;
-
-      @media screen and (max-width: 799px) {
-        font-size: 1.2rem;
-      }
-    }
-
-    & p + p {
-      margin-top: 0;
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-
-    @media screen and (max-width: 799px) {
-      margin-top: 0;
-
-      & p {
-        line-height: 1.35;
-      }
-    }
-  }
-
   .navbar__links {
     display: flex;
     flex-direction: column;

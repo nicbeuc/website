@@ -21,7 +21,7 @@
   <a href="/project/{slug}" aria-labelledby="view-project">
     <div class="media-wrapper">
       <Image alt="Project thumbnail for {client}" name={thumbnail} --aspect-ratio="3/2"/>
-      <span id="view-project">View project <Icon name="eye" /></span>
+      <span id="view-project">View project <Icon name="arrow-right" --icon-size="1.2em" /></span>
     </div>
     <section>
       <div class="info">
@@ -51,6 +51,10 @@
     text-decoration: none;
     display: block;
     position: relative;
+
+    & #view-project svg {
+      color: var(--color-neutral-600);
+    }
 
     &:focus #view-project {
       opacity: 1;
@@ -127,6 +131,7 @@
 
     & p {
       color: var(--color-neutral-700);
+      max-width: 40ch;
     }
   }
 
@@ -169,11 +174,4 @@
       }
     }
   }
-
-  /* :global([ref="card-tags"]) {
-    grid-area: tags;
-    @media screen and (min-width: 1000px) {
-      margin-top: 1.6rem;
-    }
-  } */
 </style>
