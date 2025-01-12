@@ -73,7 +73,7 @@
 
   dd {
     display: block;
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-600);
     font-size: 1rem;
     font-weight: 200;
     line-height: 1.25;
