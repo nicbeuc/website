@@ -15,6 +15,7 @@ export const metaContent = {
 export const otherProjects = [
 	{
 		title: 'Shack Store - Shake Shack Merch',
+		icon: 'project-icon-ss',
 		client: 'Shake Shack',
 		info: `Online store featuring exclusive Shake Shack merchandise, designed for a leading global food brand with no shortage of superfans.`,
 		link: 'https://shackstore.shakeshack.com/',
@@ -24,6 +25,7 @@ export const otherProjects = [
 	},
 	{
 		title: 'Shop The Sims',
+		icon: 'project-icon-sims',
 		client: 'Electronic Arts',
 		info: 'Online store showcasing merchandise and accessories that celebrate The Sims, one of the best selling video game franchises of all time.',
 		link: 'https://shopthesims.com/',
@@ -32,16 +34,8 @@ export const otherProjects = [
 		roles: ['Design', 'Development']
 	},
 	{
-		title: 'Breezy Golf',
-		client: 'Doing Things Media',
-		info: 'Online store for the performance athletic wear brand created by the personalities behind the viral YouTube sensation Bob Does Sports.',
-		link: 'https://breezygolf.com/',
-		year: '2023',
-		team: 'Make Me Modern',
-		roles: ['Design', 'Development']
-	},
-	{
 		title: 'Dr. Noze Best',
+		icon: 'project-icon-dnb',
 		client: 'Dr. Noze Best',
 		info: 'Online store for the physician-founded baby health brand on a mission to bring relief to snotty kids and their busy parents.',
 		link: 'https://drnozebest.com/',
@@ -50,7 +44,8 @@ export const otherProjects = [
 		roles: ['Design', 'Development']
 	},
 	{
-		title: 'Wet Tennis',
+		title: 'SOFI TUKKER - Wet Tennis',
+		icon: 'project-icon-wt',
 		client: 'SOFI TUKKER',
 		info: `Online store featuring exclusive merchandise for electronic duo SOFI TUKKER’s vibrant sophomore album, Wet Tennis.`,
 		link: 'https://wettennis.club/',

@@ -1,9 +1,11 @@
 <script>
   import Icon from "$lib/Icon.svelte";
+	import SimpleImage from "./SimpleImage.svelte";
   export let project;
 
   const {
     title,
+    icon,
     client,
     info,
     link,
@@ -13,8 +15,9 @@
   } = project;
 </script>
 
-<li>
+<li class="project-link">
   <article>
+    <SimpleImage alt="" name={icon} --aspect-ratio="1" />
     <h3>
       {#if link}
         <a href={link} target="_blank">
@@ -42,26 +45,24 @@
 <style>
   article {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 40px 1fr auto;
     grid-template-areas:
-      "title year"
-      "meta  year";
-    column-gap: 1rem;
-    row-gap: .6rem;
-
-    @media screen and (max-width: 499px) {
-      row-gap: .8rem;
-    }
+      "icon title year"
+      "icon meta  .";
+    column-gap: 1.2rem;
+    row-gap: .4rem;
   }
 
   li:not(:first-of-type) {
-    margin-top: 2.4rem;
+    margin-top: 1.6rem;
   }
 
   p {
     grid-area: year;
     font-size: var(--font-size-body-sm);
     color: var(--color-neutral-600);
+    align-self: end;
+    line-height: 1.2;
   }
 
   dl {
@@ -75,6 +76,7 @@
     color: var(--color-neutral-700);
     font-size: 1rem;
     font-weight: 200;
+    line-height: 1.25;
 
     &:has(svg) {
       padding: 0;
@@ -107,6 +109,7 @@
     line-height: 1.2;
     gap: 1rem;
     font-weight: 300;
+    align-self: end;
 
     & a {
       text-decoration: none;
@@ -127,5 +130,10 @@
         color: black;
       }
     }
+  }
+
+  :global(.project-link picture) {
+    --border-radius-media: .8rem;
+    grid-area: icon;
   }
 </style>
