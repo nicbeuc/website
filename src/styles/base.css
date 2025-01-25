@@ -224,6 +224,10 @@ main {
 	}
 }
 
+article + article {
+	margin-top: 4.8rem;
+}
+
 article p,
 section p {
 	max-width: var(--prose-width);

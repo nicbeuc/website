@@ -19,7 +19,7 @@
     {/if}
   </figure>
 {:else}
-	<p style="color:red;">Image not found</p>
+	<img alt="Not found" src="/media-placeholder.svg" width="800" height="500" />
 {/if}
 
 <style>
