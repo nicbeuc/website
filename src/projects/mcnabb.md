@@ -38,11 +38,27 @@ During our design discovery phase, we determined a major focal point was how the
 
 <Image name="mcnabb-process-1" caption="A high-level overview of our design discovery phase" alt="Figma page containing our early design iterations" />
 
+Our exploration culminated in a design system that exemplified the organization's approachable and compassionate nature while injecting moments of intrigue throught it's bright color scheme.
+
 <Image name="mcnabb-styleguide" caption="A sampling of design elements used across the site" alt="The McNabb Center website style guide" />
+
+The design scheme's colors played an especially important role in the websites composition, as each color denoted a specific service category, making it easier and more intuitive for visitors to find the specific type of care they're looking for. Unique iconography was also used alongside the colors to accomodate users who may have trouble distinguishing certain colors.
+
+<Image name="mcnabb-colors" caption="Examples of how the different colors were used on the website" alt="Examples of how the different colors were used on the website" />
 
 <Divider />
 
 ## Developing A More Robust Search Experience
+
+One of the most glaring shortcomings of the organization's previous website was its limited search capabilities. Trying to find a specific service area or physical location often required typing the query into the search bar, hitting "search" and sifting through multiple pages of results, many of which included information that wasn't even related to the intial query. Our goal with the improved search UX was to ensure visitors could find the exact info they came looking for without even having to leave whatever page they were on. Moreover, finding a more clever way to distinguish content types (pages, locations, numbers, etc.) in the search results would make navigation exceptionally easier.
+
+<Image name="null" />
+
+Something about autocomplete - probably video
+
+<Image name="null" />
+
+"Types" of content (pages, hotlines, stories, news, service pages)
 
 <Divider />
 

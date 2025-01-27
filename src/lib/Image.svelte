@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let name: string;
+  export let name: string = '';
   export let alt: string = '';
   export let caption: any = null;
 
@@ -8,19 +8,19 @@
 		eager: true,
 		query: { enhanced: true }
 	});
-	let src = Object.entries(allImages).filter(([k, _]) => k.includes(name)).map(([_, v]) => v as string)[0];
+	const src = Object.entries(allImages).filter(([k, _]) => k.includes(name)).map(([_, v]) => v as string)[0] || null;
 </script>
 
-{#if src}
-  <figure>
+<figure>
+  {#if src}
     <enhanced:img class="img" {src} {alt} />
     {#if caption}
       <figcaption>{caption}</figcaption>
     {/if}
-  </figure>
-{:else}
-	<img alt="Not found" src="/media-placeholder.svg" width="800" height="500" />
-{/if}
+  {:else}
+	  <img class="img" alt="Not found" src="/media-placeholder.svg" width="800" height="500" />
+  {/if}
+</figure>
 
 <style>
 
