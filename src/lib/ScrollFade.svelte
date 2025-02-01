@@ -18,7 +18,7 @@
       z-index: 1;
     }
 
-    &:first-child {
+    &:first-of-type {
       mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
       top: 0;
 
@@ -31,7 +31,7 @@
       }
     }
 
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       mask-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
       bottom: 0;
 

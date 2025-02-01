@@ -34,7 +34,7 @@
 	--font-size-body-sm: 1.2rem;
 	--font-size-body-xs: 1rem;
 
-	--prose-width: 58ch;
+	--prose-width: 64ch;
 	--navbar-width: 26rem;
 
 	--color-neutral-900: #141618;
@@ -224,6 +224,10 @@ main {
 	}
 }
 
+article + article {
+	margin-top: 6.4rem;
+}
+
 article p,
 section p {
 	max-width: var(--prose-width);
@@ -293,7 +297,7 @@ article li {
 }
 
 article li + li {
-	margin-top: .8rem;
+	margin-top: .4rem;
 }
 
 article ul li::before {
