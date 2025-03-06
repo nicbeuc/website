@@ -9,12 +9,12 @@
 	svg {
 		height: auto;
 		aspect-ratio: 32/26;
-		width: 3rem;
+		width: 2rem;
 		color: black;
 		justify-self: center;
 
 		@media screen and (max-width: 799px) {
-			width: 2.4rem;
+			width: 1.5rem;
 		}
 	}
 </style>
