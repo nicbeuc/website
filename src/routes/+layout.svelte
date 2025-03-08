@@ -31,7 +31,7 @@
 
 <SkipToContent />
 <ScrollFade />
-<Header />
+<!-- <Header /> -->
 <main id="main">
 	<slot />
 </main>
